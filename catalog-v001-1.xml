@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="Imports Wizard Entry" name="http://ontofox.hegroup.org/urze0dax.owl" uri="file:/Users/nitya11/Dropbox%20(UFL)/CS_BI/Intro_Ontology/Download_OWL/OIBO_downloads/OBIB_identifier.owl"/>
+    <uri id="Imports Wizard Entry" name="http://ontofox.hegroup.org/tq3jdxsj.owl" uri="file:/Users/nitya11/Dropbox%20(UFL)/CS_BI/Intro_Ontology/Download_OWL/OIBO_downloads/Salmonella.owl"/>
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1576115841011" name="http://purl.obolibrary.org/obo/obib.owl" uri="N_Singh_Termpaper.owl"/>
+    </group>
+</catalog>
