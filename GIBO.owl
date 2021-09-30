@@ -16,6 +16,7 @@
     <owl:Ontology rdf:about="http://www.ontogator.org/GMS6805/Singh_N/OIBO">
         <owl:imports rdf:resource="http://ontofox.hegroup.org/tq3jdxsj.owl"/>
         <owl:imports rdf:resource="http://ontofox.hegroup.org/urze0dax.owl"/>
+        <owl:imports rdf:resource="http://ontofox.hegroup.org/d85btuyk.owl"/>
         <dc:contributor>Mathias Brochhausen</dc:contributor>
         <dc:source xml:lang="en">Developed on Basic framework of OBIB ontology</dc:source>
         <dc:creator>Nitya Singh</dc:creator>
@@ -3927,6 +3928,14 @@ https://sourceforge.net/tracker/index.php?func=detail&amp;aid=3512902&amp;group_
     
 
 
+    <!-- http://purl.obolibrary.org/obo/CHMO_0000999 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHMO_0000999">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000094"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/CLO_0000001 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLO_0000001">
@@ -4341,20 +4350,22 @@ https://sourceforge.net/tracker/index.php?func=detail&amp;aid=3512902&amp;group_
     
 
 
-    <!-- http://purl.obolibrary.org/obo/GEO_000000102 -->
+    <!-- http://purl.obolibrary.org/obo/GEO_000000370 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GEO_000000102">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000030"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GEO_000000370">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <obo:IAO_0000115 xml:lang="en">A material entity that is (1) a bona fide or fiat object part of the crust, any bodies of liquid on or contained within the crust, or planetary boundary layer (if present) of a terrestrial planet (including Earth), dwarf planet, exoplanet, natural satellite, planetesimal, or small Solar System body, and that (2) overlaps the planetary surface (including having a boundary that coincides with part of the planetary surface).</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/geo.owl</obo:IAO_0000412>
         <rdfs:label xml:lang="en">geographical entity</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/GEO_000000151 -->
+    <!-- http://purl.obolibrary.org/obo/GEO_000000372 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GEO_000000151">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GEO_000000102"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GEO_000000372">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GEO_000000370"/>
+        <obo:IAO_0000115 xml:lang="en">A geographical entity that is demarcated at least in part by one or more closed fiat boundaries all of whose lines are part of the planetary surface.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/geo.owl</obo:IAO_0000412>
         <rdfs:label xml:lang="en">geographical region</rdfs:label>
     </owl:Class>
@@ -4650,7 +4661,6 @@ Previous. An information content entity is a non-realizable information entity t
                 <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <owl:disjointWith rdf:resource="http://www.ontogator.org/GMS6805/Singh_N/OIBO/GMS6805_00000065"/>
         <obo:IAO_0000112 xml:lang="en">10 feet. 3 ml.</obo:IAO_0000112>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <obo:IAO_0000115 xml:lang="en">a scalar measurement datum is a measurement datum that is composed of two parts, numerals and a unit label.</obo:IAO_0000115>
@@ -5026,30 +5036,6 @@ Cons sometimes specifies a quality which is not a realizable.</obo:IAO_0000116>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/IAO_0000408 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000408">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000032"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000039"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UO_0000001"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000221"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PATO_0000122"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
-        <obo:IAO_0000115 xml:lang="en">A scalar measurement datum that is the result of measurement of length quality</obo:IAO_0000115>
-        <obo:IAO_0000117 xml:lang="en">Alan Ruttenberg</obo:IAO_0000117>
-        <rdfs:label xml:lang="en">length measurement datum</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/IAO_0000409 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000409">
@@ -5262,6 +5248,17 @@ Cons sometimes specifies a quality which is not a realizable.</obo:IAO_0000116>
         <obo:IAO_0000118>CRID registry</obo:IAO_0000118>
         <obo:IAO_0000119 xml:lang="en">Original proposal from Bjoern, discussions at IAO calls</obo:IAO_0000119>
         <rdfs:label xml:lang="en">centrally registered identifier registry</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000646 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000646">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0020000"/>
+        <obo:IAO_0000115 xml:lang="en">An identifier that denotes some postal delivery route, some aggregate of postal delivery routes or a geographical region and was created for the purpose of sorting and delivering mail.</obo:IAO_0000115>
+        <obo:IAO_0000117>Mathias Brochhausen</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">postal code</rdfs:label>
     </owl:Class>
     
 
@@ -7087,19 +7084,6 @@ The term is used in the following meaning of being self generated. It does not s
     
 
 
-    <!-- http://purl.obolibrary.org/obo/OBIB_0000336 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBIB_0000336">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000032"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A scalar measurement datum that is the output of a temperature measurement assay performed on a oven during a formalin-fixed paraffin-embedded (FFPE) tissue section hematoxylin and eosin (H&amp;E) staining.</obo:IAO_0000115>
-        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Person: Chris Stoeckert, Helena Ellis, Jie Zheng</obo:IAO_0000117>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBIB</obo:IAO_0000119>
-        <obo:IAO_0000234 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCI BBRB</obo:IAO_0000234>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">oven temperature during FFPE tissue section H&amp;E staining</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/OBIB_0000347 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBIB_0000347">
@@ -7223,20 +7207,6 @@ The term is used in the following meaning of being self generated. It does not s
     
 
 
-    <!-- http://purl.obolibrary.org/obo/OBIB_0000362 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBIB_0000362">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000414"/>
-        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">weight of frozen tumor block after freezing in liquid nitrogen</obo:IAO_0000112>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A mass measurement datum that is the result of measuring the weight of a frozen tissue specimen.</obo:IAO_0000115>
-        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Person: Chris Stoeckert, Helena Ellis, Jie Zheng</obo:IAO_0000117>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCI BBRB, OBIB</obo:IAO_0000119>
-        <obo:IAO_0000234 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCI BBRB</obo:IAO_0000234>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">weight of frozen tissue specimen</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/OBIB_0000381 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBIB_0000381">
@@ -7289,33 +7259,6 @@ The term is used in the following meaning of being self generated. It does not s
     
 
 
-    <!-- http://purl.obolibrary.org/obo/OBIB_0000392 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBIB_0000392">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000408"/>
-        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The largest dimension of the tumor on the slide measured in millimeters.</obo:IAO_0000112>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A length measurement datum that is the result of measuring the maximum length of a tumor specimen as presented on a slide.</obo:IAO_0000115>
-        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Person: Chris Stoeckert, Helena Ellis, Jie Zheng</obo:IAO_0000117>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCI BBRB, OBIB</obo:IAO_0000119>
-        <obo:IAO_0000234 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCI BBRB</obo:IAO_0000234>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">greatest tumor dimension on slide</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OBIB_0000402 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBIB_0000402">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An information content entity that is an indicator of whether the local pathology review of a formalin-fixed paraffin-embedded (FFPE) hematoxylin and eosin (H&amp;E)-stained tumor tissue slide confirmed the histological type.</obo:IAO_0000115>
-        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Person: Chris Stoeckert, Helena Ellis, Jie Zheng</obo:IAO_0000117>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCI BBRB, OBIB</obo:IAO_0000119>
-        <obo:IAO_0000234 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCI BBRB</obo:IAO_0000234>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">confirmation of histologic type of FFPE H&amp;E tumor slide</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/OBIB_0000415 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBIB_0000415">
@@ -7338,33 +7281,6 @@ The term is used in the following meaning of being self generated. It does not s
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCI BBRB, OBIB</obo:IAO_0000119>
         <obo:IAO_0000234 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCI BBRB</obo:IAO_0000234>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">specimen transport from OR to gross room issues or deviations from SOP</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OBIB_0000417 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBIB_0000417">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000032"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A scalar measurement datum that is the output of a temperature measurement assay occurring in a pathology gross room and performed when a specimen arrived from the operating room (OR).</obo:IAO_0000115>
-        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Person: Chris Stoeckert, Helena Ellis, Jie Zheng</obo:IAO_0000117>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCI BBRB, OBIB</obo:IAO_0000119>
-        <obo:IAO_0000234 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCI BBRB</obo:IAO_0000234>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">temperature in gross room when specimen arrived from OR</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OBIB_0000420 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBIB_0000420">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000414"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A mass measurement datum that is the output of an assay to measure the weight of a resected tissue specimen.</obo:IAO_0000115>
-        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Person: Chris Stoeckert, Helena Ellis, Jie Zheng</obo:IAO_0000117>
-        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">resected tissue weight</obo:IAO_0000118>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBIB</obo:IAO_0000119>
-        <obo:IAO_0000234 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCI BBRB</obo:IAO_0000234>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">resected tissue specimen mass measurement datum</rdfs:label>
     </owl:Class>
     
 
@@ -9339,6 +9255,31 @@ A blood specimen that has been centrifuged to obtain the white blood cells.</obo
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OBI_0000973 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000973">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000109"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000295"/>
+                <owl:someValuesFrom rdf:resource="http://www.ontogator.org/GMS6805/Singh_N/OIBO/GMS6805_00000063"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
+                <owl:someValuesFrom rdf:resource="http://www.ontogator.org/GMS6805/Singh_N/OIBO/GMS6805_00000073"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000119 xml:lang="en">A molecular sequence data that is about the primary structure of ribonucleic acids, like DNA or RNA</obo:IAO_0000119>
+        <obo:IAO_0000119 xml:lang="en">OBI
+http://purl.obolibrary.org/obo/OBI_0000973</obo:IAO_0000119>
+        <efo:definition xml:lang="en">A measurement datum that represents the primary structure of a macromolecule(it&apos;s sequence) sometimes associated with an indicator of confidence of that measurement.</efo:definition>
+        <rdfs:label xml:lang="en">sequence data</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OBI_0000977 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000977">
@@ -9701,6 +9642,31 @@ pat1-114/pat1-114 ade6-M210/ade6-M216 h+/h+ (cells are diploid)
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Matthew Brush</obo:IAO_0000117>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Matthew Brush</obo:IAO_0000119>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">material analysis service</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0001573 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001573">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000973"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_16991"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
+                <owl:someValuesFrom rdf:resource="http://www.ontogator.org/GMS6805/Singh_N/OIBO/GMS6805_00000074"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/OBIws_0000192"/>
+        <obo:IAO_0000119 xml:lang="en">OBI
+http://purl.obolibrary.org/obo/OBI_0001573</obo:IAO_0000119>
+        <efo:definition xml:lang="en">A nucleic acid sequence data item that is about the primary structure of DNA</efo:definition>
+        <rdfs:label xml:lang="en">DNA sequence data</rdfs:label>
     </owl:Class>
     
 
@@ -11406,21 +11372,6 @@ The following are NOT conclusions based on data: data themselves; results from p
     
 
 
-    <!-- http://purl.obolibrary.org/obo/OBI_0002197 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0002197">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000408"/>
-        <obo:IAO_0000111>tissue section thickness</obo:IAO_0000111>
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
-        <obo:IAO_0000115>A length measurement datum that is the result of an assay measuring the thickness of a tissue section.</obo:IAO_0000115>
-        <obo:IAO_0000117>Chris Stoeckert, Helena Ellis</obo:IAO_0000117>
-        <obo:IAO_0000119>NCI BBRB, OBIB</obo:IAO_0000119>
-        <obo:IAO_0000234>NCI BBRB</obo:IAO_0000234>
-        <rdfs:label xml:lang="en">tissue section thickness</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/OBI_0002198 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0002198">
@@ -11876,22 +11827,6 @@ The following are NOT conclusions based on data: data themselves; results from p
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBIB</obo:IAO_0000119>
         <obo:IAO_0000234 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCI BBRB</obo:IAO_0000234>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">diagnosis of infectious disease</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OBI_0002388 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0002388">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0002385"/>
-        <owl:disjointWith rdf:resource="http://www.ontogator.org/GMS6805/Singh_N/OIBO/GMS6805_00000035"/>
-        <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">diagnosis of HIV</obo:IAO_0000111>
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A diagnosis of infectious disease caused by the human immunodeficiency virus (1 or 2).</obo:IAO_0000115>
-        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Chris Stoeckert, Helena Ellis</obo:IAO_0000117>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBIB</obo:IAO_0000119>
-        <obo:IAO_0000234 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCI BBRB</obo:IAO_0000234>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">diagnosis of HIV</rdfs:label>
     </owl:Class>
     
 
@@ -13920,6 +13855,48 @@ defines and states the requirements (positive or negative) for an entity to be c
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OBIws_0000080 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBIws_0000080">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000973"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
+                <owl:someValuesFrom rdf:resource="http://www.ontogator.org/GMS6805/Singh_N/OIBO/GMS6805_00000076"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">A sequence data that is about sequence of amino acids which are linked by peptide bonds.</obo:IAO_0000115>
+        <obo:IAO_0000119 xml:lang="en">Bioinformatics Web service Ontology
+http://purl.obolibrary.org/obo/OBIws_0000080</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">protein sequence data</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBIws_0000192 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBIws_0000192">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000973"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33697"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
+                <owl:someValuesFrom rdf:resource="http://www.ontogator.org/GMS6805/Singh_N/OIBO/GMS6805_00000075"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">A sequence data item that is about the primary structure of RNA</obo:IAO_0000115>
+        <obo:IAO_0000119 xml:lang="en">Bioinformatics Web service ontology
+http://purl.obolibrary.org/obo/OBIws_0000192</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">RNA sequence data</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OGMS_0000023 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGMS_0000023">
@@ -15270,94 +15247,6 @@ nature as collections of samples and data.&quot;</obo:IAO_0000115>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
         <obo:IAO_0000115>A human being acting as bearing the contact role for a sample collection or a study.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">sample collection or study contact person</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OMIABIS_00001006 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMIABIS_00001006">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0100051"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">A data item that indicates the pathological assessment of a specimen.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">specimen disease state datum</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OMIABIS_00001010 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMIABIS_00001010">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMIABIS_00001006"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom>
-                    <owl:Class>
-                        <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0100051"/>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000045"/>
-                            </owl:Restriction>
-                        </owl:intersectionOf>
-                    </owl:Class>
-                </owl:someValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">A specimen disease state datum item that specifies that the specimen in question consists of a disorder.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">diseased state specimen datum</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OMIABIS_00001011 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMIABIS_00001011">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMIABIS_00001006"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom>
-                    <owl:Class>
-                        <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0100051"/>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000045"/>
-                            </owl:Restriction>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OMIABIS_0001054"/>
-                            </owl:Restriction>
-                        </owl:intersectionOf>
-                    </owl:Class>
-                </owl:someValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">A specimen disease state datum that specifies that the specimen in question consists of partially normal tissue and a disorder.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">mixed state specimen datum</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OMIABIS_00001012 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMIABIS_00001012">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMIABIS_00001006"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OMIABIS_0001054"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">A specimen disease state datum that specifies that the specimenin questions consists of normal tissue.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">normal state specimen datum</rdfs:label>
     </owl:Class>
     
 
@@ -17429,6 +17318,17 @@ https://en.wikipedia.org/wiki/Medical_record</rdfs:comment>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/ontoneo/ONTONEO_00000064 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ontoneo/ONTONEO_00000064">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <obo:IAO_0000117>Mathias Brochhausen</obo:IAO_0000117>
+        <efo:definition xml:lang="en">A textual entity used to identify the place or location that is a residence of a person or a family.</efo:definition>
+        <rdfs:label xml:lang="en">residency information</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://vivoweb.org/ontology/core#Laboratory -->
 
     <owl:Class rdf:about="http://vivoweb.org/ontology/core#Laboratory">
@@ -17660,16 +17560,9 @@ https://en.wikipedia.org/wiki/Medical_record</rdfs:comment>
 
     <owl:Class rdf:about="http://www.ontogator.org/GMS6805/Singh_N/OIBO/GMS6805_00000006">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0020000"/>
-        <rdfs:label xml:lang="en">WGS_ID</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.ontogator.org/GMS6805/Singh_N/OIBO/GMS6805_00000007 -->
-
-    <owl:Class rdf:about="http://www.ontogator.org/GMS6805/Singh_N/OIBO/GMS6805_00000007">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000104"/>
-        <rdfs:label xml:lang="en">data submission protocol</rdfs:label>
+        <obo:IAO_0000118 xml:lang="en">WGS ID; &apos;specimen title&apos; field in NCBI data submission</obo:IAO_0000118>
+        <efo:definition xml:lang="en">An identifier that refers to the whole genome sequenced data generated for an isolate specimen.</efo:definition>
+        <rdfs:label xml:lang="en">whole genome sequence identifier</rdfs:label>
     </owl:Class>
     
 
@@ -17679,6 +17572,89 @@ https://en.wikipedia.org/wiki/Medical_record</rdfs:comment>
     <owl:Class rdf:about="http://www.ontogator.org/GMS6805/Singh_N/OIBO/GMS6805_00000008">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
         <rdfs:label xml:lang="en">data submission process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontogator.org/GMS6805/Singh_N/OIBO/GMS6805_00000014 -->
+
+    <owl:Class rdf:about="http://www.ontogator.org/GMS6805/Singh_N/OIBO/GMS6805_00000014">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0020000"/>
+        <obo:IAO_0000117>Nitya Singh</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="en">isolate ID</obo:IAO_0000118>
+        <efo:definition xml:lang="en">An identifier that denotes an isolate specimen.</efo:definition>
+        <rdfs:label xml:lang="en">isolate identifier</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontogator.org/GMS6805/Singh_N/OIBO/GMS6805_00000015 -->
+
+    <owl:Class rdf:about="http://www.ontogator.org/GMS6805/Singh_N/OIBO/GMS6805_00000015">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0020000"/>
+        <obo:IAO_0000117>Nitya Singh</obo:IAO_0000117>
+        <efo:definition xml:lang="en">An identifier that denotes a temporal region of what is called a year in any given calendar system.</efo:definition>
+        <rdfs:label xml:lang="en">year identifier</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontogator.org/GMS6805/Singh_N/OIBO/GMS6805_00000017 -->
+
+    <owl:Class rdf:about="http://www.ontogator.org/GMS6805/Singh_N/OIBO/GMS6805_00000017">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <obo:IAO_0000117>Nitya Singh</obo:IAO_0000117>
+        <efo:definition xml:lang="en">A planned process that realizes the concretization of an established extraction protocal for isolating pure culture of a microorganism from the specimen.</efo:definition>
+        <rdfs:label xml:lang="en">microbial isolation process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontogator.org/GMS6805/Singh_N/OIBO/GMS6805_00000018 -->
+
+    <owl:Class rdf:about="http://www.ontogator.org/GMS6805/Singh_N/OIBO/GMS6805_00000018">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0100051"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
+                <owl:someValuesFrom rdf:resource="http://www.ontogator.org/GMS6805/Singh_N/OIBO/GMS6805_00000017"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">A specimen that is the specific output of a microbial isolation process.</obo:IAO_0000115>
+        <obo:IAO_0000117>Nitya Singh</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">isolate specimen</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontogator.org/GMS6805/Singh_N/OIBO/GMS6805_00000019 -->
+
+    <owl:Class rdf:about="http://www.ontogator.org/GMS6805/Singh_N/OIBO/GMS6805_00000019">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0020000"/>
+        <obo:IAO_0000115 xml:lang="en">An identifier that denotes the raw sequence data submitted to the NCBI SRA database.</obo:IAO_0000115>
+        <dc:description xml:lang="en">This identifier can be used to search and retrive the raw DNA sequence data files in SRA dtabase and is linked with corresponding  metadata information (submitted in same data submission event) via NCBI accession identifier in NCBI Biosample database.</dc:description>
+        <rdfs:label xml:lang="en">NCBI SRA identifier</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontogator.org/GMS6805/Singh_N/OIBO/GMS6805_00000020 -->
+
+    <owl:Class rdf:about="http://www.ontogator.org/GMS6805/Singh_N/OIBO/GMS6805_00000020">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0020000"/>
+        <obo:IAO_0000115 xml:lang="en">An identifier that denotes the submitted metadata to the NCBI Biosample database.</obo:IAO_0000115>
+        <dc:description xml:lang="en">This identifier can be used to search and retrive the metadata information in NCBI Biosample database about the corresponding raw DNA sequence data (retrievable via NCBI SRA identifier) submitted in same data submission event in NCBI SRA database</dc:description>
+        <rdfs:label xml:lang="en">NCBI acccession identifier</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontogator.org/GMS6805/Singh_N/OIBO/GMS6805_00000021 -->
+
+    <owl:Class rdf:about="http://www.ontogator.org/GMS6805/Singh_N/OIBO/GMS6805_00000021">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBIB_0000070"/>
+        <obo:IAO_0000115 xml:lang="en">A standard operating procedure for submitting gene sequence data to the NCBI SRA database.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">NCBI SRA data submission SOP</rdfs:label>
     </owl:Class>
     
 
@@ -18156,22 +18132,6 @@ https://en.wikipedia.org/wiki/Multilocus_sequence_typing</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://www.ontogator.org/GMS6805/Singh_N/OIBO/GMS6805_00000052">
         <rdfs:subClassOf rdf:resource="http://www.ontogator.org/GMS6805/Singh_N/OIBO/GMS6805_00000063"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
-                <owl:someValuesFrom>
-                    <owl:Class>
-                        <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://www.ontogator.org/GMS6805/Singh_N/OIBO/GMS6805_00000065"/>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0001051"/>
-                            </owl:Restriction>
-                        </owl:intersectionOf>
-                    </owl:Class>
-                </owl:someValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">A molecular sequence data analysis process for analyzing genomic data, comprising genome of the organism, with the aim of identifying biologically important patterns.</obo:IAO_0000115>
         <obo:IAO_0000117>Nitya Singh</obo:IAO_0000117>
         <obo:IAO_0000119 xml:lang="en">Adapted from OBI</obo:IAO_0000119>
@@ -18237,7 +18197,7 @@ http://purl.obolibrary.org/obo/GENEPIO_0000050</obo:IAO_0000119>
         <obo:IAO_0000117>Nitya Singh</obo:IAO_0000117>
         <obo:IAO_0000119 xml:lang="en">Adapted from 
 http://www.ridom.de/seqsphere/u/Core_Genome_MLST.html</obo:IAO_0000119>
-        <efo:definition xml:lang="en">A multilocus sequence typing process whcih uses the fixed set of conserved genome-wide genes for generating the alleling profiles or sequence type(ST) of bacterial species, known as core-genome ST.</efo:definition>
+        <efo:definition xml:lang="en">A multilocus sequence typing process which uses the fixed set of conserved genome-wide genes for generating the alleling profiles or sequence type(ST) of bacterial species, known as core-genome ST.</efo:definition>
         <rdfs:label xml:lang="en">core genome multilocus sequence typing</rdfs:label>
     </owl:Class>
     
@@ -18255,7 +18215,7 @@ http://www.ridom.de/seqsphere/u/Core_Genome_MLST.html</obo:IAO_0000119>
         </rdfs:subClassOf>
         <obo:IAO_0000117>Nitya Singh</obo:IAO_0000117>
         <obo:IAO_0000119 xml:lang="en">adapted from GeneEpiO</obo:IAO_0000119>
-        <efo:definition xml:lang="en">A multilocus sequence typing process whcih uses the set of conserved housekeeping genes for generating the alleling profiles or sequence type (ST) of bacterial species.</efo:definition>
+        <efo:definition xml:lang="en">A multilocus sequence typing process which uses the set of conserved housekeeping genes for generating the alleling profiles or sequence type (ST) of bacterial species.</efo:definition>
         <rdfs:label xml:lang="en">legacy multilocus sequence typing</rdfs:label>
     </owl:Class>
     
@@ -18271,7 +18231,7 @@ http://www.ridom.de/seqsphere/u/Core_Genome_MLST.html</obo:IAO_0000119>
                 <owl:someValuesFrom rdf:resource="http://www.ontogator.org/GMS6805/Singh_N/OIBO/GMS6805_00000044"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">A multilocus sequence typing process whcih uses the fixed set of whole-wide genes for generating the alleling profiles or sequence type (ST) of bacterial species, known as whole-genome ST.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A multilocus sequence typing process which uses the fixed set of whole-wide genes for generating the alleling profiles or sequence type (ST) of bacterial species, known as whole-genome ST.</obo:IAO_0000115>
         <obo:IAO_0000117>Nitya Singh</obo:IAO_0000117>
         <obo:IAO_0000119 xml:lang="en">Adapted from GeneEpiO</obo:IAO_0000119>
         <rdfs:label xml:lang="en">whole genome multilocus sequence typing</rdfs:label>
@@ -18338,7 +18298,7 @@ http://edamontology.org/operation_0484</obo:IAO_0000119>
                 <owl:someValuesFrom>
                     <owl:Class>
                         <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://www.ontogator.org/GMS6805/Singh_N/OIBO/GMS6805_00000077"/>
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000973"/>
                             <owl:Restriction>
                                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
                                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_23367"/>
@@ -18356,59 +18316,10 @@ http://edamontology.org/operation_0484</obo:IAO_0000119>
     
 
 
-    <!-- http://www.ontogator.org/GMS6805/Singh_N/OIBO/GMS6805_00000065 -->
-
-    <owl:Class rdf:about="http://www.ontogator.org/GMS6805/Singh_N/OIBO/GMS6805_00000065">
-        <rdfs:subClassOf rdf:resource="http://www.ontogator.org/GMS6805/Singh_N/OIBO/GMS6805_00000077"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33696"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
-                <owl:someValuesFrom rdf:resource="http://www.ontogator.org/GMS6805/Singh_N/OIBO/GMS6805_00000078"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">A molecular sequence data item that is about the primary structure or sequential arrangement of nucleic acid molecules, like ribonucleic acid (RNA) or deoxynucleic acid (DNA) molecules.</obo:IAO_0000115>
-        <obo:IAO_0000115 xml:lang="en">adapted from OBI</obo:IAO_0000115>
-        <obo:IAO_0000117>Nitya Singh</obo:IAO_0000117>
-        <rdfs:label xml:lang="en">nucleic acid sequence data</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.ontogator.org/GMS6805/Singh_N/OIBO/GMS6805_00000066 -->
-
-    <owl:Class rdf:about="http://www.ontogator.org/GMS6805/Singh_N/OIBO/GMS6805_00000066">
-        <rdfs:subClassOf rdf:resource="http://www.ontogator.org/GMS6805/Singh_N/OIBO/GMS6805_00000065"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_16991"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
-                <owl:someValuesFrom rdf:resource="http://www.ontogator.org/GMS6805/Singh_N/OIBO/GMS6805_00000074"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <owl:disjointWith rdf:resource="http://www.ontogator.org/GMS6805/Singh_N/OIBO/GMS6805_00000069"/>
-        <obo:IAO_0000119 xml:lang="en">OBI
-http://purl.obolibrary.org/obo/OBI_0001573</obo:IAO_0000119>
-        <efo:definition xml:lang="en">A nucleic acid sequence data item that is about the primary structure of DNA</efo:definition>
-        <rdfs:label xml:lang="en">DNA sequence data</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://www.ontogator.org/GMS6805/Singh_N/OIBO/GMS6805_00000067 -->
 
     <owl:Class rdf:about="http://www.ontogator.org/GMS6805/Singh_N/OIBO/GMS6805_00000067">
-        <rdfs:subClassOf rdf:resource="http://www.ontogator.org/GMS6805/Singh_N/OIBO/GMS6805_00000066"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001573"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
@@ -18428,7 +18339,7 @@ OBI</obo:IAO_0000119>
     <!-- http://www.ontogator.org/GMS6805/Singh_N/OIBO/GMS6805_00000068 -->
 
     <owl:Class rdf:about="http://www.ontogator.org/GMS6805/Singh_N/OIBO/GMS6805_00000068">
-        <rdfs:subClassOf rdf:resource="http://www.ontogator.org/GMS6805/Singh_N/OIBO/GMS6805_00000066"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001573"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
@@ -18443,34 +18354,10 @@ OBI</obo:IAO_0000119>
     
 
 
-    <!-- http://www.ontogator.org/GMS6805/Singh_N/OIBO/GMS6805_00000069 -->
-
-    <owl:Class rdf:about="http://www.ontogator.org/GMS6805/Singh_N/OIBO/GMS6805_00000069">
-        <rdfs:subClassOf rdf:resource="http://www.ontogator.org/GMS6805/Singh_N/OIBO/GMS6805_00000065"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33697"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
-                <owl:someValuesFrom rdf:resource="http://www.ontogator.org/GMS6805/Singh_N/OIBO/GMS6805_00000075"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">A sequence data item that is about the primary structure of RNA</obo:IAO_0000115>
-        <obo:IAO_0000119 xml:lang="en">Bioinformatics Web service ontology
-http://purl.obolibrary.org/obo/OBIws_0000192</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">RNA sequence data</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://www.ontogator.org/GMS6805/Singh_N/OIBO/GMS6805_00000070 -->
 
     <owl:Class rdf:about="http://www.ontogator.org/GMS6805/Singh_N/OIBO/GMS6805_00000070">
-        <rdfs:subClassOf rdf:resource="http://www.ontogator.org/GMS6805/Singh_N/OIBO/GMS6805_00000069"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBIws_0000192"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
@@ -18489,7 +18376,7 @@ http://purl.obolibrary.org/obo/OBIws_0000192</obo:IAO_0000119>
     <!-- http://www.ontogator.org/GMS6805/Singh_N/OIBO/GMS6805_00000071 -->
 
     <owl:Class rdf:about="http://www.ontogator.org/GMS6805/Singh_N/OIBO/GMS6805_00000071">
-        <rdfs:subClassOf rdf:resource="http://www.ontogator.org/GMS6805/Singh_N/OIBO/GMS6805_00000069"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBIws_0000192"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
@@ -18564,7 +18451,7 @@ http://purl.obolibrary.org/obo/OBI_0001177</obo:IAO_0000119>
                 <owl:someValuesFrom>
                     <owl:Class>
                         <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://www.ontogator.org/GMS6805/Singh_N/OIBO/GMS6805_00000079"/>
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBIws_0000080"/>
                             <owl:Restriction>
                                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
                                 <owl:someValuesFrom>
@@ -18592,31 +18479,6 @@ http://purl.obolibrary.org/obo/OBI_0001923</obo:IAO_0000119>
     
 
 
-    <!-- http://www.ontogator.org/GMS6805/Singh_N/OIBO/GMS6805_00000077 -->
-
-    <owl:Class rdf:about="http://www.ontogator.org/GMS6805/Singh_N/OIBO/GMS6805_00000077">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000109"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000295"/>
-                <owl:someValuesFrom rdf:resource="http://www.ontogator.org/GMS6805/Singh_N/OIBO/GMS6805_00000063"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
-                <owl:someValuesFrom rdf:resource="http://www.ontogator.org/GMS6805/Singh_N/OIBO/GMS6805_00000073"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <obo:IAO_0000119 xml:lang="en">A molecular sequence data that is about the primary structure of ribonucleic acids, like DNA or RNA</obo:IAO_0000119>
-        <obo:IAO_0000119 xml:lang="en">OBI
-http://purl.obolibrary.org/obo/OBI_0000973</obo:IAO_0000119>
-        <efo:definition xml:lang="en">A measurement datum that represents the primary structure of a macromolecule(it&apos;s sequence) sometimes associated with an indicator of confidence of that measurement.</efo:definition>
-        <rdfs:label xml:lang="en">molecular sequence data</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://www.ontogator.org/GMS6805/Singh_N/OIBO/GMS6805_00000078 -->
 
     <owl:Class rdf:about="http://www.ontogator.org/GMS6805/Singh_N/OIBO/GMS6805_00000078">
@@ -18631,24 +18493,6 @@ http://purl.obolibrary.org/obo/OBI_0000973</obo:IAO_0000119>
         <obo:IAO_0000119 xml:lang="en">adapted from Wekipedia</obo:IAO_0000119>
         <efo:definition xml:lang="en">A sequencing assay used to determine the molecular sequence of a nucleic acid molecule, like dioxynucleic acid(DNA) or ribonucleic acid (RNA).</efo:definition>
         <rdfs:label xml:lang="en">nucleic acid sequencing assay</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.ontogator.org/GMS6805/Singh_N/OIBO/GMS6805_00000079 -->
-
-    <owl:Class rdf:about="http://www.ontogator.org/GMS6805/Singh_N/OIBO/GMS6805_00000079">
-        <rdfs:subClassOf rdf:resource="http://www.ontogator.org/GMS6805/Singh_N/OIBO/GMS6805_00000077"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
-                <owl:someValuesFrom rdf:resource="http://www.ontogator.org/GMS6805/Singh_N/OIBO/GMS6805_00000076"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">A sequence data that is about sequence of amino acids which are linked by peptide bonds.</obo:IAO_0000115>
-        <obo:IAO_0000119 xml:lang="en">Bioinformatics Web service Ontology
-http://purl.obolibrary.org/obo/OBIws_0000080</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">protein sequence data</rdfs:label>
     </owl:Class>
     
 
@@ -22036,6 +21880,15 @@ This interpretation is *not* the same as an at-all-times relation
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/omrse.owl"/>
     </rdf:Description>
     <rdf:Description>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ido.owl"/>
+    </rdf:Description>
+    <rdf:Description>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/omrse.owl"/>
+    </rdf:Description>
+    <rdf:Description>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/omrse.owl"/>
+    </rdf:Description>
+    <rdf:Description>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/omrse.owl"/>
     </rdf:Description>
     <rdf:Description>
@@ -22069,28 +21922,7 @@ This interpretation is *not* the same as an at-all-times relation
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/omrse.owl"/>
     </rdf:Description>
     <rdf:Description>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/omrse.owl"/>
-    </rdf:Description>
-    <rdf:Description>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ido.owl"/>
-    </rdf:Description>
-    <rdf:Description>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ido.owl"/>
-    </rdf:Description>
-    <rdf:Description>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/omrse.owl"/>
-    </rdf:Description>
-    <rdf:Description>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ido.owl"/>
-    </rdf:Description>
-    <rdf:Description>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ido.owl"/>
-    </rdf:Description>
-    <rdf:Description>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/omrse.owl"/>
-    </rdf:Description>
-    <rdf:Description>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/omrse.owl"/>
     </rdf:Description>
     <rdf:Description>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/omrse.owl"/>
@@ -22111,9 +21943,6 @@ This interpretation is *not* the same as an at-all-times relation
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ido.owl"/>
     </rdf:Description>
     <rdf:Description>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/omrse.owl"/>
-    </rdf:Description>
-    <rdf:Description>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ido.owl"/>
     </rdf:Description>
     <rdf:Description>
@@ -22124,6 +21953,21 @@ This interpretation is *not* the same as an at-all-times relation
     </rdf:Description>
     <rdf:Description>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ido.owl"/>
+    </rdf:Description>
+    <rdf:Description>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ido.owl"/>
+    </rdf:Description>
+    <rdf:Description>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/omrse.owl"/>
+    </rdf:Description>
+    <rdf:Description>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ido.owl"/>
+    </rdf:Description>
+    <rdf:Description>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/omrse.owl"/>
+    </rdf:Description>
+    <rdf:Description>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/omrse.owl"/>
     </rdf:Description>
     <rdf:Description>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/omrse.owl"/>
