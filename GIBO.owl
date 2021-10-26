@@ -37,17 +37,9 @@
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Mathias Brochhausen</Literal>
     </Annotation>
     <Annotation>
-        <AnnotationProperty abbreviatedIRI="dc:source"/>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Developed on Basic framework of OBIB ontology</Literal>
-    </Annotation>
-    <Annotation>
-        <AnnotationProperty abbreviatedIRI="dc:creator"/>
-        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Nitya Singh</Literal>
-    </Annotation>
-    <Annotation>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000116"/>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Used Basic architecture of OBIB with selected classes and imported relevant classes from other Ontologies.
-Created a couple of classes and created axiomatic relations between existing from different ontologiesand newly added classes.
+Created a couple of classes and created axiomatic relations between existing from different ontologies and newly added classes.
 
 List of few newly added classes
 1. Classes to represent diagnostic center :
@@ -112,6 +104,14 @@ Postal code of specimen donor
 
 Object Property:
 6. &apos;is_cuased_by_exposure_to&apos;</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dc:source"/>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Developed on Basic framework of OBIB ontology</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dc:creator"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Nitya Singh</Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="dc:description"/>
@@ -2296,10 +2296,10 @@ Object Property:
         <Class abbreviatedIRI="obo:OBI_0000423"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="obo:OBI_0002095"/>
+        <ObjectProperty abbreviatedIRI="obo:OBI_0000295"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty abbreviatedIRI="obo:OBI_0000295"/>
+        <Class abbreviatedIRI="obo:OBI_0002095"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="obo:OBI_0600018"/>
@@ -2806,10 +2806,10 @@ Object Property:
         <Class abbreviatedIRI="obo:IDO_0000456"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="obo:OBI_0002139"/>
+        <Class abbreviatedIRI="obo:OBI_0002006"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="obo:OBI_0002006"/>
+        <Class abbreviatedIRI="obo:OBI_0002139"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="obo:OMRSE_00000183"/>
@@ -47317,7 +47317,7 @@ https://en.wikipedia.org › wiki › Salmonellosis</Literal>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="efo:definition"/>
         <IRI>GIBO_00000018</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A planned process of collecting patient illness symptom data based on their recall, implemented by following a carefully designed questionnaire to capture the relevant information for diagnosis or intervention puposes.</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A planned process of collecting patient illness symptom data, using a systematic questionnaire to capture the relevant information for diagnosis or intervention puposes, that is filled based on their recall of disease onset, symptoms and possible food exposures.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
