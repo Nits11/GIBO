@@ -47186,7 +47186,7 @@ https://en.wikipedia.org/wiki/Medical_laboratory</Literal>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>GIBO_00000010</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">diagnostic organization</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">diagnostic lab organization</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
@@ -47241,7 +47241,7 @@ https://en.wikipedia.org/wiki/Medical_laboratory</Literal>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
         <IRI>GIBO_00000014</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A diagnosis of infectious disease caused by the pathogenic bacterial strains of Salmonella, typical signs of illness occur after 12 to 36 hours of bacterial exposure.</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A diagnosis of infectious disease caused by the pathogenic bacterial strains of Salmonella, typical signs of Salmonellosis illness occur after 12 to 36 hours of bacterial exposure.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
@@ -47272,7 +47272,7 @@ https://en.wikipedia.org › wiki › Salmonellosis</Literal>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="efo:definition"/>
         <IRI>GIBO_00000015</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A planned process, performed using specific guidelines  to capture clinical information for making clinical decisions about presence or absence of a disease. Examples include, X-ray, biopsies, presence or absence of pathogenic infection etc.</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A planned process, performed using specific guidelines to capture clinical information for making clinical decisions about presence or absence of a disease. Examples include, biopsies, lab tests for detecting presence or absence of pathogenic infection etc.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
