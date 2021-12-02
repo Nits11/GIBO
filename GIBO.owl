@@ -9060,6 +9060,13 @@ Object Property:
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
+        <Class abbreviatedIRI="obo:OMIABIS_0000026"/>
+        <DataSomeValuesFrom>
+            <DataProperty abbreviatedIRI="obo:OBI_0002815"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class abbreviatedIRI="obo:OMIABIS_0000027"/>
         <Class abbreviatedIRI="obo:OMIABIS_0000026"/>
     </SubClassOf>
@@ -9870,6 +9877,13 @@ Object Property:
     <SubClassOf>
         <Class abbreviatedIRI="obo:ONTONEO_00000064"/>
         <Class abbreviatedIRI="obo:IAO_0000300"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:ONTONEO_00000064"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="obo:IAO_0000136"/>
+            <Class abbreviatedIRI="obo:GEO_000000372"/>
+        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="obo:PATO_0000011"/>
