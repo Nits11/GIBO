@@ -2440,6 +2440,9 @@ Object Property:
         <Class IRI="GIBO_00000077"/>
     </Declaration>
     <Declaration>
+        <Class IRI="GIBO_00000078"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="isolate_specimen_ID"/>
     </Declaration>
     <Declaration>
@@ -4736,6 +4739,13 @@ Object Property:
         <Class abbreviatedIRI="obo:BFO_0000003"/>
     </SubClassOf>
     <SubClassOf>
+        <Class abbreviatedIRI="obo:BFO_0000008"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="obo:BFO_0000050"/>
+            <Class abbreviatedIRI="obo:BFO_0000008"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class abbreviatedIRI="obo:BFO_0000009"/>
         <Class abbreviatedIRI="obo:BFO_0000006"/>
     </SubClassOf>
@@ -5556,8 +5566,36 @@ Object Property:
         <Class abbreviatedIRI="obo:OBI_0100026"/>
     </SubClassOf>
     <SubClassOf>
+        <Class abbreviatedIRI="obo:IDO_0000495"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="obo:BFO_0000050"/>
+            <Class abbreviatedIRI="obo:BFO_0000182"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:IDO_0000495"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="obo:BFO_0000155"/>
+            <Class abbreviatedIRI="obo:BFO_0000008"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:IDO_0000495"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="obo:RO_0002224"/>
+            <Class abbreviatedIRI="obo:BFO_0000008"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class abbreviatedIRI="obo:IDO_0000502"/>
         <Class abbreviatedIRI="obo:BFO_0000015"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:IDO_0000502"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty abbreviatedIRI="obo:IAO_0020018"/>
+            <Class IRI="GIBO_00000078"/>
+        </ObjectExactCardinality>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="obo:IDO_0000528"/>
@@ -10161,6 +10199,13 @@ Object Property:
         <Class abbreviatedIRI="obo:IAO_0020000"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="GIBO_00000004"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="obo:IAO_0000219"/>
+            <Class abbreviatedIRI="obo:BFO_0000008"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="GIBO_00000005"/>
         <Class abbreviatedIRI="obo:IAO_0020000"/>
     </SubClassOf>
@@ -10348,6 +10393,20 @@ Object Property:
     <SubClassOf>
         <Class IRI="GIBO_00000016"/>
         <Class abbreviatedIRI="obo:BFO_0000023"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="GIBO_00000016"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="obo:BFO_0000055"/>
+            <Class abbreviatedIRI="obo:OGMS_0000104"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="GIBO_00000016"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="obo:RO_0000059"/>
+            <Class IRI="GIBO_00000015"/>
+        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="GIBO_00000018"/>
@@ -10917,6 +10976,10 @@ Object Property:
             <ObjectProperty abbreviatedIRI="obo:IAO_0000219"/>
             <Class IRI="GIBO_00000075"/>
         </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="GIBO_00000078"/>
+        <Class abbreviatedIRI="obo:IAO_0020000"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="isolate_specimen_ID"/>
@@ -47310,7 +47373,7 @@ https://en.wikipedia.org › wiki › Salmonellosis</Literal>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
         <IRI>GIBO_00000016</IRI>
-        <Literal xml:lang="en">A role that inheres in a concretization of an diagnostic assay and is realized by an diagnostic process.</Literal>
+        <Literal xml:lang="en">A role that inheres in a concretization of an diagnostic test and is realized by an diagnostic process.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
@@ -47335,7 +47398,7 @@ https://en.wikipedia.org › wiki › Salmonellosis</Literal>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>GIBO_00000017</IRI>
-        <Literal xml:lang="en">is_cuased_by_exposure_to</Literal>
+        <Literal xml:lang="en">is cuased by exposure to</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
@@ -48150,6 +48213,11 @@ http://purl.obolibrary.org/obo/OBIws_0000080</Literal>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>GIBO_00000077</IRI>
         <Literal xml:lang="en">SNP cluster number</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>GIBO_00000078</IRI>
+        <Literal xml:lang="en">epidemic identifier</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
