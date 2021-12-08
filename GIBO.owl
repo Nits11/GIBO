@@ -2443,6 +2443,9 @@ Object Property:
         <Class IRI="GIBO_00000079"/>
     </Declaration>
     <Declaration>
+        <Class IRI="GIBO_00000080"/>
+    </Declaration>
+    <Declaration>
         <Class abbreviatedIRI="owl:Thing"/>
     </Declaration>
     <Declaration>
@@ -10313,6 +10316,10 @@ Object Property:
         <ObjectIntersectionOf>
             <Class abbreviatedIRI="obo:OBI_0002385"/>
             <ObjectSomeValuesFrom>
+                <ObjectProperty abbreviatedIRI="obo:BFO_0000062"/>
+                <Class IRI="GIBO_00000080"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
                 <ObjectProperty abbreviatedIRI="obo:OBI_0000312"/>
                 <ObjectSomeValuesFrom>
                     <ObjectProperty abbreviatedIRI="obo:OBI_0000293"/>
@@ -10324,16 +10331,6 @@ Object Property:
                         </ObjectSomeValuesFrom>
                     </ObjectIntersectionOf>
                 </ObjectSomeValuesFrom>
-            </ObjectSomeValuesFrom>
-            <ObjectSomeValuesFrom>
-                <ObjectProperty IRI="GIBO_00000017"/>
-                <ObjectIntersectionOf>
-                    <Class abbreviatedIRI="obo:NCBITaxon_590"/>
-                    <ObjectSomeValuesFrom>
-                        <ObjectProperty abbreviatedIRI="obo:RO_0000091"/>
-                        <Class abbreviatedIRI="obo:IDO_0000450"/>
-                    </ObjectSomeValuesFrom>
-                </ObjectIntersectionOf>
             </ObjectSomeValuesFrom>
         </ObjectIntersectionOf>
     </SubClassOf>
@@ -10955,6 +10952,23 @@ Object Property:
     <SubClassOf>
         <Class IRI="GIBO_00000079"/>
         <Class abbreviatedIRI="obo:OMIABIS_0001046"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="GIBO_00000080"/>
+        <Class abbreviatedIRI="obo:IDO_0000436"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="GIBO_00000080"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="GIBO_00000017"/>
+            <ObjectIntersectionOf>
+                <Class abbreviatedIRI="obo:NCBITaxon_590"/>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty abbreviatedIRI="obo:RO_0000091"/>
+                    <Class abbreviatedIRI="obo:IDO_0000450"/>
+                </ObjectSomeValuesFrom>
+            </ObjectIntersectionOf>
+        </ObjectSomeValuesFrom>
     </SubClassOf>
     <DisjointClasses>
         <Class abbreviatedIRI="obo:APOLLO_SV_00000032"/>
@@ -47283,7 +47297,7 @@ https://en.wikipedia.org/wiki/Medical_laboratory</Literal>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
         <IRI>GIBO_00000014</IRI>
-        <Literal xml:lang="en">A diagnosis of infectious disease caused by the pathogenic bacterial strains of Salmonella, typical signs of Salmonellosis illness occur after 12 to 36 hours of bacterial exposure.</Literal>
+        <Literal xml:lang="en">A diagnosis of infectious disease caused by the pathogenic bacterial strains of Salmonella.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
@@ -48098,22 +48112,22 @@ http://purl.obolibrary.org/obo/OBIws_0000080</Literal>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>GIBO_00000068</IRI>
-        <Literal xml:lang="en">HC2 number</Literal>
+        <Literal xml:lang="en">HC2 cluster number</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>GIBO_00000069</IRI>
-        <Literal xml:lang="en">HC5 number</Literal>
+        <Literal xml:lang="en">HC5 cluster number</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>GIBO_00000070</IRI>
-        <Literal xml:lang="en">HC10 number</Literal>
+        <Literal xml:lang="en">HC10 cluster number</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>GIBO_00000071</IRI>
-        <Literal xml:lang="en">HC20 number</Literal>
+        <Literal xml:lang="en">HC20 cluster number</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
@@ -48174,6 +48188,11 @@ http://purl.obolibrary.org/obo/OBIws_0000080</Literal>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>GIBO_00000079</IRI>
         <Literal xml:lang="en">isolate specimen ID</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>GIBO_00000080</IRI>
+        <Literal xml:lang="en">Salmonellosis</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000111"/>
