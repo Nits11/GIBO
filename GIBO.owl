@@ -2254,9 +2254,6 @@ Object Property:
         <Class IRI="GIBO_00000012"/>
     </Declaration>
     <Declaration>
-        <Class IRI="GIBO_00000013"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="GIBO_00000014"/>
     </Declaration>
     <Declaration>
@@ -2443,7 +2440,7 @@ Object Property:
         <Class IRI="GIBO_00000078"/>
     </Declaration>
     <Declaration>
-        <Class IRI="isolate_specimen_ID"/>
+        <Class IRI="GIBO_00000079"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="owl:Thing"/>
@@ -10312,32 +10309,6 @@ Object Property:
         <Class abbreviatedIRI="obo:OMIABIS_0000012"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="GIBO_00000013"/>
-        <Class abbreviatedIRI="obo:IAO_0000027"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="GIBO_00000013"/>
-        <ObjectIntersectionOf>
-            <Class abbreviatedIRI="obo:IAO_0000027"/>
-            <ObjectSomeValuesFrom>
-                <ObjectProperty abbreviatedIRI="obo:IAO_0000136"/>
-                <ObjectIntersectionOf>
-                    <Class abbreviatedIRI="obo:BFO_0000038"/>
-                    <ObjectSomeValuesFrom>
-                        <ObjectProperty abbreviatedIRI="obo:BFO_0000051"/>
-                        <ObjectIntersectionOf>
-                            <Class abbreviatedIRI="obo:BFO_0000038"/>
-                            <ObjectSomeValuesFrom>
-                                <ObjectProperty abbreviatedIRI="obo:BFO_0000156"/>
-                                <Class IRI="GIBO_00000018"/>
-                            </ObjectSomeValuesFrom>
-                        </ObjectIntersectionOf>
-                    </ObjectSomeValuesFrom>
-                </ObjectIntersectionOf>
-            </ObjectSomeValuesFrom>
-        </ObjectIntersectionOf>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="GIBO_00000014"/>
         <ObjectIntersectionOf>
             <Class abbreviatedIRI="obo:OBI_0002385"/>
@@ -10982,7 +10953,7 @@ Object Property:
         <Class abbreviatedIRI="obo:IAO_0020000"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="isolate_specimen_ID"/>
+        <Class IRI="GIBO_00000079"/>
         <Class abbreviatedIRI="obo:OMIABIS_0001046"/>
     </SubClassOf>
     <DisjointClasses>
@@ -47310,26 +47281,6 @@ https://en.wikipedia.org/wiki/Medical_laboratory</Literal>
         <Literal xml:lang="en">diagnostic lab contact role</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
-        <IRI>GIBO_00000013</IRI>
-        <Literal>Nitya Singh</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000119"/>
-        <IRI>GIBO_00000013</IRI>
-        <Literal xml:lang="en">adapted from MedicineNet</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="efo:definition"/>
-        <IRI>GIBO_00000013</IRI>
-        <Literal xml:lang="en">A data item that indicates the time when disease or the initial symptoms or manifestations of a disease appear in an individual, based on the recall of reporting patient.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>GIBO_00000013</IRI>
-        <Literal xml:lang="en">date of illness onset</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
         <IRI>GIBO_00000014</IRI>
         <Literal xml:lang="en">A diagnosis of infectious disease caused by the pathogenic bacterial strains of Salmonella, typical signs of Salmonellosis illness occur after 12 to 36 hours of bacterial exposure.</Literal>
@@ -47595,7 +47546,7 @@ http://edamontology.org/operation_3197</Literal>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>GIBO_00000028</IRI>
-        <Literal xml:lang="en">genetic variation Analysis</Literal>
+        <Literal xml:lang="en">genetic variation analysis</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000119"/>
@@ -48221,7 +48172,7 @@ http://purl.obolibrary.org/obo/OBIws_0000080</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>isolate_specimen_ID</IRI>
+        <IRI>GIBO_00000079</IRI>
         <Literal xml:lang="en">isolate specimen ID</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
