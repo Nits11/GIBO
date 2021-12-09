@@ -2284,9 +2284,6 @@ Object Property:
         <Class IRI="GIBO_00000024"/>
     </Declaration>
     <Declaration>
-        <Class IRI="GIBO_00000025"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="GIBO_00000026"/>
     </Declaration>
     <Declaration>
@@ -5024,6 +5021,13 @@ Object Property:
             <ObjectProperty abbreviatedIRI="obo:OBI_0000312"/>
             <Class IRI="GIBO_00000048"/>
         </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:ECO_0000338"/>
+        <DataSomeValuesFrom>
+            <DataProperty abbreviatedIRI="obo:OBI_0002815"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="obo:ENVO_00010483"/>
@@ -10441,24 +10445,6 @@ Object Property:
     <SubClassOf>
         <Class IRI="GIBO_00000024"/>
         <Class abbreviatedIRI="obo:IAO_0000100"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="GIBO_00000025"/>
-        <Class abbreviatedIRI="obo:IAO_0000109"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="GIBO_00000025"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty abbreviatedIRI="obo:IAO_0000219"/>
-            <Class abbreviatedIRI="obo:ECO_0000338"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="GIBO_00000025"/>
-        <DataSomeValuesFrom>
-            <DataProperty abbreviatedIRI="obo:OBI_0002815"/>
-            <Datatype abbreviatedIRI="xsd:string"/>
-        </DataSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="GIBO_00000026"/>
@@ -47242,12 +47228,12 @@ https://en.wikipedia.org/wiki/Medical_laboratory</Literal>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="efo:definition"/>
         <IRI>GIBO_00000009</IRI>
-        <Literal xml:lang="en">A material entity that representing a computer lab that participates in the mathematical and statistical analysis of omics data generated from different diagnostic tests and processes, usually conducted on clinical samples.</Literal>
+        <Literal xml:lang="en">A material entity that representing a computer lab that participates in the mathematical and statistical analysis of genomics data generated from different diagnostic tests and processes, usually conducted on clinical samples.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>GIBO_00000009</IRI>
-        <Literal xml:lang="en">omics data analysis center</Literal>
+        <Literal xml:lang="en">genomics data analysis center</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
@@ -47510,21 +47496,6 @@ https://en.wikipedia.org/wiki/Multilocus_sequence_typing</Literal>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>GIBO_00000024</IRI>
         <Literal xml:lang="en">NCBI biosample metadata</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
-        <IRI>GIBO_00000025</IRI>
-        <Literal xml:lang="en">A measurement datum which is  a recorded output of pulse-field gel electrophoresis evidence and is denoted by a alphanumeric charater string.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
-        <IRI>GIBO_00000025</IRI>
-        <Literal>Nitya singh</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>GIBO_00000025</IRI>
-        <Literal xml:lang="en">PFGE pattern</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
