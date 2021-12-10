@@ -2443,6 +2443,9 @@ Object Property:
         <Class IRI="GIBO_00000082"/>
     </Declaration>
     <Declaration>
+        <Class IRI="GIBO_00000083"/>
+    </Declaration>
+    <Declaration>
         <Class abbreviatedIRI="owl:Thing"/>
     </Declaration>
     <Declaration>
@@ -10910,7 +10913,7 @@ Object Property:
         <Class IRI="GIBO_00000057"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty abbreviatedIRI="obo:OBI_0000293"/>
-            <Class IRI="GIBO_00000022"/>
+            <Class IRI="GIBO_00000083"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
@@ -10920,8 +10923,8 @@ Object Property:
     <SubClassOf>
         <Class IRI="GIBO_00000058"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty abbreviatedIRI="obo:OBI_0000312"/>
-            <Class IRI="GIBO_00000058"/>
+            <ObjectProperty abbreviatedIRI="obo:OBI_0000293"/>
+            <Class IRI="GIBO_00000083"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
@@ -10929,12 +10932,33 @@ Object Property:
         <Class IRI="GIBO_00000057"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="GIBO_00000059"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="obo:OBI_0000293"/>
+            <Class IRI="GIBO_00000083"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="GIBO_00000060"/>
         <Class IRI="GIBO_00000057"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="GIBO_00000060"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="obo:OBI_0000293"/>
+            <Class IRI="GIBO_00000083"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="GIBO_00000061"/>
         <Class IRI="GIBO_00000057"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="GIBO_00000061"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="obo:OBI_0000293"/>
+            <Class IRI="GIBO_00000083"/>
+        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="GIBO_00000062"/>
@@ -10994,6 +11018,20 @@ Object Property:
     <SubClassOf>
         <Class IRI="GIBO_00000067"/>
         <Class abbreviatedIRI="obo:IAO_0020000"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="GIBO_00000067"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="obo:IAO_0000219"/>
+            <Class IRI="GIBO_00000062"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="GIBO_00000067"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="obo:OBI_0000312"/>
+            <Class IRI="GIBO_00000057"/>
+        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="GIBO_00000068"/>
@@ -11158,6 +11196,17 @@ Object Property:
     <SubClassOf>
         <Class IRI="GIBO_00000082"/>
         <Class abbreviatedIRI="obo:OBI_0001573"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="GIBO_00000083"/>
+        <Class abbreviatedIRI="obo:IAO_0000100"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="GIBO_00000083"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="obo:OBI_0000293"/>
+            <Class IRI="GIBO_00000022"/>
+        </ObjectSomeValuesFrom>
     </SubClassOf>
     <DisjointClasses>
         <Class abbreviatedIRI="obo:APOLLO_SV_00000032"/>
@@ -48206,9 +48255,29 @@ http://purl.obolibrary.org/obo/OBIws_0000080</Literal>
         <Literal xml:lang="en">electronic submission package</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
+        <IRI>GIBO_00000057</IRI>
+        <Literal>Nitya singh</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition"/>
+        <IRI>GIBO_00000057</IRI>
+        <Literal xml:lang="en">An algorithm, developed by Zhou et al.2021, that performs the scalable Hierarchical clustering assignment to the the bacterial population using their core genome multi-locus type profiles as input and generates Hierarchical clusters as output.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>GIBO_00000057</IRI>
         <Literal xml:lang="en">Hierarchical Clustering scheme for cgMLST (HeirCC)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
+        <IRI>GIBO_00000058</IRI>
+        <Literal>Nitya Singh</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition"/>
+        <IRI>GIBO_00000058</IRI>
+        <Literal xml:lang="en">A HierCC algorithm that performs hierarchical clustering of core genome MLST profiles and generates HC2 cluster as output comprising MLST profiles that are 2 or less allelic distance apart.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -48216,14 +48285,44 @@ http://purl.obolibrary.org/obo/OBIws_0000080</Literal>
         <Literal xml:lang="en">HierCC2</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
+        <IRI>GIBO_00000059</IRI>
+        <Literal>Nitya Singh</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition"/>
+        <IRI>GIBO_00000059</IRI>
+        <Literal xml:lang="en">A HierCC algorithm that performs hierarchical clustering of core genome MLST profiles and generates HC5 cluster as output comprising MLST profiles that are 5 or less allelic distance apart.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>GIBO_00000059</IRI>
         <Literal xml:lang="en">HierCC5</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
+        <IRI>GIBO_00000060</IRI>
+        <Literal>Nitya Singh</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition"/>
+        <IRI>GIBO_00000060</IRI>
+        <Literal xml:lang="en">A HierCC algorithm that performs hierarchical clustering of core genome MLST profiles and generates HC10 cluster as output comprising MLST profiles that are 10 or less allelic distance apart.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>GIBO_00000060</IRI>
         <Literal xml:lang="en">HierCC10</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
+        <IRI>GIBO_00000061</IRI>
+        <Literal>Nitya Singh</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition"/>
+        <IRI>GIBO_00000061</IRI>
+        <Literal xml:lang="en">A HierCC algorithm that performs hierarchical clustering of core genome MLST profiles and generates HC20 cluster as output comprising MLST profiles that are 20 or less allelic distance apart.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -48236,6 +48335,11 @@ http://purl.obolibrary.org/obo/OBIws_0000080</Literal>
         <Literal>Nitya Singh</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition"/>
+        <IRI>GIBO_00000062</IRI>
+        <Literal xml:lang="en">A data set that is output of hierarchical clustering of core genome MLST profiles and comprises a set of MLST profiles are at a given threshold allelic distance from each other.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="oboInOwl:shorthand"/>
         <IRI>GIBO_00000062</IRI>
         <Literal xml:lang="en">HC</Literal>
@@ -48246,9 +48350,29 @@ http://purl.obolibrary.org/obo/OBIws_0000080</Literal>
         <Literal xml:lang="en">Hierarchical Cluster of cgMLST</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
+        <IRI>GIBO_00000063</IRI>
+        <Literal>Nitya Singh</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition"/>
+        <IRI>GIBO_00000063</IRI>
+        <Literal xml:lang="en">A hierarchical cluster of core genome MLST profiles and comprises a set of MLST profiles that are 2 or less allelic distance apart.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>GIBO_00000063</IRI>
         <Literal xml:lang="en">HC2</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
+        <IRI>GIBO_00000064</IRI>
+        <Literal>Nitya Singh</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition"/>
+        <IRI>GIBO_00000064</IRI>
+        <Literal xml:lang="en">A hierarchical cluster of core genome MLST profiles and comprises a set of MLST profiles that are 5 or less allelic distance apart.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -48256,14 +48380,44 @@ http://purl.obolibrary.org/obo/OBIws_0000080</Literal>
         <Literal xml:lang="en">HC5</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
+        <IRI>GIBO_00000065</IRI>
+        <Literal>Nitya Singh</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition"/>
+        <IRI>GIBO_00000065</IRI>
+        <Literal xml:lang="en">A hierarchical cluster of core genome MLST profiles and comprises a set of MLST profiles that are 10 or less allelic distance apart.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>GIBO_00000065</IRI>
         <Literal xml:lang="en">HC10</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
+        <IRI>GIBO_00000066</IRI>
+        <Literal>Nitya Singh</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition"/>
+        <IRI>GIBO_00000066</IRI>
+        <Literal xml:lang="en">A hierarchical cluster of core genome MLST profiles and comprises a set of MLST profiles that are 20 or less allelic distance apart.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>GIBO_00000066</IRI>
         <Literal xml:lang="en">HC20</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
+        <IRI>GIBO_00000067</IRI>
+        <Literal>Nitya Singh</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition"/>
+        <IRI>GIBO_00000067</IRI>
+        <Literal xml:lang="en">An identifier that denotes the unique numeric digits for a given Hier CC cluster.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="oboInOwl:shorthand"/>
@@ -48276,9 +48430,29 @@ http://purl.obolibrary.org/obo/OBIws_0000080</Literal>
         <Literal xml:lang="en">hierarchical cluster number</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
+        <IRI>GIBO_00000068</IRI>
+        <Literal>Nitya Singh</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition"/>
+        <IRI>GIBO_00000068</IRI>
+        <Literal xml:lang="en">An identifier that denotes the unique numeric digits for HC2 cluster.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>GIBO_00000068</IRI>
         <Literal xml:lang="en">HC2 cluster number</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
+        <IRI>GIBO_00000069</IRI>
+        <Literal>Nitya Singh</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition"/>
+        <IRI>GIBO_00000069</IRI>
+        <Literal xml:lang="en">An identifier that denotes the unique numeric digits for HC2 cluster.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -48286,9 +48460,29 @@ http://purl.obolibrary.org/obo/OBIws_0000080</Literal>
         <Literal xml:lang="en">HC5 cluster number</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
+        <IRI>GIBO_00000070</IRI>
+        <Literal>Nitya Singh</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition"/>
+        <IRI>GIBO_00000070</IRI>
+        <Literal xml:lang="en">An identifier that denotes the unique numeric digits for HC10 cluster.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>GIBO_00000070</IRI>
         <Literal xml:lang="en">HC10 cluster number</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
+        <IRI>GIBO_00000071</IRI>
+        <Literal>Nitya Singh</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition"/>
+        <IRI>GIBO_00000071</IRI>
+        <Literal xml:lang="en">An identifier that denotes the unique numeric digits for HC20 cluster.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -48444,6 +48638,21 @@ http://purl.obolibrary.org/obo/OBIws_0000080</Literal>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>GIBO_00000082</IRI>
         <Literal xml:lang="en">raw reads of DNA sequence data</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
+        <IRI>GIBO_00000083</IRI>
+        <Literal>Nitya Singh</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition"/>
+        <IRI>GIBO_00000083</IRI>
+        <Literal xml:lang="en">A data set that comprises multiple core genome sequence types of a given WGS sample set.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>GIBO_00000083</IRI>
+        <Literal xml:lang="en">core genome MLST profiles</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000111"/>
