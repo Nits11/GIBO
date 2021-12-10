@@ -22,6 +22,7 @@
     <Import>http://ontofox.hegroup.org/as57c5bv.owl</Import>
     <Import>http://ontofox.hegroup.org/bmjd056y.owl</Import>
     <Import>http://ontofox.hegroup.org/d85btuyk.owl</Import>
+    <Import>http://ontofox.hegroup.org/daijfvut.owl</Import>
     <Import>http://ontofox.hegroup.org/i4fzu7o2.owl</Import>
     <Import>http://ontofox.hegroup.org/jcwxhsbn.owl</Import>
     <Import>http://ontofox.hegroup.org/kf2wqti7.owl</Import>
@@ -30,7 +31,6 @@
     <Import>http://ontofox.hegroup.org/t5x9ueeq.owl</Import>
     <Import>http://ontofox.hegroup.org/tq3jdxsj.owl</Import>
     <Import>http://ontofox.hegroup.org/urze0dax.owl</Import>
-    <Import>http://ontofox.hegroup.org/3akwgk4g.owl</Import>
     <Import>http://ontofox.hegroup.org/63mjhcaf.owl</Import>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000116"/>
@@ -3548,6 +3548,9 @@ Object Property:
     </Declaration>
     <Declaration>
         <Datatype abbreviatedIRI="xsd:string"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="obo:BFO_0000155"/>
     </Declaration>
     <EquivalentClasses>
         <Class abbreviatedIRI="obo:APOLLO_SV_00000032"/>
@@ -10096,8 +10099,22 @@ Object Property:
         <Class abbreviatedIRI="obo:UBERON_0000463"/>
     </SubClassOf>
     <SubClassOf>
+        <Class abbreviatedIRI="obo:UBERON_0007221"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="obo:BFO_0000050"/>
+            <Class abbreviatedIRI="obo:BFO_0000182"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class abbreviatedIRI="obo:UBERON_0007311"/>
         <Class abbreviatedIRI="obo:UBERON_0000463"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:UBERON_0035946"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="obo:RO_0002224"/>
+            <Class abbreviatedIRI="obo:UBERON_0007221"/>
+        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="obo:UO_0000001"/>
@@ -10232,6 +10249,20 @@ Object Property:
     <SubClassOf>
         <Class IRI="GIBO_00000005"/>
         <Class abbreviatedIRI="obo:IAO_0020000"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="GIBO_00000005"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="obo:IAO_0000219"/>
+            <Class abbreviatedIRI="obo:BFO_0000008"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="GIBO_00000005"/>
+        <DataSomeValuesFrom>
+            <DataProperty abbreviatedIRI="obo:OBI_0002815"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="GIBO_00000006"/>
@@ -47177,6 +47208,16 @@ This interpretation is *not* the same as an at-all-times relation
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>GIBO_00000004</IRI>
         <Literal xml:lang="en">year identifier</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
+        <IRI>GIBO_00000005</IRI>
+        <Literal>Nitya Singh</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition"/>
+        <IRI>GIBO_00000005</IRI>
+        <Literal xml:lang="en">An identifier that denotes a temporal region and has a string representation which is generated using a Gregorian calendar system.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>

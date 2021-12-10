@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="Imports Wizard Entry" name="http://ontofox.hegroup.org/daijfvut.owl" uri="uberon_new.owl"/>
+    <uri id="Imports Wizard Entry" name="http://ontofox.hegroup.org/7grxz4at.owl" uri="uberon_new.owl"/>
+    <uri id="Imports Wizard Entry" name="http://ontofox.hegroup.org/gxtwnjpf.owl" uri="uberon_new.owl"/>
+    <uri id="Imports Wizard Entry" name="http://ontofox.hegroup.org/c0avi6ka.owl" uri="uberon_new.owl"/>
+    <uri id="Imports Wizard Entry" name="http://ontofox.hegroup.org/x2szdggc.owl" uri="uberon_new.owl"/>
     <uri id="Imports Wizard Entry" name="http://ontofox.hegroup.org/t5x9ueeq.owl" uri="RO_0002224.owl"/>
     <uri id="Imports Wizard Entry" name="http://ontofox.hegroup.org/as57c5bv.owl" uri="GEO_000000372.owl"/>
     <uri id="Imports Wizard Entry" name="http://ontofox.hegroup.org/rsknuibn.owl" uri="ECO_0000338.owl"/>
