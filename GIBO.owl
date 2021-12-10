@@ -2440,6 +2440,9 @@ Object Property:
         <Class IRI="GIBO_00000081"/>
     </Declaration>
     <Declaration>
+        <Class IRI="GIBO_00000082"/>
+    </Declaration>
+    <Declaration>
         <Class abbreviatedIRI="owl:Thing"/>
     </Declaration>
     <Declaration>
@@ -10532,6 +10535,13 @@ Object Property:
         <Class abbreviatedIRI="obo:IAO_0000100"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="GIBO_00000024"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="obo:OBI_0000312"/>
+            <Class IRI="GIBO_00000055"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="GIBO_00000026"/>
         <Class IRI="GIBO_00000037"/>
     </SubClassOf>
@@ -10760,10 +10770,16 @@ Object Property:
     </SubClassOf>
     <SubClassOf>
         <Class IRI="GIBO_00000051"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty abbreviatedIRI="obo:OBI_0000312"/>
-            <Class IRI="GIBO_00000053"/>
-        </ObjectSomeValuesFrom>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty abbreviatedIRI="obo:IAO_0000219"/>
+                <Class abbreviatedIRI="obo:OBI_0001573"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty abbreviatedIRI="obo:OBI_0000312"/>
+                <Class IRI="GIBO_00000053"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="GIBO_00000052"/>
@@ -10771,40 +10787,78 @@ Object Property:
     </SubClassOf>
     <SubClassOf>
         <Class IRI="GIBO_00000052"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty abbreviatedIRI="obo:OBI_0000312"/>
-            <Class IRI="GIBO_00000054"/>
-        </ObjectSomeValuesFrom>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty abbreviatedIRI="obo:IAO_0000219"/>
+                <Class IRI="GIBO_00000024"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty abbreviatedIRI="obo:OBI_0000312"/>
+                <Class IRI="GIBO_00000054"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="GIBO_00000053"/>
-        <Class IRI="GIBO_00000003"/>
+        <Class IRI="GIBO_00000055"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="GIBO_00000053"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty abbreviatedIRI="obo:OBI_0000293"/>
-            <Class abbreviatedIRI="obo:OBI_0001573"/>
-        </ObjectSomeValuesFrom>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty abbreviatedIRI="obo:OBI_0000293"/>
+                <Class abbreviatedIRI="obo:OBI_0001573"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty abbreviatedIRI="obo:RO_0000059"/>
+                <Class IRI="GIBO_00000002"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="GIBO_00000054"/>
-        <Class IRI="GIBO_00000003"/>
+        <Class IRI="GIBO_00000055"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="GIBO_00000054"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty abbreviatedIRI="obo:OBI_0000293"/>
-            <Class IRI="GIBO_00000024"/>
-        </ObjectSomeValuesFrom>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty abbreviatedIRI="obo:OBI_0000293"/>
+                <Class IRI="GIBO_00000024"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty abbreviatedIRI="obo:RO_0000059"/>
+                <Class IRI="GIBO_00000054"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="GIBO_00000055"/>
         <Class IRI="GIBO_00000003"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="GIBO_00000055"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty abbreviatedIRI="obo:OBI_0000293"/>
+                <Class IRI="GIBO_00000056"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty abbreviatedIRI="obo:RO_0000059"/>
+                <Class IRI="GIBO_00000002"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="GIBO_00000056"/>
         <Class abbreviatedIRI="obo:IAO_0000100"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="GIBO_00000056"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="obo:OBI_0000312"/>
+            <Class abbreviatedIRI="obo:OBI_0200000"/>
+        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="GIBO_00000057"/>
@@ -11051,6 +11105,10 @@ Object Property:
     <SubClassOf>
         <Class IRI="GIBO_00000081"/>
         <Class abbreviatedIRI="obo:OBIB_0000070"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="GIBO_00000082"/>
+        <Class abbreviatedIRI="obo:OBI_0001573"/>
     </SubClassOf>
     <DisjointClasses>
         <Class abbreviatedIRI="obo:APOLLO_SV_00000032"/>
@@ -48011,7 +48069,7 @@ http://purl.obolibrary.org/obo/OBIws_0000080</Literal>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="efo:definition"/>
         <IRI>GIBO_00000051</IRI>
-        <Literal xml:lang="en">An identifier that denotes the raw sequence data submitted to the NCBI SRA (Sequence Read Archive ) database.</Literal>
+        <Literal xml:lang="en">An identifier that denotes the DNA sequence data submitted to the NCBI SRA (Sequence Read Archive ) database.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -48071,7 +48129,7 @@ http://purl.obolibrary.org/obo/OBIws_0000080</Literal>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
         <IRI>GIBO_00000055</IRI>
-        <Literal xml:lang="en">A data submission process that realizes the concretization of an NCBI SRA data submission standard operating procedure.</Literal>
+        <Literal xml:lang="en">A data submission process that uses an electronic submission package and realizes the concretization of an NCBI SRA data submission standard operating procedure.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
@@ -48087,6 +48145,11 @@ http://purl.obolibrary.org/obo/OBIws_0000080</Literal>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
         <IRI>GIBO_00000056</IRI>
         <Literal>Nitya Singh</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition"/>
+        <IRI>GIBO_00000056</IRI>
+        <Literal xml:lang="en">A data set that is specific output of data transformation</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -48282,6 +48345,21 @@ http://purl.obolibrary.org/obo/OBIws_0000080</Literal>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>GIBO_00000081</IRI>
         <Literal xml:lang="en">microbial isolation SOP</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
+        <IRI>GIBO_00000082</IRI>
+        <Literal>Nitya singh</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition"/>
+        <IRI>GIBO_00000082</IRI>
+        <Literal xml:lang="en">A DNA sequence data in its raw read format (.raw) as produced as output of a DNA sequencing assay</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>GIBO_00000082</IRI>
+        <Literal xml:lang="en">raw reads of DNA sequence data</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000111"/>
