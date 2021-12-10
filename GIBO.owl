@@ -10563,6 +10563,13 @@ Object Property:
         <Class IRI="GIBO_00000026"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="GIBO_00000028"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="obo:OBI_0000293"/>
+            <Class IRI="GIBO_00000039"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="GIBO_00000029"/>
         <Class IRI="GIBO_00000028"/>
     </SubClassOf>
@@ -10609,6 +10616,13 @@ Object Property:
     <SubClassOf>
         <Class IRI="GIBO_00000033"/>
         <Class IRI="GIBO_00000028"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="GIBO_00000033"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="obo:OBI_0000293"/>
+            <Class IRI="GIBO_00000039"/>
+        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="GIBO_00000034"/>
@@ -47799,7 +47813,7 @@ http://edamontology.org/operation_0452</Literal>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="efo:definition"/>
         <IRI>GIBO_00000035</IRI>
-        <Literal xml:lang="en">A polymorphism detection whcih involves Identification of insertion, deletion and duplication events after the sequence alignment of sample data set.</Literal>
+        <Literal xml:lang="en">A polymorphism detection which involves Identification of insertion, deletion and duplication events after the sequence alignment of sample data set.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
