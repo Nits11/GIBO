@@ -2437,6 +2437,9 @@ Object Property:
         <Class IRI="GIBO_00000080"/>
     </Declaration>
     <Declaration>
+        <Class IRI="GIBO_00000081"/>
+    </Declaration>
+    <Declaration>
         <Class abbreviatedIRI="owl:Thing"/>
     </Declaration>
     <Declaration>
@@ -6478,6 +6481,13 @@ Object Property:
     <SubClassOf>
         <Class abbreviatedIRI="obo:OBI_0000257"/>
         <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="obo:OBI_0000293"/>
+            <Class IRI="GIBO_00000019"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:OBI_0000257"/>
+        <ObjectSomeValuesFrom>
             <ObjectProperty abbreviatedIRI="obo:OBI_0000299"/>
             <Class abbreviatedIRI="obo:CHEBI_16991"/>
         </ObjectSomeValuesFrom>
@@ -10282,6 +10292,22 @@ Object Property:
         <Class abbreviatedIRI="obo:OBI_0000011"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="GIBO_00000006"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty abbreviatedIRI="obo:BFO_0000055"/>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty abbreviatedIRI="obo:RO_0000059"/>
+                    <Class IRI="GIBO_00000081"/>
+                </ObjectSomeValuesFrom>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty abbreviatedIRI="obo:OBI_0000293"/>
+                <Class abbreviatedIRI="obo:OBI_0100051"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="GIBO_00000007"/>
         <Class abbreviatedIRI="obo:IAO_0020000"/>
     </SubClassOf>
@@ -11014,6 +11040,10 @@ Object Property:
                 </ObjectSomeValuesFrom>
             </ObjectIntersectionOf>
         </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="GIBO_00000081"/>
+        <Class abbreviatedIRI="obo:OBIB_0000070"/>
     </SubClassOf>
     <DisjointClasses>
         <Class abbreviatedIRI="obo:APOLLO_SV_00000032"/>
@@ -47213,7 +47243,7 @@ This interpretation is *not* the same as an at-all-times relation
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="dc:description"/>
         <IRI>GIBO_00000006</IRI>
-        <Literal xml:lang="en">A planned process that involves implementing an established extraction protocal for isolating pure culture of a microorganism from the specimen.</Literal>
+        <Literal xml:lang="en">A planned process that involves implementing an microbial isolation SOP for isolating pure culture of a microorganism from the specimen.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="efo:definition"/>
@@ -47425,7 +47455,7 @@ https://en.wikipedia.org › wiki › Salmonellosis</Literal>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="efo:definition"/>
         <IRI>GIBO_00000019</IRI>
-        <Literal xml:lang="en">A specimen that is the specified output of a microbial isolation process.</Literal>
+        <Literal xml:lang="en">A processed specimen that is the specified output of a microbial isolation process.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -48212,6 +48242,16 @@ http://purl.obolibrary.org/obo/OBIws_0000080</Literal>
         <Literal xml:lang="en">epidemic identifier</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
+        <IRI>GIBO_00000079</IRI>
+        <Literal>Nitya Singh</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition"/>
+        <IRI>GIBO_00000079</IRI>
+        <Literal xml:lang="en">A specimen ID denoting a microbial isolate specimen.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>GIBO_00000079</IRI>
         <Literal xml:lang="en">isolate specimen ID</Literal>
@@ -48220,6 +48260,21 @@ http://purl.obolibrary.org/obo/OBIws_0000080</Literal>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>GIBO_00000080</IRI>
         <Literal xml:lang="en">Salmonellosis</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
+        <IRI>GIBO_00000081</IRI>
+        <Literal>Nitya Singh</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition"/>
+        <IRI>GIBO_00000081</IRI>
+        <Literal xml:lang="en">A standard operating procedure for isolating pure micorbial isolate from a specimen .</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>GIBO_00000081</IRI>
+        <Literal xml:lang="en">microbial isolation SOP</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000111"/>
