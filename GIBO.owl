@@ -8963,6 +8963,13 @@ Object Property:
         <Class abbreviatedIRI="obo:OGMS_0000073"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty abbreviatedIRI="obo:OBI_0000312"/>
+            <Class IRI="GIBO_00000015"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:OGMS_0000073"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="obo:OBI_0000312"/>
             <ObjectSomeValuesFrom>
                 <ObjectProperty abbreviatedIRI="obo:OBI_0000293"/>
                 <ObjectIntersectionOf>
