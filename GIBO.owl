@@ -5596,6 +5596,13 @@ Object Property:
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="obo:IDO_0000502"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="obo:BFO_0000051"/>
+            <Class abbreviatedIRI="obo:IDO_0000495"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:IDO_0000502"/>
         <ObjectExactCardinality cardinality="1">
             <ObjectProperty abbreviatedIRI="obo:IAO_0020018"/>
             <Class IRI="GIBO_00000078"/>
@@ -5723,6 +5730,19 @@ Object Property:
     <SubClassOf>
         <Class abbreviatedIRI="obo:NCBITaxon_9606"/>
         <Class abbreviatedIRI="obo:NCBITaxon_314146"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:NCBITaxon_9606"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty abbreviatedIRI="obo:BFO_0000054"/>
+                <Class abbreviatedIRI="obo:OBI_0000659"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty abbreviatedIRI="obo:RO_0000052"/>
+                <Class abbreviatedIRI="obo:OBI_0000093"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="obo:NCIT_C126528"/>
@@ -10936,6 +10956,13 @@ Object Property:
         <Class abbreviatedIRI="obo:IAO_0020000"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="GIBO_00000078"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty abbreviatedIRI="obo:IAO_0000219"/>
+            <Class abbreviatedIRI="obo:IDO_0000502"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="GIBO_00000079"/>
         <Class abbreviatedIRI="obo:OMIABIS_0001046"/>
     </SubClassOf>
@@ -12681,9 +12708,6 @@ Object Property:
     </AsymmetricObjectProperty>
     <TransitiveObjectProperty>
         <ObjectProperty abbreviatedIRI="obo:BFO_0000050"/>
-    </TransitiveObjectProperty>
-    <TransitiveObjectProperty>
-        <ObjectProperty abbreviatedIRI="obo:BFO_0000051"/>
     </TransitiveObjectProperty>
     <TransitiveObjectProperty>
         <ObjectProperty abbreviatedIRI="obo:BFO_0000062"/>
@@ -48149,6 +48173,16 @@ http://purl.obolibrary.org/obo/OBIws_0000080</Literal>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>GIBO_00000077</IRI>
         <Literal xml:lang="en">SNP cluster number</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>GIBO_00000078</IRI>
+        <Literal xml:lang="en">An identifier that denotes one infectious disease epidemic</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
+        <IRI>GIBO_00000078</IRI>
+        <Literal>Nitya Singh</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
