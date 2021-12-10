@@ -8456,6 +8456,13 @@ Object Property:
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="obo:OBI_0200000"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="obo:OBI_0000293"/>
+            <Class IRI="GIBO_00000039"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:OBI_0200000"/>
         <ObjectAllValuesFrom>
             <ObjectProperty abbreviatedIRI="obo:OBI_0000293"/>
             <Class abbreviatedIRI="obo:IAO_0000027"/>
@@ -10727,7 +10734,7 @@ Object Property:
     </SubClassOf>
     <SubClassOf>
         <Class IRI="GIBO_00000049"/>
-        <Class IRI="GIBO_00000028"/>
+        <Class IRI="GIBO_00000026"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="GIBO_00000050"/>
@@ -47168,7 +47175,7 @@ This interpretation is *not* the same as an at-all-times relation
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
         <IRI>GIBO_00000001</IRI>
-        <Literal xml:lang="en">An identifier that denotes the whole genome sequenced data generated for an isolate specimen.</Literal>
+        <Literal xml:lang="en">An identifier that denotes the whole genome sequenced data generated as specific output of a DNA sequencing assay</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000118"/>
@@ -47793,7 +47800,7 @@ http://edamontology.org/operation_0484</Literal>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
         <IRI>GIBO_00000039</IRI>
-        <Literal xml:lang="en">A DNA sequence data item that is about the primary structure of DNA of whole genetic content of an organism.</Literal>
+        <Literal xml:lang="en">A DNA sequence data item that is about the primary structure of DNA of whole genetic content of an organism and is a specific output of a DNA sequencing assay.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
@@ -47979,7 +47986,7 @@ http://purl.obolibrary.org/obo/OBIws_0000080</Literal>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
         <IRI>GIBO_00000050</IRI>
-        <Literal xml:lang="en">A microbial serotype phenotype which is predicted, primarily by utilizing whole genome sequence data and following the planned process of in-silico serotype prediction.</Literal>
+        <Literal xml:lang="en">A microbial serotype phenotype which is predicted, that uses whole genome sequence data as specific input and concretizes the planned process of in-silico serotype prediction.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
