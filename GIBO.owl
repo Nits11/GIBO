@@ -4057,6 +4057,13 @@ Object Property:
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
+        <Class abbreviatedIRI="obo:OBI_0100051"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="obo:OBI_0000312"/>
+            <Class abbreviatedIRI="obo:OBI_0000659"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
         <Class abbreviatedIRI="obo:OBI_0200000"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty abbreviatedIRI="obo:OBI_0000417"/>
@@ -9200,6 +9207,19 @@ Object Property:
         <Class abbreviatedIRI="obo:OMIABIS_0000012"/>
     </SubClassOf>
     <SubClassOf>
+        <Class abbreviatedIRI="obo:OMIABIS_0000093"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty abbreviatedIRI="obo:RO_0000052"/>
+            <ObjectIntersectionOf>
+                <Class abbreviatedIRI="obo:NCBITaxon_9606"/>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty abbreviatedIRI="obo:OBI_0000846"/>
+                    <Class IRI="GIBO_00000010"/>
+                </ObjectSomeValuesFrom>
+            </ObjectIntersectionOf>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class abbreviatedIRI="obo:OMIABIS_0000094"/>
         <Class abbreviatedIRI="obo:OMIABIS_0000012"/>
     </SubClassOf>
@@ -10260,22 +10280,10 @@ Object Property:
     </SubClassOf>
     <SubClassOf>
         <Class IRI="GIBO_00000007"/>
-        <ObjectIntersectionOf>
-            <ObjectIntersectionOf>
-                <ObjectSomeValuesFrom>
-                    <ObjectProperty abbreviatedIRI="obo:BFO_0000050"/>
-                    <Class IRI="GIBO_00000008"/>
-                </ObjectSomeValuesFrom>
-                <ObjectSomeValuesFrom>
-                    <ObjectProperty abbreviatedIRI="obo:RO_0000056"/>
-                    <Class IRI="GIBO_00000037"/>
-                </ObjectSomeValuesFrom>
-            </ObjectIntersectionOf>
-            <ObjectSomeValuesFrom>
-                <ObjectProperty abbreviatedIRI="obo:IAO_0020012"/>
-                <Class IRI="GIBO_00000008"/>
-            </ObjectSomeValuesFrom>
-        </ObjectIntersectionOf>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="obo:IAO_0000219"/>
+            <Class IRI="GIBO_00000008"/>
+        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="GIBO_00000007"/>
@@ -47213,7 +47221,7 @@ This interpretation is *not* the same as an at-all-times relation
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
         <IRI>GIBO_00000007</IRI>
-        <Literal xml:lang="en">An identifier, referring to the name of diagnostic lab facility receving the specimen for diagnostics</Literal>
+        <Literal xml:lang="en">An identifier, referring to the name of diagnostic lab facility that receive the specimen for diagnostics</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
@@ -47299,7 +47307,7 @@ https://en.wikipedia.org/wiki/Medical_laboratory</Literal>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
         <IRI>GIBO_00000012</IRI>
-        <Literal xml:lang="en">A contact role borne by a member of a  diagnostic lab organization and realized by serving as the contact for one of its diagnostic labs.</Literal>
+        <Literal xml:lang="en">A contact role borne by a member of a diagnostic lab organization and realized by serving as the contact for one of its diagnostic labs.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
