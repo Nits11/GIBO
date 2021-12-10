@@ -10623,6 +10623,13 @@ Object Property:
         <Class IRI="GIBO_00000033"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="GIBO_00000036"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="obo:OBI_0000293"/>
+            <Class IRI="GIBO_00000039"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="GIBO_00000037"/>
         <Class abbreviatedIRI="obo:OBI_0000011"/>
     </SubClassOf>
@@ -48277,9 +48284,29 @@ http://purl.obolibrary.org/obo/OBIws_0000080</Literal>
         <Literal xml:lang="en">ribosomal sequence type</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
+        <IRI>GIBO_00000074</IRI>
+        <Literal xml:lang="en">A data set that is specific output of Single nucleotide polymorphism detection and comprises of a matrix of positions SNP differences in the processed input WGS data set.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
+        <IRI>GIBO_00000074</IRI>
+        <Literal>Nitya Singh</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>GIBO_00000074</IRI>
         <Literal xml:lang="en">SNP profile</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
+        <IRI>GIBO_00000075</IRI>
+        <Literal>Nitya singh</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition"/>
+        <IRI>GIBO_00000075</IRI>
+        <Literal xml:lang="en">A data set that is output of SNP clustering algorithm and comprises of WGS data samples grouped together as cluster.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -48287,9 +48314,24 @@ http://purl.obolibrary.org/obo/OBIws_0000080</Literal>
         <Literal xml:lang="en">SNP cluster</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition"/>
+        <IRI>GIBO_00000076</IRI>
+        <Literal xml:lang="en">An algotrithm that takes SNP profiles as inputs and generates clusters of WGS data samples as output, on the basis of thier similarity to each other.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>GIBO_00000076</IRI>
         <Literal xml:lang="en">SNP clustering</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
+        <IRI>GIBO_00000077</IRI>
+        <Literal>Nitya Singh</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition"/>
+        <IRI>GIBO_00000077</IRI>
+        <Literal xml:lang="en">An identifier that denotes a SNP cluster</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
