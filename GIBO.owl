@@ -316,12 +316,6 @@ Object Property:
         <Class abbreviatedIRI="obo:GEO_000000006"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="obo:GEO_000000102"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="obo:GEO_000000151"/>
-    </Declaration>
-    <Declaration>
         <Class abbreviatedIRI="obo:GEO_000000370"/>
     </Declaration>
     <Declaration>
@@ -5095,14 +5089,6 @@ Object Property:
     <SubClassOf>
         <Class abbreviatedIRI="obo:GEO_000000006"/>
         <Class abbreviatedIRI="obo:GEO_000000004"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class abbreviatedIRI="obo:GEO_000000102"/>
-        <Class abbreviatedIRI="obo:BFO_0000030"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class abbreviatedIRI="obo:GEO_000000151"/>
-        <Class abbreviatedIRI="obo:GEO_000000102"/>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="obo:GEO_000000370"/>
@@ -17003,26 +16989,6 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <AbbreviatedIRI>obo:GEO_000000012</AbbreviatedIRI>
         <Literal xml:lang="en">member of</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000412"/>
-        <AbbreviatedIRI>obo:GEO_000000102</AbbreviatedIRI>
-        <Literal>http://purl.obolibrary.org/obo/geo.owl</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>obo:GEO_000000102</AbbreviatedIRI>
-        <Literal xml:lang="en">geographical entity</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000412"/>
-        <AbbreviatedIRI>obo:GEO_000000151</AbbreviatedIRI>
-        <Literal>http://purl.obolibrary.org/obo/geo.owl</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>obo:GEO_000000151</AbbreviatedIRI>
-        <Literal xml:lang="en">geographical region</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
