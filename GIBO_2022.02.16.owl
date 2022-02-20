@@ -2443,6 +2443,15 @@ Object Property:
         <Class IRI="GIBO_00000077"/>
     </Declaration>
     <Declaration>
+        <Class IRI="GIBO_00000079"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="GIBO_00000080"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="GIBO_00000081"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="GIBO_00000085"/>
     </Declaration>
     <Declaration>
@@ -10746,6 +10755,16 @@ Object Property:
     <SubClassOf>
         <Class IRI="GIBO_00000055"/>
         <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="obo:BFO_0000055"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty abbreviatedIRI="obo:RO_0000059"/>
+                <Class IRI="GIBO_00000002"/>
+            </ObjectSomeValuesFrom>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="GIBO_00000055"/>
+        <ObjectSomeValuesFrom>
             <ObjectProperty abbreviatedIRI="obo:OBI_0000293"/>
             <Class IRI="GIBO_00000056"/>
         </ObjectSomeValuesFrom>
@@ -10759,34 +10778,27 @@ Object Property:
         <Class abbreviatedIRI="obo:IAO_0000064"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="GIBO_00000057"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty abbreviatedIRI="obo:OBI_0000293"/>
-            <Class IRI="GIBO_00000022"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="GIBO_00000058"/>
-        <Class IRI="GIBO_00000057"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="GIBO_00000058"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty abbreviatedIRI="obo:OBI_0000312"/>
-            <Class IRI="GIBO_00000058"/>
-        </ObjectSomeValuesFrom>
+        <Class IRI="GIBO_00000079"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="GIBO_00000059"/>
-        <Class IRI="GIBO_00000057"/>
+        <Class IRI="GIBO_00000079"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="GIBO_00000060"/>
-        <Class IRI="GIBO_00000057"/>
+        <Class IRI="GIBO_00000079"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="GIBO_00000061"/>
-        <Class IRI="GIBO_00000057"/>
+        <Class IRI="GIBO_00000079"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="GIBO_00000061"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="obo:RO_0002234"/>
+            <Class IRI="GIBO_00000066"/>
+        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="GIBO_00000062"/>
@@ -10796,7 +10808,7 @@ Object Property:
         <Class IRI="GIBO_00000062"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty abbreviatedIRI="obo:OBI_0000312"/>
-            <Class IRI="GIBO_00000057"/>
+            <Class IRI="GIBO_00000079"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
@@ -10852,13 +10864,6 @@ Object Property:
         <ObjectSomeValuesFrom>
             <ObjectProperty abbreviatedIRI="obo:IAO_0000219"/>
             <Class IRI="GIBO_00000062"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="GIBO_00000067"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty abbreviatedIRI="obo:OBI_0000312"/>
-            <Class IRI="GIBO_00000057"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
@@ -10946,26 +10951,12 @@ Object Property:
         <Class IRI="GIBO_00000075"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty abbreviatedIRI="obo:OBI_0000312"/>
-            <Class IRI="GIBO_00000076"/>
+            <Class IRI="GIBO_00000081"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="GIBO_00000076"/>
         <Class abbreviatedIRI="obo:IAO_0000064"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="GIBO_00000076"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty abbreviatedIRI="obo:OBI_0000293"/>
-            <Class IRI="GIBO_00000074"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="GIBO_00000076"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty abbreviatedIRI="obo:OBI_0000299"/>
-            <Class IRI="GIBO_00000075"/>
-        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="GIBO_00000077"/>
@@ -10975,6 +10966,66 @@ Object Property:
         <Class IRI="GIBO_00000077"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty abbreviatedIRI="obo:IAO_0000219"/>
+            <Class IRI="GIBO_00000075"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="GIBO_00000079"/>
+        <Class IRI="GIBO_00000080"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="GIBO_00000079"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="obo:BFO_0000055"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty abbreviatedIRI="obo:RO_0000059"/>
+                <Class IRI="GIBO_00000057"/>
+            </ObjectSomeValuesFrom>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="GIBO_00000079"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="obo:OBI_0000293"/>
+            <Class IRI="GIBO_00000086"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="GIBO_00000079"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="obo:RO_0002234"/>
+            <Class IRI="GIBO_00000062"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="GIBO_00000080"/>
+        <Class abbreviatedIRI="obo:OBI_0000011"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="GIBO_00000081"/>
+        <Class IRI="GIBO_00000080"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="GIBO_00000081"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="obo:BFO_0000055"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty abbreviatedIRI="obo:RO_0000059"/>
+                <Class IRI="GIBO_00000076"/>
+            </ObjectSomeValuesFrom>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="GIBO_00000081"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="obo:OBI_0000293"/>
+            <Class IRI="GIBO_00000074"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="GIBO_00000081"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="obo:OBI_0000299"/>
             <Class IRI="GIBO_00000075"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
@@ -11305,12 +11356,6 @@ Object Property:
     <DisjointClasses>
         <Class IRI="GIBO_00000042"/>
         <Class IRI="GIBO_00000043"/>
-    </DisjointClasses>
-    <DisjointClasses>
-        <Class IRI="GIBO_00000058"/>
-        <Class IRI="GIBO_00000059"/>
-        <Class IRI="GIBO_00000060"/>
-        <Class IRI="GIBO_00000061"/>
     </DisjointClasses>
     <DisjointClasses>
         <Class IRI="GIBO_00000063"/>
@@ -48141,7 +48186,7 @@ http://purl.obolibrary.org/obo/OBIws_0000080</Literal>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="efo:definition"/>
         <IRI>GIBO_00000058</IRI>
-        <Literal xml:lang="en">A HierCC algorithm that performs hierarchical clustering of core genome MLST profiles and generates HC2 cluster as output comprising MLST profiles that are 2 or less allelic distance apart.</Literal>
+        <Literal xml:lang="en">A HierCC clustering that performs hierarchical clustering of core genome MLST profiles and generates HC2 cluster as output comprising MLST profiles that are 2 or less allelic distance apart.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -48156,7 +48201,7 @@ http://purl.obolibrary.org/obo/OBIws_0000080</Literal>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="efo:definition"/>
         <IRI>GIBO_00000059</IRI>
-        <Literal xml:lang="en">A HierCC algorithm that performs hierarchical clustering of core genome MLST profiles and generates HC5 cluster as output comprising MLST profiles that are 5 or less allelic distance apart.</Literal>
+        <Literal xml:lang="en">A HierCC clustering that performs hierarchical clustering of core genome MLST profiles and generates HC5 cluster as output comprising MLST profiles that are 5 or less allelic distance apart.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -48171,7 +48216,7 @@ http://purl.obolibrary.org/obo/OBIws_0000080</Literal>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="efo:definition"/>
         <IRI>GIBO_00000060</IRI>
-        <Literal xml:lang="en">A HierCC algorithm that performs hierarchical clustering of core genome MLST profiles and generates HC10 cluster as output comprising MLST profiles that are 10 or less allelic distance apart.</Literal>
+        <Literal xml:lang="en">A HierCC clustering that performs hierarchical clustering of core genome MLST profiles and generates HC10 cluster as output comprising MLST profiles that are 10 or less allelic distance apart.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -48186,7 +48231,7 @@ http://purl.obolibrary.org/obo/OBIws_0000080</Literal>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="efo:definition"/>
         <IRI>GIBO_00000061</IRI>
-        <Literal xml:lang="en">A HierCC algorithm that performs hierarchical clustering of core genome MLST profiles and generates HC20 cluster as output comprising MLST profiles that are 20 or less allelic distance apart.</Literal>
+        <Literal xml:lang="en">A HierCC clustering that performs hierarchical clustering of core genome MLST profiles and generates HC20 cluster as output comprising MLST profiles that are 20 or less allelic distance apart.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -48201,7 +48246,7 @@ http://purl.obolibrary.org/obo/OBIws_0000080</Literal>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="efo:definition"/>
         <IRI>GIBO_00000062</IRI>
-        <Literal xml:lang="en">A data set that is output of hierarchical clustering of core genome MLST profiles and comprises a set of MLST profiles are at a given threshold allelic distance from each other.</Literal>
+        <Literal xml:lang="en">A data set that is output of hierarchical clustering of core genome MLST (cgMLST)  profiles and comprises a set of MLST profiles are at a given threshold allelic distance from each other.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="oboInOwl:shorthand"/>
@@ -48416,7 +48461,7 @@ http://purl.obolibrary.org/obo/OBIws_0000080</Literal>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>GIBO_00000076</IRI>
-        <Literal xml:lang="en">SNP clustering</Literal>
+        <Literal xml:lang="en">SNP clustering scheme</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
@@ -48432,6 +48477,51 @@ http://purl.obolibrary.org/obo/OBIws_0000080</Literal>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>GIBO_00000077</IRI>
         <Literal xml:lang="en">SNP cluster number</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
+        <IRI>GIBO_00000079</IRI>
+        <Literal>Nitya Singh</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition"/>
+        <IRI>GIBO_00000079</IRI>
+        <Literal xml:lang="en">A data clustering process that implements the  HierCC clustering scheme for core genome MLST(cgMLST) on given core genome profiles as input and generates Hierarchical Clusters of cgMLST as output.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>GIBO_00000079</IRI>
+        <Literal xml:lang="en">Hierarchical Clustering of cgMLST (HeirCC)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
+        <IRI>GIBO_00000080</IRI>
+        <Literal>Nitya Singh</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition"/>
+        <IRI>GIBO_00000080</IRI>
+        <Literal xml:lang="en">A planned process that group together all data entities in one cluster that are more similar to each other, in comparison to data enetities those are grouped in other clusters.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>GIBO_00000080</IRI>
+        <Literal xml:lang="en">data clustering</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
+        <IRI>GIBO_00000081</IRI>
+        <Literal>Nitya  Singh</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition"/>
+        <IRI>GIBO_00000081</IRI>
+        <Literal xml:lang="en">A data clustering process that implements the  SNP clustering scheme on given SNP profiles as input and generates SNP clusters as output.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>GIBO_00000081</IRI>
+        <Literal xml:lang="en">SNP clustering</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
