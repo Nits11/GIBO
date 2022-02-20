@@ -11025,7 +11025,7 @@ Object Property:
     <SubClassOf>
         <Class IRI="GIBO_00000081"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty abbreviatedIRI="obo:OBI_0000299"/>
+            <ObjectProperty abbreviatedIRI="obo:RO_0002234"/>
             <Class IRI="GIBO_00000075"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
