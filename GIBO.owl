@@ -2446,6 +2446,9 @@ Object Property:
         <Class IRI="GIBO_00000083"/>
     </Declaration>
     <Declaration>
+        <Class IRI="GIBO_00000084"/>
+    </Declaration>
+    <Declaration>
         <Class abbreviatedIRI="owl:Thing"/>
     </Declaration>
     <Declaration>
@@ -2471,6 +2474,9 @@ Object Property:
     </Declaration>
     <Declaration>
         <ObjectProperty abbreviatedIRI="obo:BFO_0000067"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="obo:BFO_0000155"/>
     </Declaration>
     <Declaration>
         <ObjectProperty abbreviatedIRI="obo:BFO_0000156"/>
@@ -3551,9 +3557,6 @@ Object Property:
     </Declaration>
     <Declaration>
         <Datatype abbreviatedIRI="xsd:string"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty abbreviatedIRI="obo:BFO_0000155"/>
     </Declaration>
     <EquivalentClasses>
         <Class abbreviatedIRI="obo:APOLLO_SV_00000032"/>
@@ -11207,6 +11210,10 @@ Object Property:
             <ObjectProperty abbreviatedIRI="obo:OBI_0000293"/>
             <Class IRI="GIBO_00000022"/>
         </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="GIBO_00000084"/>
+        <Class abbreviatedIRI="obo:IAO_0000109"/>
     </SubClassOf>
     <DisjointClasses>
         <Class abbreviatedIRI="obo:APOLLO_SV_00000032"/>
@@ -48655,6 +48662,21 @@ http://purl.obolibrary.org/obo/OBIws_0000080</Literal>
         <Literal xml:lang="en">core genome MLST profiles</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
+        <IRI>GIBO_00000084</IRI>
+        <Literal>Nitya Singh</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>GIBO_00000084</IRI>
+        <Literal xml:lang="en">A measurement datum which is  a recorded output of pulse-field gel electrophoresis evidence and is denoted by a alphanumeric charater string.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>GIBO_00000084</IRI>
+        <Literal xml:lang="en">PFGE pattern</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000111"/>
         <AbbreviatedIRI>rdfs:label</AbbreviatedIRI>
         <Literal>label</Literal>
@@ -48676,167 +48698,167 @@ http://purl.obolibrary.org/obo/OBIws_0000080</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000412"/>
-        <AnonymousIndividual nodeID="_:genid2147484219"/>
+        <AnonymousIndividual nodeID="_:genid2147484839"/>
         <AbbreviatedIRI>obo:omrse.owl</AbbreviatedIRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000412"/>
-        <AnonymousIndividual nodeID="_:genid2147484220"/>
+        <AnonymousIndividual nodeID="_:genid2147484840"/>
         <AbbreviatedIRI>obo:omrse.owl</AbbreviatedIRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000412"/>
-        <AnonymousIndividual nodeID="_:genid2147484221"/>
+        <AnonymousIndividual nodeID="_:genid2147484841"/>
         <AbbreviatedIRI>obo:ido.owl</AbbreviatedIRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000412"/>
-        <AnonymousIndividual nodeID="_:genid2147484222"/>
+        <AnonymousIndividual nodeID="_:genid2147484842"/>
         <AbbreviatedIRI>obo:ido.owl</AbbreviatedIRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000412"/>
-        <AnonymousIndividual nodeID="_:genid2147484223"/>
+        <AnonymousIndividual nodeID="_:genid2147484843"/>
         <AbbreviatedIRI>obo:omrse.owl</AbbreviatedIRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000412"/>
-        <AnonymousIndividual nodeID="_:genid2147484224"/>
+        <AnonymousIndividual nodeID="_:genid2147484844"/>
         <AbbreviatedIRI>obo:ido.owl</AbbreviatedIRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000412"/>
-        <AnonymousIndividual nodeID="_:genid2147484225"/>
+        <AnonymousIndividual nodeID="_:genid2147484845"/>
         <AbbreviatedIRI>obo:omrse.owl</AbbreviatedIRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000412"/>
-        <AnonymousIndividual nodeID="_:genid2147484226"/>
+        <AnonymousIndividual nodeID="_:genid2147484846"/>
         <AbbreviatedIRI>obo:omrse.owl</AbbreviatedIRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000412"/>
-        <AnonymousIndividual nodeID="_:genid2147484227"/>
+        <AnonymousIndividual nodeID="_:genid2147484847"/>
         <AbbreviatedIRI>obo:omrse.owl</AbbreviatedIRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000412"/>
-        <AnonymousIndividual nodeID="_:genid2147484228"/>
+        <AnonymousIndividual nodeID="_:genid2147484848"/>
         <AbbreviatedIRI>obo:omrse.owl</AbbreviatedIRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000412"/>
-        <AnonymousIndividual nodeID="_:genid2147484229"/>
+        <AnonymousIndividual nodeID="_:genid2147484849"/>
         <AbbreviatedIRI>obo:omrse.owl</AbbreviatedIRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000412"/>
-        <AnonymousIndividual nodeID="_:genid2147484230"/>
+        <AnonymousIndividual nodeID="_:genid2147484850"/>
         <AbbreviatedIRI>obo:ido.owl</AbbreviatedIRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000412"/>
-        <AnonymousIndividual nodeID="_:genid2147484231"/>
+        <AnonymousIndividual nodeID="_:genid2147484851"/>
         <AbbreviatedIRI>obo:omrse.owl</AbbreviatedIRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000412"/>
-        <AnonymousIndividual nodeID="_:genid2147484232"/>
+        <AnonymousIndividual nodeID="_:genid2147484852"/>
         <AbbreviatedIRI>obo:omrse.owl</AbbreviatedIRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000412"/>
-        <AnonymousIndividual nodeID="_:genid2147484233"/>
+        <AnonymousIndividual nodeID="_:genid2147484853"/>
         <AbbreviatedIRI>obo:omrse.owl</AbbreviatedIRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000412"/>
-        <AnonymousIndividual nodeID="_:genid2147484234"/>
+        <AnonymousIndividual nodeID="_:genid2147484854"/>
         <AbbreviatedIRI>obo:omrse.owl</AbbreviatedIRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000412"/>
-        <AnonymousIndividual nodeID="_:genid2147484235"/>
+        <AnonymousIndividual nodeID="_:genid2147484855"/>
         <AbbreviatedIRI>obo:omrse.owl</AbbreviatedIRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000412"/>
-        <AnonymousIndividual nodeID="_:genid2147484236"/>
+        <AnonymousIndividual nodeID="_:genid2147484856"/>
         <AbbreviatedIRI>obo:omrse.owl</AbbreviatedIRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000412"/>
-        <AnonymousIndividual nodeID="_:genid2147484237"/>
+        <AnonymousIndividual nodeID="_:genid2147484857"/>
         <AbbreviatedIRI>obo:omrse.owl</AbbreviatedIRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000412"/>
-        <AnonymousIndividual nodeID="_:genid2147484238"/>
+        <AnonymousIndividual nodeID="_:genid2147484858"/>
         <AbbreviatedIRI>obo:ido.owl</AbbreviatedIRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000412"/>
-        <AnonymousIndividual nodeID="_:genid2147484239"/>
+        <AnonymousIndividual nodeID="_:genid2147484859"/>
         <AbbreviatedIRI>obo:omrse.owl</AbbreviatedIRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000412"/>
-        <AnonymousIndividual nodeID="_:genid2147484240"/>
+        <AnonymousIndividual nodeID="_:genid2147484860"/>
         <AbbreviatedIRI>obo:omrse.owl</AbbreviatedIRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000412"/>
-        <AnonymousIndividual nodeID="_:genid2147484241"/>
+        <AnonymousIndividual nodeID="_:genid2147484861"/>
         <AbbreviatedIRI>obo:omrse.owl</AbbreviatedIRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000412"/>
-        <AnonymousIndividual nodeID="_:genid2147484242"/>
+        <AnonymousIndividual nodeID="_:genid2147484862"/>
         <AbbreviatedIRI>obo:omrse.owl</AbbreviatedIRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000412"/>
-        <AnonymousIndividual nodeID="_:genid2147484243"/>
+        <AnonymousIndividual nodeID="_:genid2147484863"/>
         <AbbreviatedIRI>obo:omrse.owl</AbbreviatedIRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000412"/>
-        <AnonymousIndividual nodeID="_:genid2147484244"/>
+        <AnonymousIndividual nodeID="_:genid2147484864"/>
         <AbbreviatedIRI>obo:omrse.owl</AbbreviatedIRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000412"/>
-        <AnonymousIndividual nodeID="_:genid2147484245"/>
+        <AnonymousIndividual nodeID="_:genid2147484865"/>
         <AbbreviatedIRI>obo:ido.owl</AbbreviatedIRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000412"/>
-        <AnonymousIndividual nodeID="_:genid2147484246"/>
+        <AnonymousIndividual nodeID="_:genid2147484866"/>
         <AbbreviatedIRI>obo:omrse.owl</AbbreviatedIRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000412"/>
-        <AnonymousIndividual nodeID="_:genid2147484247"/>
+        <AnonymousIndividual nodeID="_:genid2147484867"/>
         <AbbreviatedIRI>obo:ido.owl</AbbreviatedIRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000412"/>
-        <AnonymousIndividual nodeID="_:genid2147484248"/>
+        <AnonymousIndividual nodeID="_:genid2147484868"/>
         <AbbreviatedIRI>obo:ido.owl</AbbreviatedIRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000412"/>
-        <AnonymousIndividual nodeID="_:genid2147484249"/>
+        <AnonymousIndividual nodeID="_:genid2147484869"/>
         <AbbreviatedIRI>obo:omrse.owl</AbbreviatedIRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000412"/>
-        <AnonymousIndividual nodeID="_:genid2147484250"/>
+        <AnonymousIndividual nodeID="_:genid2147484870"/>
         <AbbreviatedIRI>obo:omrse.owl</AbbreviatedIRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000412"/>
-        <AnonymousIndividual nodeID="_:genid2147484251"/>
+        <AnonymousIndividual nodeID="_:genid2147484871"/>
         <AbbreviatedIRI>obo:ido.owl</AbbreviatedIRI>
     </AnnotationAssertion>
     <SubAnnotationPropertyOf>

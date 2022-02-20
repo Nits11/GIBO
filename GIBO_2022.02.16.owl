@@ -10745,16 +10745,10 @@ Object Property:
     </SubClassOf>
     <SubClassOf>
         <Class IRI="GIBO_00000055"/>
-        <ObjectIntersectionOf>
-            <ObjectSomeValuesFrom>
-                <ObjectProperty abbreviatedIRI="obo:OBI_0000293"/>
-                <Class IRI="GIBO_00000056"/>
-            </ObjectSomeValuesFrom>
-            <ObjectSomeValuesFrom>
-                <ObjectProperty abbreviatedIRI="obo:RO_0000059"/>
-                <Class IRI="GIBO_00000002"/>
-            </ObjectSomeValuesFrom>
-        </ObjectIntersectionOf>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="obo:OBI_0000293"/>
+            <Class IRI="GIBO_00000056"/>
+        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="GIBO_00000056"/>
