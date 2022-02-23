@@ -10576,22 +10576,8 @@ Object Property:
         <Class abbreviatedIRI="obo:OBI_0001573"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="GIBO_00000039"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty abbreviatedIRI="obo:OBI_0000312"/>
-            <Class abbreviatedIRI="obo:OBI_0000626"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="GIBO_00000040"/>
         <Class abbreviatedIRI="obo:OBI_0001573"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="GIBO_00000040"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty abbreviatedIRI="obo:OBI_0000312"/>
-            <Class abbreviatedIRI="obo:OBI_0000626"/>
-        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="GIBO_00000041"/>
@@ -10616,22 +10602,8 @@ Object Property:
         <Class IRI="GIBO_00000041"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="GIBO_00000042"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty abbreviatedIRI="obo:OBI_0000312"/>
-            <Class abbreviatedIRI="obo:OBI_0001177"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="GIBO_00000043"/>
         <Class IRI="GIBO_00000041"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="GIBO_00000043"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty abbreviatedIRI="obo:OBI_0000312"/>
-            <Class abbreviatedIRI="obo:OBI_0001177"/>
-        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="GIBO_00000044"/>
