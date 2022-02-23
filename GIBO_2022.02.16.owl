@@ -10166,6 +10166,16 @@ Object Property:
         <Class abbreviatedIRI="obo:OBI_0000011"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="GIBO_00000003"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="obo:BFO_0000055"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty abbreviatedIRI="obo:RO_0000059"/>
+                <Class abbreviatedIRI="obo:OBI_0000272"/>
+            </ObjectSomeValuesFrom>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="GIBO_00000004"/>
         <Class abbreviatedIRI="obo:IAO_0020000"/>
     </SubClassOf>
@@ -47240,9 +47250,24 @@ This interpretation is *not* the same as an at-all-times relation
         <Literal xml:lang="en">NCBI SRA data submission standard operating procedure</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000116"/>
+        <IRI>GIBO_00000003</IRI>
+        <Literal xml:lang="en">data submitted using web data submission get stored to a public or license accessible database which required data being submitted to follow its corresponding data submission protocol</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
+        <IRI>GIBO_00000003</IRI>
+        <Literal>Nitya Singh</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition"/>
+        <IRI>GIBO_00000003</IRI>
+        <Literal xml:lang="en">A planned process that involves data submission to a database through a user-friendly web-base interface by realizing the concretization of a protocol</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>GIBO_00000003</IRI>
-        <Literal xml:lang="en">data submission process</Literal>
+        <Literal xml:lang="en">web data submission process</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
@@ -48118,7 +48143,7 @@ http://purl.obolibrary.org/obo/OBIws_0000080</Literal>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
         <IRI>GIBO_00000053</IRI>
-        <Literal xml:lang="en">A data submission process that realizes the concretization of an NCBI SRA database submission protocal.</Literal>
+        <Literal xml:lang="en">A NCBI SRA data submission process submission process that realizes the concretization of an NCBI SRA database submission protocal.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
@@ -48133,7 +48158,7 @@ http://purl.obolibrary.org/obo/OBIws_0000080</Literal>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
         <IRI>GIBO_00000054</IRI>
-        <Literal xml:lang="en">A data submission process that realizes the concretization of an NCBI Biosample database submission protocal.</Literal>
+        <Literal xml:lang="en">A NCBI SRA data submission process submission process that realizes the concretization of an NCBI Biosample database submission protocal.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
@@ -48148,7 +48173,7 @@ http://purl.obolibrary.org/obo/OBIws_0000080</Literal>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
         <IRI>GIBO_00000055</IRI>
-        <Literal xml:lang="en">A data submission process that realizes the concretization of an NCBI SRA data submission standard operating procedure.</Literal>
+        <Literal xml:lang="en">A web data submission process that realizes the concretization of an NCBI SRA data submission standard operating procedure.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
