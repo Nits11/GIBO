@@ -10350,17 +10350,14 @@ Object Property:
                     </ObjectIntersectionOf>
                 </ObjectSomeValuesFrom>
             </ObjectSomeValuesFrom>
-            <ObjectSomeValuesFrom>
-                <ObjectProperty IRI="GIBO_00000017"/>
-                <ObjectIntersectionOf>
-                    <Class abbreviatedIRI="obo:NCBITaxon_590"/>
-                    <ObjectSomeValuesFrom>
-                        <ObjectProperty abbreviatedIRI="obo:RO_0000091"/>
-                        <Class abbreviatedIRI="obo:IDO_0000450"/>
-                    </ObjectSomeValuesFrom>
-                </ObjectIntersectionOf>
-            </ObjectSomeValuesFrom>
         </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="GIBO_00000014"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="GIBO_00000017"/>
+            <Class abbreviatedIRI="obo:NCBITaxon_590"/>
+        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="GIBO_00000015"/>
@@ -13174,6 +13171,10 @@ Object Property:
     <ObjectPropertyRange>
         <ObjectProperty abbreviatedIRI="obo:RO_0002222"/>
         <Class abbreviatedIRI="obo:BFO_0000003"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="GIBO_00000017"/>
+        <Class abbreviatedIRI="obo:OBI_0100026"/>
     </ObjectPropertyRange>
     <SubObjectPropertyOf>
         <ObjectPropertyChain>
@@ -47477,7 +47478,7 @@ https://en.wikipedia.org › wiki › Salmonellosis</Literal>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
         <IRI>GIBO_00000017</IRI>
-        <Literal xml:lang="en">A relationship  of material entity with generically dependent or specifically dependent continuant, in which both generically and  specifically dependent continuant are result of direct contact wtih material entity.</Literal>
+        <Literal xml:lang="en">A relationship  of material entity with generically dependent or specifically dependent continuant, in which both generically and specifically dependent continuant are result of direct contact wtih material entity.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
@@ -47487,7 +47488,7 @@ https://en.wikipedia.org › wiki › Salmonellosis</Literal>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>GIBO_00000017</IRI>
-        <Literal xml:lang="en">is_cuased_by_exposure_to</Literal>
+        <Literal xml:lang="en">is_caused_by_exposure_to</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
