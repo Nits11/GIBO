@@ -5441,13 +5441,6 @@ Object Property:
         <Class abbreviatedIRI="obo:IAO_0000030"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI="obo:IAO_0020000"/>
-        <DataSomeValuesFrom>
-            <DataProperty abbreviatedIRI="obo:OBI_0002815"/>
-            <Datatype abbreviatedIRI="xsd:string"/>
-        </DataSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
         <Class abbreviatedIRI="obo:IAO_0020010"/>
         <Class abbreviatedIRI="obo:OBI_0000011"/>
     </SubClassOf>
@@ -10158,6 +10151,13 @@ Object Property:
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="GIBO_00000001"/>
+        <DataSomeValuesFrom>
+            <DataProperty abbreviatedIRI="obo:OBI_0002815"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="GIBO_00000002"/>
         <Class abbreviatedIRI="obo:OBIB_0000070"/>
     </SubClassOf>
@@ -10170,6 +10170,13 @@ Object Property:
         <Class abbreviatedIRI="obo:IAO_0020000"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="GIBO_00000004"/>
+        <DataSomeValuesFrom>
+            <DataProperty abbreviatedIRI="obo:OBI_0002815"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="GIBO_00000005"/>
         <Class abbreviatedIRI="obo:IAO_0020000"/>
     </SubClassOf>
@@ -10179,6 +10186,13 @@ Object Property:
             <ObjectProperty abbreviatedIRI="obo:IAO_0000219"/>
             <Class abbreviatedIRI="obo:BFO_0000008"/>
         </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="GIBO_00000005"/>
+        <DataSomeValuesFrom>
+            <DataProperty abbreviatedIRI="obo:OBI_0002815"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="GIBO_00000006"/>
@@ -10197,22 +10211,10 @@ Object Property:
     </SubClassOf>
     <SubClassOf>
         <Class IRI="GIBO_00000007"/>
-        <ObjectIntersectionOf>
-            <ObjectIntersectionOf>
-                <ObjectSomeValuesFrom>
-                    <ObjectProperty abbreviatedIRI="obo:BFO_0000050"/>
-                    <Class IRI="GIBO_00000008"/>
-                </ObjectSomeValuesFrom>
-                <ObjectSomeValuesFrom>
-                    <ObjectProperty abbreviatedIRI="obo:RO_0000056"/>
-                    <Class IRI="GIBO_00000037"/>
-                </ObjectSomeValuesFrom>
-            </ObjectIntersectionOf>
-            <ObjectSomeValuesFrom>
-                <ObjectProperty abbreviatedIRI="obo:IAO_0020012"/>
-                <Class IRI="GIBO_00000008"/>
-            </ObjectSomeValuesFrom>
-        </ObjectIntersectionOf>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="obo:IAO_0020012"/>
+            <Class IRI="GIBO_00000008"/>
+        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="GIBO_00000007"/>
@@ -10695,6 +10697,13 @@ Object Property:
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="GIBO_00000051"/>
+        <DataSomeValuesFrom>
+            <DataProperty abbreviatedIRI="obo:OBI_0002815"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="GIBO_00000052"/>
         <Class abbreviatedIRI="obo:IAO_0020000"/>
     </SubClassOf>
@@ -10704,6 +10713,13 @@ Object Property:
             <ObjectProperty abbreviatedIRI="obo:OBI_0000312"/>
             <Class IRI="GIBO_00000054"/>
         </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="GIBO_00000052"/>
+        <DataSomeValuesFrom>
+            <DataProperty abbreviatedIRI="obo:OBI_0002815"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="GIBO_00000053"/>
@@ -10846,6 +10862,13 @@ Object Property:
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="GIBO_00000067"/>
+        <DataSomeValuesFrom>
+            <DataProperty abbreviatedIRI="obo:OBI_0002815"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="GIBO_00000068"/>
         <Class IRI="GIBO_00000067"/>
     </SubClassOf>
@@ -10947,6 +10970,13 @@ Object Property:
             <ObjectProperty abbreviatedIRI="obo:IAO_0000219"/>
             <Class IRI="GIBO_00000075"/>
         </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="GIBO_00000077"/>
+        <DataSomeValuesFrom>
+            <DataProperty abbreviatedIRI="obo:OBI_0002815"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="GIBO_00000079"/>
@@ -11054,6 +11084,13 @@ Object Property:
             <ObjectProperty abbreviatedIRI="obo:IAO_0000219"/>
             <Class abbreviatedIRI="obo:IDO_0000502"/>
         </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="GIBO_00000089"/>
+        <DataSomeValuesFrom>
+            <DataProperty abbreviatedIRI="obo:OBI_0002815"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="isolate_specimen_ID"/>
@@ -47254,6 +47291,21 @@ This interpretation is *not* the same as an at-all-times relation
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>GIBO_00000004</IRI>
         <Literal xml:lang="en">year identifier</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000116"/>
+        <IRI>GIBO_00000005</IRI>
+        <Literal xml:lang="en">can be used to record the corresponding day of occuring of an event at a given place and time</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
+        <IRI>GIBO_00000005</IRI>
+        <Literal>Nitya Singh</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition"/>
+        <IRI>GIBO_00000005</IRI>
+        <Literal xml:lang="en">An identifier that denotes a temporal region of what is called a date, comprising information about year, month and number of day, in any given calendar system.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
