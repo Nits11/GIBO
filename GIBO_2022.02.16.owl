@@ -8910,24 +8910,6 @@ Object Property:
         <Class abbreviatedIRI="obo:BFO_0000016"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI="obo:OGMS_0000031"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="GIBO_00000017"/>
-            <ObjectIntersectionOf>
-                <ObjectUnionOf>
-                    <Class abbreviatedIRI="obo:NCBITaxon_10239"/>
-                    <Class abbreviatedIRI="obo:NCBITaxon_2"/>
-                    <Class abbreviatedIRI="obo:NCBITaxon_2157"/>
-                    <Class abbreviatedIRI="obo:NCBITaxon_2759"/>
-                </ObjectUnionOf>
-                <ObjectSomeValuesFrom>
-                    <ObjectProperty abbreviatedIRI="obo:RO_0000091"/>
-                    <Class abbreviatedIRI="obo:IDO_0000450"/>
-                </ObjectSomeValuesFrom>
-            </ObjectIntersectionOf>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
         <Class abbreviatedIRI="obo:OGMS_0000045"/>
         <Class abbreviatedIRI="obo:BFO_0000040"/>
     </SubClassOf>
