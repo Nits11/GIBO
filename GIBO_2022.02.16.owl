@@ -4087,13 +4087,6 @@ Object Property:
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
-        <Class abbreviatedIRI="obo:OBI_0200000"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty abbreviatedIRI="obo:OBI_0000417"/>
-            <Class abbreviatedIRI="obo:OBI_0200031"/>
-        </ObjectSomeValuesFrom>
-    </EquivalentClasses>
-    <EquivalentClasses>
         <Class abbreviatedIRI="obo:OBI_0200170"/>
         <ObjectUnionOf>
             <ObjectSomeValuesFrom>
@@ -7361,10 +7354,6 @@ Object Property:
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="obo:OBI_0002136"/>
-        <Class abbreviatedIRI="obo:OBI_0000650"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class abbreviatedIRI="obo:OBI_0002136"/>
         <Class abbreviatedIRI="obo:OBI_0200000"/>
     </SubClassOf>
     <SubClassOf>
@@ -8427,10 +8416,6 @@ Object Property:
     <SubClassOf>
         <Class abbreviatedIRI="obo:OBI_0200166"/>
         <Class abbreviatedIRI="obo:IAO_0000005"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class abbreviatedIRI="obo:OBI_0200170"/>
-        <Class abbreviatedIRI="obo:OBI_0000650"/>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="obo:OBI_0200170"/>
@@ -10151,13 +10136,6 @@ Object Property:
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="GIBO_00000001"/>
-        <DataSomeValuesFrom>
-            <DataProperty abbreviatedIRI="obo:OBI_0002815"/>
-            <Datatype abbreviatedIRI="xsd:string"/>
-        </DataSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="GIBO_00000002"/>
         <Class abbreviatedIRI="obo:OBIB_0000070"/>
     </SubClassOf>
@@ -10180,13 +10158,6 @@ Object Property:
         <Class abbreviatedIRI="obo:IAO_0020000"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="GIBO_00000004"/>
-        <DataSomeValuesFrom>
-            <DataProperty abbreviatedIRI="obo:OBI_0002815"/>
-            <Datatype abbreviatedIRI="xsd:string"/>
-        </DataSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="GIBO_00000005"/>
         <Class abbreviatedIRI="obo:IAO_0020000"/>
     </SubClassOf>
@@ -10196,13 +10167,6 @@ Object Property:
             <ObjectProperty abbreviatedIRI="obo:IAO_0000219"/>
             <Class abbreviatedIRI="obo:BFO_0000008"/>
         </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="GIBO_00000005"/>
-        <DataSomeValuesFrom>
-            <DataProperty abbreviatedIRI="obo:OBI_0002815"/>
-            <Datatype abbreviatedIRI="xsd:string"/>
-        </DataSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="GIBO_00000006"/>
@@ -10227,35 +10191,14 @@ Object Property:
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="GIBO_00000007"/>
-        <DataSomeValuesFrom>
-            <DataProperty abbreviatedIRI="obo:OBI_0002815"/>
-            <Datatype abbreviatedIRI="xsd:string"/>
-        </DataSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="GIBO_00000008"/>
         <Class abbreviatedIRI="obo:BFO_0000040"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="GIBO_00000008"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty abbreviatedIRI="obo:IAO_0020018"/>
-            <Class IRI="GIBO_00000007"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="GIBO_00000008"/>
-        <ObjectSomeValuesFrom>
             <ObjectProperty abbreviatedIRI="obo:OMIABIS_0000048"/>
             <Class IRI="GIBO_00000010"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="GIBO_00000008"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty abbreviatedIRI="obo:RO_0000056"/>
-            <Class abbreviatedIRI="obo:OGMS_0000104"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
@@ -10285,13 +10228,6 @@ Object Property:
     <SubClassOf>
         <Class IRI="GIBO_00000010"/>
         <Class abbreviatedIRI="obo:OBI_0000245"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="GIBO_00000010"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty abbreviatedIRI="obo:OBI_0001688"/>
-            <Class IRI="GIBO_00000011"/>
-        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="GIBO_00000011"/>
@@ -10679,13 +10615,6 @@ Object Property:
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="GIBO_00000051"/>
-        <DataSomeValuesFrom>
-            <DataProperty abbreviatedIRI="obo:OBI_0002815"/>
-            <Datatype abbreviatedIRI="xsd:string"/>
-        </DataSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="GIBO_00000052"/>
         <Class abbreviatedIRI="obo:IAO_0020000"/>
     </SubClassOf>
@@ -10695,13 +10624,6 @@ Object Property:
             <ObjectProperty abbreviatedIRI="obo:OBI_0000312"/>
             <Class IRI="GIBO_00000054"/>
         </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="GIBO_00000052"/>
-        <DataSomeValuesFrom>
-            <DataProperty abbreviatedIRI="obo:OBI_0002815"/>
-            <Datatype abbreviatedIRI="xsd:string"/>
-        </DataSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="GIBO_00000053"/>
@@ -10954,13 +10876,6 @@ Object Property:
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="GIBO_00000077"/>
-        <DataSomeValuesFrom>
-            <DataProperty abbreviatedIRI="obo:OBI_0002815"/>
-            <Datatype abbreviatedIRI="xsd:string"/>
-        </DataSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="GIBO_00000079"/>
         <Class IRI="GIBO_00000080"/>
     </SubClassOf>
@@ -11066,13 +10981,6 @@ Object Property:
             <ObjectProperty abbreviatedIRI="obo:IAO_0000219"/>
             <Class abbreviatedIRI="obo:IDO_0000502"/>
         </ObjectExactCardinality>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="GIBO_00000089"/>
-        <DataSomeValuesFrom>
-            <DataProperty abbreviatedIRI="obo:OBI_0002815"/>
-            <Datatype abbreviatedIRI="xsd:string"/>
-        </DataSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="isolate_specimen_ID"/>
@@ -13175,7 +13083,7 @@ Object Property:
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="GIBO_00000017"/>
-        <Class abbreviatedIRI="obo:OBI_0100026"/>
+        <Class abbreviatedIRI="obo:BFO_0000040"/>
     </ObjectPropertyRange>
     <SubObjectPropertyOf>
         <ObjectPropertyChain>
@@ -47262,7 +47170,7 @@ This interpretation is *not* the same as an at-all-times relation
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="efo:definition"/>
         <IRI>GIBO_00000003</IRI>
-        <Literal xml:lang="en">A planned process that involves data submission to a database through a user-friendly web-base interface by realizing the concretization of a protocol</Literal>
+        <Literal xml:lang="en">A planned process that involves data submission to a database through a web-base interface by realizing the concretization of a protocol</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -47362,7 +47270,7 @@ This interpretation is *not* the same as an at-all-times relation
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000119"/>
         <IRI>GIBO_00000008</IRI>
-        <Literal xml:lang="en">Wekipedia
+        <Literal xml:lang="en">Wikipedia
 https://en.wikipedia.org/wiki/Medical_laboratory</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
@@ -47463,7 +47371,7 @@ https://en.wikipedia.org/wiki/Medical_laboratory</Literal>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000119"/>
         <IRI>GIBO_00000014</IRI>
-        <Literal xml:lang="en">Adapted from Wekipedia
+        <Literal xml:lang="en">Adapted from Wikipedia
 https://en.wikipedia.org › wiki › Salmonellosis</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
@@ -47509,7 +47417,7 @@ https://en.wikipedia.org › wiki › Salmonellosis</Literal>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
         <IRI>GIBO_00000017</IRI>
-        <Literal xml:lang="en">A relationship  of material entity with generically dependent or specifically dependent continuant, in which both generically and specifically dependent continuant are result of direct contact wtih material entity.</Literal>
+        <Literal xml:lang="en">A relationship of generically dependent or specifically dependent continuant and a material entity, in which both generically and specifically dependent continuant are result of direct contact wtih material entity.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
@@ -47569,7 +47477,7 @@ https://en.wikipedia.org › wiki › Salmonellosis</Literal>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000119"/>
         <IRI>GIBO_00000020</IRI>
-        <Literal xml:lang="en">adapted from Wekipedia
+        <Literal xml:lang="en">adapted from Wikipedia
 https://en.wikipedia.org/wiki/Multilocus_sequence_typing</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
