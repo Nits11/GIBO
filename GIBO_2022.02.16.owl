@@ -2467,7 +2467,7 @@ Object Property:
         <Class IRI="GIBO_00000089"/>
     </Declaration>
     <Declaration>
-        <Class IRI="isolate_specimen_ID"/>
+        <Class IRI="iGIBO_00000027"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="owl:Thing"/>
@@ -8044,18 +8044,28 @@ Object Property:
             <Class abbreviatedIRI="obo:OGMS_0000073"/>
             <ObjectSomeValuesFrom>
                 <ObjectProperty abbreviatedIRI="obo:OBI_0000312"/>
-                <ObjectSomeValuesFrom>
-                    <ObjectProperty abbreviatedIRI="obo:OBI_0000293"/>
-                    <ObjectIntersectionOf>
-                        <Class abbreviatedIRI="obo:OBI_0100051"/>
-                        <ObjectSomeValuesFrom>
-                            <ObjectProperty abbreviatedIRI="obo:RO_0000087"/>
-                            <Class IRI="GIBO_00000016"/>
-                        </ObjectSomeValuesFrom>
-                    </ObjectIntersectionOf>
-                </ObjectSomeValuesFrom>
+                <ObjectIntersectionOf>
+                    <Class abbreviatedIRI="obo:OGMS_0000104"/>
+                    <ObjectSomeValuesFrom>
+                        <ObjectProperty abbreviatedIRI="obo:OBI_0000293"/>
+                        <ObjectIntersectionOf>
+                            <Class abbreviatedIRI="obo:OBI_0100051"/>
+                            <ObjectSomeValuesFrom>
+                                <ObjectProperty abbreviatedIRI="obo:RO_0000087"/>
+                                <Class IRI="GIBO_00000016"/>
+                            </ObjectSomeValuesFrom>
+                        </ObjectIntersectionOf>
+                    </ObjectSomeValuesFrom>
+                </ObjectIntersectionOf>
             </ObjectSomeValuesFrom>
         </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:OBI_0002385"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="obo:IAO_0000136"/>
+            <Class IRI="GIBO_00000085"/>
+        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="obo:OBI_0002388"/>
@@ -8901,22 +8911,6 @@ Object Property:
     <SubClassOf>
         <Class abbreviatedIRI="obo:OGMS_0000073"/>
         <Class abbreviatedIRI="obo:IAO_0000027"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class abbreviatedIRI="obo:OGMS_0000073"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty abbreviatedIRI="obo:OBI_0000312"/>
-            <ObjectSomeValuesFrom>
-                <ObjectProperty abbreviatedIRI="obo:OBI_0000293"/>
-                <ObjectIntersectionOf>
-                    <Class abbreviatedIRI="obo:OBI_0100051"/>
-                    <ObjectSomeValuesFrom>
-                        <ObjectProperty abbreviatedIRI="obo:RO_0000087"/>
-                        <Class IRI="GIBO_00000016"/>
-                    </ObjectSomeValuesFrom>
-                </ObjectIntersectionOf>
-            </ObjectSomeValuesFrom>
-        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="obo:OGMS_0000097"/>
@@ -10283,13 +10277,6 @@ Object Property:
         </ObjectIntersectionOf>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="GIBO_00000014"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="GIBO_00000017"/>
-            <Class abbreviatedIRI="obo:NCBITaxon_590"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="GIBO_00000015"/>
         <Class abbreviatedIRI="obo:OBI_0000011"/>
     </SubClassOf>
@@ -10983,8 +10970,15 @@ Object Property:
         </ObjectExactCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="isolate_specimen_ID"/>
+        <Class IRI="iGIBO_00000027"/>
         <Class abbreviatedIRI="obo:OMIABIS_0001046"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="iGIBO_00000027"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="obo:IAO_0000219"/>
+            <Class IRI="GIBO_00000019"/>
+        </ObjectSomeValuesFrom>
     </SubClassOf>
     <DisjointClasses>
         <Class abbreviatedIRI="obo:APOLLO_SV_00000032"/>
@@ -48539,9 +48533,19 @@ http://purl.obolibrary.org/obo/OBIws_0000080</Literal>
         <Literal xml:lang="en">epidemic identifier</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
+        <IRI>iGIBO_00000027</IRI>
+        <Literal>Nitya Singh</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition"/>
+        <IRI>iGIBO_00000027</IRI>
+        <Literal xml:lang="en">A specimen ID denoting a microbial isolate specimen.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>isolate_specimen_ID</IRI>
-        <Literal xml:lang="en">isolate specimen ID</Literal>
+        <IRI>iGIBO_00000027</IRI>
+        <Literal xml:lang="en">microbial isolate specimen ID</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000111"/>
