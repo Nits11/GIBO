@@ -10445,8 +10445,8 @@ Object Property:
     <SubClassOf>
         <Class IRI="GIBO_00000031"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty abbreviatedIRI="obo:OBI_0000299"/>
-            <Class IRI="GIBO_00000022"/>
+            <ObjectProperty abbreviatedIRI="obo:OBI_0000293"/>
+            <Class IRI="GIBO_00000039"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
@@ -47684,7 +47684,7 @@ http://www.ridom.de/seqsphere/u/Core_Genome_MLST.html</Literal>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="efo:definition"/>
         <IRI>GIBO_00000031</IRI>
-        <Literal xml:lang="en">A multilocus sequence typing process which uses the fixed set of conserved genome-wide genes for generating the alleling profiles or sequence type(ST) of bacterial species, known as core-genome ST.</Literal>
+        <Literal xml:lang="en">A multilocus sequence typing process which takes whole genome sequence data as input and uses the fixed set of conserved genome-wide genes  for generating the alleling profiles or sequence type(ST) of bacterial species, known as core-genome ST.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
