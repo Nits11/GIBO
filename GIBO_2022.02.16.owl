@@ -10597,6 +10597,13 @@ Object Property:
     <SubClassOf>
         <Class IRI="GIBO_00000051"/>
         <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="obo:IAO_0000219"/>
+            <Class IRI="GIBO_00000087"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="GIBO_00000051"/>
+        <ObjectSomeValuesFrom>
             <ObjectProperty abbreviatedIRI="obo:OBI_0000312"/>
             <Class IRI="GIBO_00000053"/>
         </ObjectSomeValuesFrom>
@@ -10604,6 +10611,13 @@ Object Property:
     <SubClassOf>
         <Class IRI="GIBO_00000052"/>
         <Class abbreviatedIRI="obo:IAO_0020000"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="GIBO_00000052"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="obo:IAO_0000219"/>
+            <Class IRI="GIBO_00000024"/>
+        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="GIBO_00000052"/>
