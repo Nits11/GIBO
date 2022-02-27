@@ -10682,12 +10682,33 @@ Object Property:
         <Class IRI="GIBO_00000079"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="GIBO_00000058"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="obo:RO_0002234"/>
+            <Class IRI="GIBO_00000063"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="GIBO_00000059"/>
         <Class IRI="GIBO_00000079"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="GIBO_00000059"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="obo:RO_0002234"/>
+            <Class IRI="GIBO_00000066"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="GIBO_00000060"/>
         <Class IRI="GIBO_00000079"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="GIBO_00000060"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="obo:RO_0002234"/>
+            <Class IRI="GIBO_00000065"/>
+        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="GIBO_00000061"/>
@@ -10853,13 +10874,6 @@ Object Property:
     <SubClassOf>
         <Class IRI="GIBO_00000075"/>
         <Class abbreviatedIRI="obo:IAO_0000100"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="GIBO_00000075"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty abbreviatedIRI="obo:OBI_0000312"/>
-            <Class IRI="GIBO_00000081"/>
-        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="GIBO_00000076"/>
@@ -47717,6 +47731,11 @@ http://www.ridom.de/seqsphere/u/Core_Genome_MLST.html</Literal>
         <Literal xml:lang="en">A genetic variation analysis that detects mutations in multiple DNA sequences, for example, from the alignment and comparison of the fluorescent traces produced by DNA sequencing hardware.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
+        <IRI>GIBO_00000033</IRI>
+        <Literal>Nitya Singh</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000119"/>
         <IRI>GIBO_00000033</IRI>
         <Literal xml:lang="en">adapted from EDAM
@@ -47726,6 +47745,11 @@ http://edamontology.org/operation_3202</Literal>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>GIBO_00000033</IRI>
         <Literal xml:lang="en">polymorphism detection</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
+        <IRI>GIBO_00000034</IRI>
+        <Literal>Nitya Singh</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000119"/>
@@ -47742,6 +47766,11 @@ http://edamontology.org/operation_0265</Literal>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>GIBO_00000034</IRI>
         <Literal xml:lang="en">Frameshift polymorphism detection</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
+        <IRI>GIBO_00000035</IRI>
+        <Literal>Nitya Singh</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000119"/>
@@ -47763,6 +47792,11 @@ http://edamontology.org/operation_0452</Literal>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
         <IRI>GIBO_00000036</IRI>
         <Literal xml:lang="en">A polymorphism detection which can find change in single nucleotide base positions between sequences.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
+        <IRI>GIBO_00000036</IRI>
+        <Literal>Nitya Singh</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000119"/>
