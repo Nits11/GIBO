@@ -10152,6 +10152,13 @@ Object Property:
         <Class abbreviatedIRI="obo:IAO_0020000"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="GIBO_00000004"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="obo:IAO_0000219"/>
+            <Class abbreviatedIRI="obo:BFO_0000008"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="GIBO_00000005"/>
         <Class abbreviatedIRI="obo:IAO_0020000"/>
     </SubClassOf>
