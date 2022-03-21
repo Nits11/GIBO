@@ -5022,6 +5022,10 @@ Object Property:
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
+        <Class abbreviatedIRI="obo:ECO_0000000"/>
+        <Class abbreviatedIRI="obo:IAO_0000030"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class abbreviatedIRI="obo:ECO_0000338"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty abbreviatedIRI="obo:OBI_0000312"/>
@@ -9667,6 +9671,10 @@ Object Property:
         <Class abbreviatedIRI="obo:OBI_0000011"/>
     </SubClassOf>
     <SubClassOf>
+        <Class abbreviatedIRI="obo:OMP_0000000"/>
+        <Class abbreviatedIRI="obo:BFO_0000031"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class abbreviatedIRI="obo:OMRSE_00000010"/>
         <Class abbreviatedIRI="obo:OMRSE_00000024"/>
     </SubClassOf>
@@ -10172,6 +10180,16 @@ Object Property:
     <SubClassOf>
         <Class IRI="GIBO_00000006"/>
         <Class abbreviatedIRI="obo:OBI_0000011"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="GIBO_00000006"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="obo:BFO_0000055"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty abbreviatedIRI="obo:RO_0000059"/>
+                <Class IRI="GIBO_00000088"/>
+            </ObjectSomeValuesFrom>
+        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="GIBO_00000006"/>
@@ -48165,7 +48183,7 @@ http://purl.obolibrary.org/obo/OBIws_0000080</Literal>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>GIBO_00000057</IRI>
-        <Literal xml:lang="en">Hierarchical Clustering scheme for cgMLST (HeirCC)</Literal>
+        <Literal xml:lang="en">Hierarchical Clustering scheme for cgMLST (HierCC)</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
@@ -48480,7 +48498,7 @@ http://purl.obolibrary.org/obo/OBIws_0000080</Literal>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>GIBO_00000079</IRI>
-        <Literal xml:lang="en">Hierarchical Clustering of cgMLST (HeirCC)</Literal>
+        <Literal xml:lang="en">Hierarchical Clustering of cgMLST (HierCC)</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
