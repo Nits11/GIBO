@@ -5,7 +5,7 @@
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
-    <Prefix name="" IRI="http://www.ontogator.org/GIBO/"/>
+    <Prefix name="" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="dc" IRI="http://purl.org/dc/elements/1.1/"/>
     <Prefix name="efo" IRI="http://www.ebi.ac.uk/efo/"/>
     <Prefix name="obo" IRI="http://purl.obolibrary.org/obo/"/>
@@ -37,71 +37,115 @@
     <Annotation>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000116"/>
         <Literal xml:lang="en">Used Basic architecture of OBIB with selected classes and imported relevant classes from other Ontologies.
-Created a couple of classes and created axiomatic relations between existing from different ontologiesand newly added classes.
 
-List of few newly added classes
-1. Classes to represent diagnostic center :
-&apos;diagnostic lab&apos;
-&apos;diagnostic organization&apos;
-&apos;diagnostic test&apos;
-&apos;diagnostic lab unique resource locater&apos;
-&apos;diagnostic lab contact role&apos;
+Under 5 functionalmodules, created 84 new classes and created axiomatic relations between existing from different ontologies and newly added classes:
+1. Clinical and Epidemiological module
 
-2. Classes to represent of genetic (omics) data
+Epidemic identifier (GIBO00000089)
+year identifier (GIBO_00000004)
+date identifier (GIBO_00000005)
 
-Processes:
-&apos;molecular data analysis
-  &apos;Genomic data analysis&apos;
-     &apos;gene expression level analysis&apos;
-     &apos;genetic Variation Analysis&apos;
-        &apos;multilocus sequence typing&apos;
-           &apos;core genome multilocus sequence typing&apos;
-           &apos;legacy multilocus sequence typing&apos;
-           &apos;whole Genome multilocus sequence typing&apos;
-         &apos;polymorphism detection&apos;
-            &apos;Frameshift polymorphism detection&apos;
-            &apos;Indel polymorphism detection&apos;
-            &apos;Single nucleotide polymorphism detection&apos;
-nucleic acid sequencing assay
 
-Data: 
-&apos;molecular sequence data&apos;
-  &apos;protein sequence data&apos;
-  &apos;nucleic acid sequence data&apos;
-    &apos;DNA sequence data&apos;
-      &apos;whole exome sequence data&apos;
-      &apos;whole genome sequence data&apos;
-    &apos;RNA Sequence data&apos;
-      &apos;16s RNA data&apos;
-      &apos;whole transcriptome sequence data&apos;
-Data set: 
-&apos;sequence types&apos;
-  &apos; core genome sequence type&apos;
-   &apos;whole genome sequence type&apos;
-   &apos;legacy sequence type&apos;
+2. Diagnostic facility and specimen collection module 
 
-Assay:
-&apos;sequencing assay&apos;
-  &apos;nucleic acid sequencing assay&apos;
-    &apos;DNA sequencing assay&apos;
-    &apos;RNA sequencing assay&apos;
-  &apos;protein sequencing assay by tandem mass spectroscopy assay&apos;
+ diagnostic lab organization (GIBO_00000010)
+diagnostic lab (GIBO_00000008)
+diagnostic lab identifier (GIBO_00000007)
+diagnostic role (GIBO_00000016)
+diagnostic test (GIBO_00000015)
+diagnostic lab contact person (GIBO_00000011)
+diagnostic lab contact role (GIBO_00000012)
+diagnosis of Salmonellosis (GIBO_00000014)
+Salmonellosis (GIBO_00000085)
+patient recall interview data collection (GIBO_00000018)
+genomics data analysis center (GIBO_00000009)
+is caused by exposure to (GIBO_00000017)
 
-3. 
-diagnosis of Infectious disease
-&apos;diagnosis of Salmonellosis&apos;
+3. Specimen processing and sequencing module
 
-4. 
-&apos;date of illness onset&apos;
-&apos;patient recall interview data collection&apos;
+Microbial isolation process (GIBO_00000006)
+Microbial isolation SOP(GIBO_00000088)
+Microbial isolate specimen (GIBO_00000019)
+microbial isolate specimen ID (GIBO_00000027)
+DNA extraction (OBI_0000257)
+DNA extract (OBI_0001051)
+pulsed-field gel electrophoresis (GIBO_00000048)
+PFGE pattern (GIBO_00000025)
+molecular sequence data (GIBO_00000045)
+nucleic acid sequence data (GIBO_00000038)
+whole-genome sequence data (GIBO_00000039)
+whole genome sequence identifier (GIBO_00000001)
+RNA sequence data (GIBO_00000041)
+whole transcriptome sequence data (GIBO_00000043)
+whole-exome sequence data (GIBO_00000040)
+protein sequence data (GIBO_00000046)
+sequencing assay (GIBO_00000044)
 
-5. 
-Postal code of specimen donor
+4. Sequence data submission module
+
+
+web data submission process (GIBO_00000003)
+electronic submission package (GIBO_00000056)
+NCBI-SRA data submission standard operating procedure (GIBO_00000002)
+NCBI-SRA data submission process (GIBO_00000055)
+NCBI SRA database submission process (GIBO_00000053)
+raw reads of DNA sequence data (GIBO_00000087)
+NCBI SRA identifier (GIBO_00000051)
+NCBI Biosample metadata (GIBO_00000024)
+NCBI Biosample database submission process (GIBO_00000054)
+NCBI Accession identifier (GIBO_00000052)
+
+5. Sequence data analysis/ post-processing module
+
+in-silico serotype prediction (GIBO_00000049)
+predicted serotype phenotype (GIBO_00000050)
+molecular sequence data analysis ( GIBO_00000037)
+Whole Genome data analysis (GIBO_00000026)
+multilocus sequence typing (GIBO_00000029)
+sequence types (GIBO_00000020) 
+legacy Multilocus Sequence Typing (GIBO_00000030)
+legacy sequence type (GIBO_00000021)
+ribosomal Multilocus Sequence Typing (GIBO_00000072)
+ribosomal sequence type (GIBO_00000073)
+whole genome multilocus sequence typing (GIBO_00000032)
+whole genome sequence type (GIBO_00000023)
+core genome Multilocus Sequence Typing (GIBO_00000031)
+core genome MLST profiles (GIBO_00000086)
+core genome sequence type (GIBO_00000022)
+data clustering (GIBO_00000080)
+hierarchical Cluster of cgMLST (GIBO_00000062)
+Hierarchical Clustering of cgMLST (HierCC) (GIBO_00000079)
+hierarchical Clustering scheme for cgMLST (HeirCC) (GIBO_00000057)
+HierCC2 (GIBO_00000058)
+HC2 (GIBO_00000063)
+HC2 cluster Number (GIBO_00000068)
+HierCC5 (GIBO_00000059)
+HC5 (GIBO_00000064)
+HC5 cluster Number (GIBO_00000069)
+HierCC10 (GIBO_00000060)
+HC10 (GIBO_00000065)
+HC10 cluster Number (GIBO_00000070)
+HierCC20 (GIBO_00000061)
+HC20 (GIBO_00000066)
+HC20 cluster Number (GIBO_00000071)
+SNP detection (GIBO_00000036)
+SNP profile (GIBO_00000074)
+SNP clustering (GIBO_00000081)
+SNP Clustering scheme (GIBO_00000076)
+SNP Cluster (GIBO_00000075)
+SNP Cluster number (GIBO_00000077)
+genetic variation Analysis (GIBO_00000028)
+polymorphism detection (GIBO_00000033)
+Frameshift polymorphism detection (GIBO_00000034)
+Indel polymorphism detection (GIBO_00000035)
+Single nucleotide polymorphism detection (GIBO_00000036)
+16s RNA data (GIBO_00000042)
+
 
 
 
 Object Property:
-6. &apos;is_cuased_by_exposure_to&apos;</Literal>
+is caused by exposure to (GIBO_00000017)</Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="dc:contributor"/>
@@ -2220,253 +2264,253 @@ Object Property:
         <Class abbreviatedIRI="oboInOwl:SynonymType"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI=":GIBO_00000001"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000001"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI=":GIBO_00000002"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000002"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI=":GIBO_00000003"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000003"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI=":GIBO_00000004"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000004"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI=":GIBO_00000005"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000005"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI=":GIBO_00000006"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000006"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI=":GIBO_00000007"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000007"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI=":GIBO_00000008"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000008"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI=":GIBO_00000009"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000009"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI=":GIBO_00000010"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000010"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI=":GIBO_00000011"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000011"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI=":GIBO_00000012"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000012"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI=":GIBO_00000013"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000013"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI=":GIBO_00000014"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000014"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI=":GIBO_00000015"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000015"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI=":GIBO_00000016"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000016"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI=":GIBO_00000018"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000018"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI=":GIBO_00000019"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000019"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI=":GIBO_00000020"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000020"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI=":GIBO_00000021"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000021"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI=":GIBO_00000022"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000022"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI=":GIBO_00000023"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000023"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI=":GIBO_00000024"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000024"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI=":GIBO_00000025"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000025"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI=":GIBO_00000026"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000026"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI=":GIBO_00000028"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000027"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI=":GIBO_00000029"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000028"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI=":GIBO_00000030"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000029"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI=":GIBO_00000031"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000030"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI=":GIBO_00000032"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000031"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI=":GIBO_00000033"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000032"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI=":GIBO_00000034"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000033"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI=":GIBO_00000035"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000034"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI=":GIBO_00000036"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000035"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI=":GIBO_00000037"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000036"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI=":GIBO_00000038"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000037"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI=":GIBO_00000039"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000038"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI=":GIBO_00000040"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000039"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI=":GIBO_00000041"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000040"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI=":GIBO_00000042"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000041"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI=":GIBO_00000043"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000042"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI=":GIBO_00000044"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000043"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI=":GIBO_00000045"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000044"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI=":GIBO_00000046"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000045"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI=":GIBO_00000048"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000046"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI=":GIBO_00000049"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000048"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI=":GIBO_00000050"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000049"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI=":GIBO_00000051"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000050"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI=":GIBO_00000052"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000051"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI=":GIBO_00000053"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000052"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI=":GIBO_00000054"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000053"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI=":GIBO_00000055"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000054"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI=":GIBO_00000056"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000055"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI=":GIBO_00000057"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000056"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI=":GIBO_00000058"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000057"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI=":GIBO_00000059"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000058"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI=":GIBO_00000060"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000059"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI=":GIBO_00000061"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000060"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI=":GIBO_00000062"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000061"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI=":GIBO_00000063"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000062"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI=":GIBO_00000064"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000063"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI=":GIBO_00000065"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000064"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI=":GIBO_00000066"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000065"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI=":GIBO_00000067"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000066"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI=":GIBO_00000068"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000067"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI=":GIBO_00000069"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000068"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI=":GIBO_00000070"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000069"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI=":GIBO_00000071"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000070"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI=":GIBO_00000072"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000071"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI=":GIBO_00000073"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000072"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI=":GIBO_00000074"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000073"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI=":GIBO_00000075"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000074"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI=":GIBO_00000076"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000075"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI=":GIBO_00000077"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000076"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI=":GIBO_00000079"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000077"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI=":GIBO_00000080"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000079"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI=":GIBO_00000081"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000080"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI=":GIBO_00000085"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000081"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI=":GIBO_00000086"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000085"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI=":GIBO_00000087"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000086"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI=":GIBO_00000088"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000087"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI=":GIBO_00000089"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000088"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI=":iGIBO_00000027"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000089"/>
     </Declaration>
     <Declaration>
         <Class IRI="Thing"/>
@@ -2706,7 +2750,7 @@ Object Property:
         <ObjectProperty IRI="http://purl.obolibrary.org/obo/cl#lacks_part"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty abbreviatedIRI=":GIBO_00000017"/>
+        <ObjectProperty IRI="http://www.ontogator.org/GIBO/GIBO_00000017"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="topObjectProperty"/>
@@ -4683,16 +4727,16 @@ Object Property:
         </ObjectOneOf>
     </EquivalentClasses>
     <EquivalentClasses>
-        <Class abbreviatedIRI=":GIBO_00000011"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000011"/>
         <ObjectIntersectionOf>
             <Class abbreviatedIRI="obo:NCBITaxon_9606"/>
             <ObjectSomeValuesFrom>
                 <ObjectProperty abbreviatedIRI="obo:OBI_0000846"/>
-                <Class abbreviatedIRI=":GIBO_00000010"/>
+                <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000010"/>
             </ObjectSomeValuesFrom>
             <ObjectSomeValuesFrom>
                 <ObjectProperty abbreviatedIRI="obo:RO_0000053"/>
-                <Class abbreviatedIRI=":GIBO_00000012"/>
+                <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000012"/>
             </ObjectSomeValuesFrom>
         </ObjectIntersectionOf>
     </EquivalentClasses>
@@ -5028,7 +5072,7 @@ Object Property:
         <Class abbreviatedIRI="obo:ECO_0000338"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty abbreviatedIRI="obo:OBI_0000312"/>
-            <Class abbreviatedIRI=":GIBO_00000048"/>
+            <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000048"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
@@ -6636,7 +6680,7 @@ Object Property:
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="obo:OBI_0000626"/>
-        <Class abbreviatedIRI=":GIBO_00000044"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000044"/>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="obo:OBI_0000626"/>
@@ -7051,7 +7095,7 @@ Object Property:
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="obo:OBI_0001177"/>
-        <Class abbreviatedIRI=":GIBO_00000044"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000044"/>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="obo:OBI_0001177"/>
@@ -7100,7 +7144,7 @@ Object Property:
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="obo:OBI_0001573"/>
-        <Class abbreviatedIRI=":GIBO_00000038"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000038"/>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="obo:OBI_0001573"/>
@@ -8055,7 +8099,7 @@ Object Property:
                             <Class abbreviatedIRI="obo:OBI_0100051"/>
                             <ObjectSomeValuesFrom>
                                 <ObjectProperty abbreviatedIRI="obo:RO_0000087"/>
-                                <Class abbreviatedIRI=":GIBO_00000016"/>
+                                <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000016"/>
                             </ObjectSomeValuesFrom>
                         </ObjectIntersectionOf>
                     </ObjectSomeValuesFrom>
@@ -8067,7 +8111,7 @@ Object Property:
         <Class abbreviatedIRI="obo:OBI_0002385"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty abbreviatedIRI="obo:IAO_0000136"/>
-            <Class abbreviatedIRI=":GIBO_00000085"/>
+            <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000085"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
@@ -10126,26 +10170,26 @@ Object Property:
         <Class abbreviatedIRI="obo:IAO_0000102"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":GIBO_00000001"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000001"/>
         <Class abbreviatedIRI="obo:IAO_0020000"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":GIBO_00000001"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000001"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty abbreviatedIRI="obo:IAO_0000219"/>
-            <Class abbreviatedIRI=":GIBO_00000039"/>
+            <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000039"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":GIBO_00000002"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000002"/>
         <Class abbreviatedIRI="obo:OBIB_0000070"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":GIBO_00000003"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000003"/>
         <Class abbreviatedIRI="obo:OBI_0000011"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":GIBO_00000003"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000003"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty abbreviatedIRI="obo:BFO_0000055"/>
             <ObjectSomeValuesFrom>
@@ -10155,112 +10199,112 @@ Object Property:
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":GIBO_00000004"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000004"/>
         <Class abbreviatedIRI="obo:IAO_0020000"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":GIBO_00000004"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000004"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty abbreviatedIRI="obo:IAO_0000219"/>
             <Class abbreviatedIRI="obo:BFO_0000008"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":GIBO_00000005"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000005"/>
         <Class abbreviatedIRI="obo:IAO_0020000"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":GIBO_00000005"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000005"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty abbreviatedIRI="obo:IAO_0000219"/>
             <Class abbreviatedIRI="obo:BFO_0000008"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":GIBO_00000006"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000006"/>
         <Class abbreviatedIRI="obo:OBI_0000011"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":GIBO_00000006"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000006"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty abbreviatedIRI="obo:BFO_0000055"/>
             <ObjectSomeValuesFrom>
                 <ObjectProperty abbreviatedIRI="obo:RO_0000059"/>
-                <Class abbreviatedIRI=":GIBO_00000088"/>
+                <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000088"/>
             </ObjectSomeValuesFrom>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":GIBO_00000006"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000006"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty abbreviatedIRI="obo:BFO_0000155"/>
             <Class abbreviatedIRI="obo:BFO_0000008"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":GIBO_00000007"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000007"/>
         <Class abbreviatedIRI="obo:IAO_0020000"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":GIBO_00000007"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000007"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty abbreviatedIRI="obo:IAO_0020012"/>
-            <Class abbreviatedIRI=":GIBO_00000008"/>
+            <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000008"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":GIBO_00000008"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000008"/>
         <Class abbreviatedIRI="obo:BFO_0000040"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":GIBO_00000008"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000008"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty abbreviatedIRI="obo:OMIABIS_0000048"/>
-            <Class abbreviatedIRI=":GIBO_00000010"/>
+            <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000010"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":GIBO_00000009"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000009"/>
         <Class abbreviatedIRI="obo:BFO_0000040"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":GIBO_00000009"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000009"/>
         <ObjectIntersectionOf>
             <ObjectSomeValuesFrom>
                 <ObjectProperty abbreviatedIRI="obo:BFO_0000050"/>
-                <Class abbreviatedIRI=":GIBO_00000008"/>
+                <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000008"/>
             </ObjectSomeValuesFrom>
             <ObjectSomeValuesFrom>
                 <ObjectProperty abbreviatedIRI="obo:RO_0000056"/>
-                <Class abbreviatedIRI=":GIBO_00000037"/>
+                <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000037"/>
             </ObjectSomeValuesFrom>
         </ObjectIntersectionOf>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":GIBO_00000009"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000009"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty abbreviatedIRI="obo:IAO_0020018"/>
-            <Class abbreviatedIRI=":GIBO_00000007"/>
+            <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000007"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":GIBO_00000010"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000010"/>
         <Class abbreviatedIRI="obo:OBI_0000245"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":GIBO_00000011"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000011"/>
         <Class abbreviatedIRI="obo:NCBITaxon_9606"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":GIBO_00000012"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000012"/>
         <Class abbreviatedIRI="obo:OMIABIS_0000012"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":GIBO_00000013"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000013"/>
         <Class abbreviatedIRI="obo:IAO_0000027"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":GIBO_00000013"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000013"/>
         <ObjectIntersectionOf>
             <Class abbreviatedIRI="obo:IAO_0000027"/>
             <ObjectSomeValuesFrom>
@@ -10273,7 +10317,7 @@ Object Property:
                             <Class abbreviatedIRI="obo:BFO_0000038"/>
                             <ObjectSomeValuesFrom>
                                 <ObjectProperty abbreviatedIRI="obo:BFO_0000156"/>
-                                <Class abbreviatedIRI=":GIBO_00000018"/>
+                                <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000018"/>
                             </ObjectSomeValuesFrom>
                         </ObjectIntersectionOf>
                     </ObjectSomeValuesFrom>
@@ -10282,7 +10326,7 @@ Object Property:
         </ObjectIntersectionOf>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":GIBO_00000014"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000014"/>
         <ObjectIntersectionOf>
             <Class abbreviatedIRI="obo:OBI_0002385"/>
             <ObjectSomeValuesFrom>
@@ -10293,7 +10337,7 @@ Object Property:
                         <Class abbreviatedIRI="obo:OBI_0100051"/>
                         <ObjectSomeValuesFrom>
                             <ObjectProperty abbreviatedIRI="obo:RO_0000087"/>
-                            <Class abbreviatedIRI=":GIBO_00000016"/>
+                            <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000016"/>
                         </ObjectSomeValuesFrom>
                     </ObjectIntersectionOf>
                 </ObjectSomeValuesFrom>
@@ -10301,134 +10345,134 @@ Object Property:
         </ObjectIntersectionOf>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":GIBO_00000015"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000015"/>
         <Class abbreviatedIRI="obo:OBI_0000011"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":GIBO_00000015"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000015"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty abbreviatedIRI="obo:OBI_0000293"/>
             <ObjectIntersectionOf>
                 <Class abbreviatedIRI="obo:OBI_0100051"/>
                 <ObjectSomeValuesFrom>
                     <ObjectProperty abbreviatedIRI="obo:RO_0000087"/>
-                    <Class abbreviatedIRI=":GIBO_00000016"/>
+                    <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000016"/>
                 </ObjectSomeValuesFrom>
             </ObjectIntersectionOf>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":GIBO_00000015"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000015"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty abbreviatedIRI="obo:OBI_0000299"/>
             <Class abbreviatedIRI="obo:OGMS_0000073"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":GIBO_00000016"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000016"/>
         <Class abbreviatedIRI="obo:BFO_0000023"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":GIBO_00000018"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000018"/>
         <Class abbreviatedIRI="obo:OBI_0000011"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":GIBO_00000019"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000019"/>
         <Class abbreviatedIRI="obo:OBI_0000953"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":GIBO_00000019"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000019"/>
         <ObjectIntersectionOf>
             <Class abbreviatedIRI="obo:OBI_0000953"/>
             <ObjectSomeValuesFrom>
                 <ObjectProperty abbreviatedIRI="obo:OBI_0000312"/>
-                <Class abbreviatedIRI=":GIBO_00000006"/>
+                <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000006"/>
             </ObjectSomeValuesFrom>
         </ObjectIntersectionOf>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":GIBO_00000020"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000020"/>
         <Class abbreviatedIRI="obo:IAO_0000100"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":GIBO_00000020"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000020"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty abbreviatedIRI="obo:OBI_0000312"/>
-            <Class abbreviatedIRI=":GIBO_00000029"/>
+            <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000029"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":GIBO_00000021"/>
-        <Class abbreviatedIRI=":GIBO_00000020"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000021"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000020"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":GIBO_00000021"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000021"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty abbreviatedIRI="obo:OBI_0000312"/>
-            <Class abbreviatedIRI=":GIBO_00000030"/>
+            <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000030"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":GIBO_00000022"/>
-        <Class abbreviatedIRI=":GIBO_00000020"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000022"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000020"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":GIBO_00000022"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000022"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty abbreviatedIRI="obo:OBI_0000312"/>
-            <Class abbreviatedIRI=":GIBO_00000031"/>
+            <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000031"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":GIBO_00000023"/>
-        <Class abbreviatedIRI=":GIBO_00000020"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000023"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000020"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":GIBO_00000023"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000023"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty abbreviatedIRI="obo:OBI_0000312"/>
-            <Class abbreviatedIRI=":GIBO_00000032"/>
+            <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000032"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":GIBO_00000024"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000024"/>
         <Class abbreviatedIRI="obo:IAO_0000100"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":GIBO_00000024"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000024"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty abbreviatedIRI="obo:OBI_0000312"/>
-            <Class abbreviatedIRI=":GIBO_00000055"/>
+            <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000055"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":GIBO_00000025"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000025"/>
         <Class abbreviatedIRI="obo:IAO_0000109"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":GIBO_00000025"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000025"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty abbreviatedIRI="obo:IAO_0000219"/>
             <Class abbreviatedIRI="obo:ECO_0000338"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":GIBO_00000025"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000025"/>
         <DataSomeValuesFrom>
             <DataProperty abbreviatedIRI="obo:OBI_0002815"/>
             <Datatype abbreviatedIRI="xsd:string"/>
         </DataSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":GIBO_00000026"/>
-        <Class abbreviatedIRI=":GIBO_00000037"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000026"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000037"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":GIBO_00000026"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000026"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty abbreviatedIRI="obo:OBI_0000293"/>
             <ObjectIntersectionOf>
-                <Class abbreviatedIRI=":GIBO_00000039"/>
+                <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000039"/>
                 <ObjectSomeValuesFrom>
                     <ObjectProperty abbreviatedIRI="obo:IAO_0000136"/>
                     <Class abbreviatedIRI="obo:OBI_0001051"/>
@@ -10437,79 +10481,90 @@ Object Property:
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":GIBO_00000028"/>
-        <Class abbreviatedIRI=":GIBO_00000026"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000027"/>
+        <Class abbreviatedIRI="obo:OMIABIS_0001046"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":GIBO_00000029"/>
-        <Class abbreviatedIRI=":GIBO_00000028"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class abbreviatedIRI=":GIBO_00000029"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000027"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty abbreviatedIRI="obo:OBI_0000299"/>
-            <Class abbreviatedIRI=":GIBO_00000020"/>
+            <ObjectProperty abbreviatedIRI="obo:IAO_0000219"/>
+            <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000019"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":GIBO_00000030"/>
-        <Class abbreviatedIRI=":GIBO_00000029"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000028"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000026"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":GIBO_00000030"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000029"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000028"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000029"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty abbreviatedIRI="obo:OBI_0000299"/>
-            <Class abbreviatedIRI=":GIBO_00000021"/>
+            <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000020"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":GIBO_00000031"/>
-        <Class abbreviatedIRI=":GIBO_00000029"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000030"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000029"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":GIBO_00000031"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000030"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="obo:OBI_0000299"/>
+            <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000021"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000031"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000029"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000031"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty abbreviatedIRI="obo:OBI_0000293"/>
-            <Class abbreviatedIRI=":GIBO_00000039"/>
+            <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000039"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":GIBO_00000032"/>
-        <Class abbreviatedIRI=":GIBO_00000029"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000032"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000029"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":GIBO_00000032"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000032"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty abbreviatedIRI="obo:OBI_0000299"/>
-            <Class abbreviatedIRI=":GIBO_00000023"/>
+            <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000023"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":GIBO_00000033"/>
-        <Class abbreviatedIRI=":GIBO_00000028"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000033"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000028"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":GIBO_00000034"/>
-        <Class abbreviatedIRI=":GIBO_00000033"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000034"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000033"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":GIBO_00000035"/>
-        <Class abbreviatedIRI=":GIBO_00000033"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000035"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000033"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":GIBO_00000036"/>
-        <Class abbreviatedIRI=":GIBO_00000033"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000036"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000033"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":GIBO_00000037"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000037"/>
         <Class abbreviatedIRI="obo:OBI_0000011"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":GIBO_00000037"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000037"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty abbreviatedIRI="obo:OBI_0000293"/>
             <ObjectIntersectionOf>
-                <Class abbreviatedIRI=":GIBO_00000045"/>
+                <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000045"/>
                 <ObjectSomeValuesFrom>
                     <ObjectProperty abbreviatedIRI="obo:IAO_0000136"/>
                     <Class abbreviatedIRI="obo:CHEBI_23367"/>
@@ -10518,470 +10573,470 @@ Object Property:
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":GIBO_00000038"/>
-        <Class abbreviatedIRI=":GIBO_00000045"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000038"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000045"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":GIBO_00000038"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000038"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty abbreviatedIRI="obo:IAO_0000136"/>
             <Class abbreviatedIRI="obo:CHEBI_33696"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":GIBO_00000039"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000039"/>
         <Class abbreviatedIRI="obo:OBI_0001573"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":GIBO_00000040"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000040"/>
         <Class abbreviatedIRI="obo:OBI_0001573"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":GIBO_00000041"/>
-        <Class abbreviatedIRI=":GIBO_00000038"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000041"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000038"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":GIBO_00000041"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000041"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty abbreviatedIRI="obo:IAO_0000136"/>
             <Class abbreviatedIRI="obo:CHEBI_33697"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":GIBO_00000041"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000041"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty abbreviatedIRI="obo:OBI_0000312"/>
             <Class abbreviatedIRI="obo:OBI_0001177"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":GIBO_00000042"/>
-        <Class abbreviatedIRI=":GIBO_00000041"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000042"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000041"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":GIBO_00000043"/>
-        <Class abbreviatedIRI=":GIBO_00000041"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000043"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000041"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":GIBO_00000044"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000044"/>
         <Class abbreviatedIRI="obo:OBI_0000070"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":GIBO_00000045"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000045"/>
         <Class abbreviatedIRI="obo:IAO_0000109"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":GIBO_00000045"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000045"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty abbreviatedIRI="obo:OBI_0000295"/>
-            <Class abbreviatedIRI=":GIBO_00000037"/>
+            <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000037"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":GIBO_00000045"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000045"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty abbreviatedIRI="obo:OBI_0000312"/>
-            <Class abbreviatedIRI=":GIBO_00000044"/>
+            <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000044"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":GIBO_00000046"/>
-        <Class abbreviatedIRI=":GIBO_00000045"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000046"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000045"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":GIBO_00000048"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000048"/>
         <Class abbreviatedIRI="obo:OBI_0000070"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":GIBO_00000049"/>
-        <Class abbreviatedIRI=":GIBO_00000028"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000049"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000028"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":GIBO_00000050"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000050"/>
         <Class abbreviatedIRI="obo:OMP_0000207"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":GIBO_00000050"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000050"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty abbreviatedIRI="obo:OBI_0000312"/>
-            <Class abbreviatedIRI=":GIBO_00000049"/>
+            <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000049"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":GIBO_00000050"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000050"/>
         <DataSomeValuesFrom>
             <DataProperty abbreviatedIRI="obo:OBI_0002815"/>
             <Datatype abbreviatedIRI="xsd:string"/>
         </DataSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":GIBO_00000051"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000051"/>
         <Class abbreviatedIRI="obo:IAO_0020000"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":GIBO_00000051"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000051"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty abbreviatedIRI="obo:IAO_0000219"/>
-            <Class abbreviatedIRI=":GIBO_00000087"/>
+            <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000087"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":GIBO_00000051"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000051"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty abbreviatedIRI="obo:OBI_0000312"/>
-            <Class abbreviatedIRI=":GIBO_00000053"/>
+            <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000053"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":GIBO_00000052"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000052"/>
         <Class abbreviatedIRI="obo:IAO_0020000"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":GIBO_00000052"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000052"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty abbreviatedIRI="obo:IAO_0000219"/>
-            <Class abbreviatedIRI=":GIBO_00000024"/>
+            <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000024"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":GIBO_00000052"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000052"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty abbreviatedIRI="obo:OBI_0000312"/>
-            <Class abbreviatedIRI=":GIBO_00000054"/>
+            <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000054"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":GIBO_00000053"/>
-        <Class abbreviatedIRI=":GIBO_00000055"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000053"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000055"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":GIBO_00000053"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000053"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty abbreviatedIRI="obo:OBI_0000293"/>
             <Class abbreviatedIRI="obo:OBI_0001573"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":GIBO_00000054"/>
-        <Class abbreviatedIRI=":GIBO_00000055"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000054"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000055"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":GIBO_00000054"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000054"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty abbreviatedIRI="obo:OBI_0000293"/>
-            <Class abbreviatedIRI=":GIBO_00000024"/>
+            <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000024"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":GIBO_00000055"/>
-        <Class abbreviatedIRI=":GIBO_00000003"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000055"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000003"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":GIBO_00000055"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000055"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty abbreviatedIRI="obo:BFO_0000055"/>
             <ObjectSomeValuesFrom>
                 <ObjectProperty abbreviatedIRI="obo:RO_0000059"/>
-                <Class abbreviatedIRI=":GIBO_00000002"/>
+                <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000002"/>
             </ObjectSomeValuesFrom>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":GIBO_00000055"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000055"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty abbreviatedIRI="obo:OBI_0000293"/>
-            <Class abbreviatedIRI=":GIBO_00000056"/>
+            <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000056"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":GIBO_00000056"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000056"/>
         <Class abbreviatedIRI="obo:IAO_0000100"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":GIBO_00000057"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000057"/>
         <Class abbreviatedIRI="obo:IAO_0000064"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":GIBO_00000058"/>
-        <Class abbreviatedIRI=":GIBO_00000079"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000058"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000079"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":GIBO_00000058"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000058"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty abbreviatedIRI="obo:RO_0002234"/>
-            <Class abbreviatedIRI=":GIBO_00000063"/>
+            <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000063"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":GIBO_00000059"/>
-        <Class abbreviatedIRI=":GIBO_00000079"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000059"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000079"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":GIBO_00000059"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000059"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty abbreviatedIRI="obo:RO_0002234"/>
-            <Class abbreviatedIRI=":GIBO_00000066"/>
+            <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000066"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":GIBO_00000060"/>
-        <Class abbreviatedIRI=":GIBO_00000079"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000060"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000079"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":GIBO_00000060"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000060"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty abbreviatedIRI="obo:RO_0002234"/>
-            <Class abbreviatedIRI=":GIBO_00000065"/>
+            <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000065"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":GIBO_00000061"/>
-        <Class abbreviatedIRI=":GIBO_00000079"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000061"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000079"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":GIBO_00000061"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000061"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty abbreviatedIRI="obo:RO_0002234"/>
-            <Class abbreviatedIRI=":GIBO_00000066"/>
+            <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000066"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":GIBO_00000062"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000062"/>
         <Class abbreviatedIRI="obo:IAO_0000100"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":GIBO_00000062"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000062"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty abbreviatedIRI="obo:OBI_0000312"/>
-            <Class abbreviatedIRI=":GIBO_00000079"/>
+            <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000079"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":GIBO_00000063"/>
-        <Class abbreviatedIRI=":GIBO_00000062"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000063"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000062"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":GIBO_00000063"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000063"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty abbreviatedIRI="obo:OBI_0000312"/>
-            <Class abbreviatedIRI=":GIBO_00000058"/>
+            <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000058"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":GIBO_00000064"/>
-        <Class abbreviatedIRI=":GIBO_00000062"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000064"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000062"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":GIBO_00000064"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000064"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty abbreviatedIRI="obo:OBI_0000312"/>
-            <Class abbreviatedIRI=":GIBO_00000059"/>
+            <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000059"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":GIBO_00000065"/>
-        <Class abbreviatedIRI=":GIBO_00000062"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000065"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000062"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":GIBO_00000065"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000065"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty abbreviatedIRI="obo:OBI_0000312"/>
-            <Class abbreviatedIRI=":GIBO_00000060"/>
+            <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000060"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":GIBO_00000066"/>
-        <Class abbreviatedIRI=":GIBO_00000062"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000066"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000062"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":GIBO_00000066"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000066"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty abbreviatedIRI="obo:OBI_0000312"/>
-            <Class abbreviatedIRI=":GIBO_00000061"/>
+            <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000061"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":GIBO_00000067"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000067"/>
         <Class abbreviatedIRI="obo:IAO_0020000"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":GIBO_00000067"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000067"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty abbreviatedIRI="obo:IAO_0000219"/>
-            <Class abbreviatedIRI=":GIBO_00000062"/>
+            <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000062"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":GIBO_00000067"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000067"/>
         <DataSomeValuesFrom>
             <DataProperty abbreviatedIRI="obo:OBI_0002815"/>
             <Datatype abbreviatedIRI="xsd:string"/>
         </DataSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":GIBO_00000068"/>
-        <Class abbreviatedIRI=":GIBO_00000067"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000068"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000067"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":GIBO_00000068"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000068"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty abbreviatedIRI="obo:IAO_0000219"/>
-            <Class abbreviatedIRI=":GIBO_00000063"/>
+            <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000063"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":GIBO_00000069"/>
-        <Class abbreviatedIRI=":GIBO_00000067"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000069"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000067"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":GIBO_00000069"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000069"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty abbreviatedIRI="obo:IAO_0000219"/>
-            <Class abbreviatedIRI=":GIBO_00000064"/>
+            <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000064"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":GIBO_00000070"/>
-        <Class abbreviatedIRI=":GIBO_00000067"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000070"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000067"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":GIBO_00000070"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000070"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty abbreviatedIRI="obo:IAO_0000219"/>
-            <Class abbreviatedIRI=":GIBO_00000065"/>
+            <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000065"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":GIBO_00000071"/>
-        <Class abbreviatedIRI=":GIBO_00000067"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000071"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000067"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":GIBO_00000071"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000071"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty abbreviatedIRI="obo:IAO_0000219"/>
-            <Class abbreviatedIRI=":GIBO_00000066"/>
+            <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000066"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":GIBO_00000072"/>
-        <Class abbreviatedIRI=":GIBO_00000029"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000072"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000029"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":GIBO_00000072"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000072"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty abbreviatedIRI="obo:OBI_0000299"/>
-            <Class abbreviatedIRI=":GIBO_00000073"/>
+            <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000073"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":GIBO_00000073"/>
-        <Class abbreviatedIRI=":GIBO_00000020"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000073"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000020"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":GIBO_00000073"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000073"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty abbreviatedIRI="obo:OBI_0000312"/>
-            <Class abbreviatedIRI=":GIBO_00000072"/>
+            <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000072"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":GIBO_00000074"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000074"/>
         <Class abbreviatedIRI="obo:IAO_0000100"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":GIBO_00000074"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000074"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty abbreviatedIRI="obo:OBI_0000312"/>
-            <Class abbreviatedIRI=":GIBO_00000036"/>
+            <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000036"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":GIBO_00000075"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000075"/>
         <Class abbreviatedIRI="obo:IAO_0000100"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":GIBO_00000076"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000076"/>
         <Class abbreviatedIRI="obo:IAO_0000064"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":GIBO_00000077"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000077"/>
         <Class abbreviatedIRI="obo:IAO_0020000"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":GIBO_00000077"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000077"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty abbreviatedIRI="obo:IAO_0000219"/>
-            <Class abbreviatedIRI=":GIBO_00000075"/>
+            <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000075"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":GIBO_00000079"/>
-        <Class abbreviatedIRI=":GIBO_00000080"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000079"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000080"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":GIBO_00000079"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000079"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty abbreviatedIRI="obo:BFO_0000055"/>
             <ObjectSomeValuesFrom>
                 <ObjectProperty abbreviatedIRI="obo:RO_0000059"/>
-                <Class abbreviatedIRI=":GIBO_00000057"/>
+                <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000057"/>
             </ObjectSomeValuesFrom>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":GIBO_00000079"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000079"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty abbreviatedIRI="obo:OBI_0000293"/>
-            <Class abbreviatedIRI=":GIBO_00000086"/>
+            <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000086"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":GIBO_00000079"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000079"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty abbreviatedIRI="obo:RO_0002234"/>
-            <Class abbreviatedIRI=":GIBO_00000062"/>
+            <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000062"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":GIBO_00000080"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000080"/>
         <Class abbreviatedIRI="obo:OBI_0000011"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":GIBO_00000081"/>
-        <Class abbreviatedIRI=":GIBO_00000080"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000081"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000080"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":GIBO_00000081"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000081"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty abbreviatedIRI="obo:BFO_0000055"/>
             <ObjectSomeValuesFrom>
                 <ObjectProperty abbreviatedIRI="obo:RO_0000059"/>
-                <Class abbreviatedIRI=":GIBO_00000076"/>
+                <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000076"/>
             </ObjectSomeValuesFrom>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":GIBO_00000081"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000081"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty abbreviatedIRI="obo:OBI_0000293"/>
-            <Class abbreviatedIRI=":GIBO_00000074"/>
+            <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000074"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":GIBO_00000081"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000081"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty abbreviatedIRI="obo:RO_0002234"/>
-            <Class abbreviatedIRI=":GIBO_00000075"/>
+            <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000075"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":GIBO_00000085"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000085"/>
         <Class abbreviatedIRI="obo:IDO_0000436"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":GIBO_00000085"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000085"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty abbreviatedIRI=":GIBO_00000017"/>
+            <ObjectProperty IRI="http://www.ontogator.org/GIBO/GIBO_00000017"/>
             <ObjectIntersectionOf>
                 <Class abbreviatedIRI="obo:NCBITaxon_590"/>
                 <ObjectSomeValuesFrom>
@@ -10992,45 +11047,34 @@ Object Property:
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":GIBO_00000086"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000086"/>
         <Class abbreviatedIRI="obo:IAO_0000100"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":GIBO_00000086"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000086"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty abbreviatedIRI="obo:OBI_0000312"/>
-            <Class abbreviatedIRI=":GIBO_00000031"/>
+            <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000031"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":GIBO_00000087"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000087"/>
         <Class abbreviatedIRI="obo:OBI_0001573"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":GIBO_00000088"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000088"/>
         <Class abbreviatedIRI="obo:OBIB_0000070"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":GIBO_00000089"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000089"/>
         <Class abbreviatedIRI="obo:IAO_0020000"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI=":GIBO_00000089"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000089"/>
         <ObjectExactCardinality cardinality="1">
             <ObjectProperty abbreviatedIRI="obo:IAO_0000219"/>
             <Class abbreviatedIRI="obo:IDO_0000502"/>
         </ObjectExactCardinality>
-    </SubClassOf>
-    <SubClassOf>
-        <Class abbreviatedIRI=":iGIBO_00000027"/>
-        <Class abbreviatedIRI="obo:OMIABIS_0001046"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class abbreviatedIRI=":iGIBO_00000027"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty abbreviatedIRI="obo:IAO_0000219"/>
-            <Class abbreviatedIRI=":GIBO_00000019"/>
-        </ObjectSomeValuesFrom>
     </SubClassOf>
     <DisjointClasses>
         <Class abbreviatedIRI="obo:APOLLO_SV_00000032"/>
@@ -11044,10 +11088,10 @@ Object Property:
         <Class abbreviatedIRI="obo:APOLLO_SV_00000085"/>
         <Class abbreviatedIRI="obo:IAO_0000579"/>
         <Class abbreviatedIRI="obo:OMIABIS_0001002"/>
-        <Class abbreviatedIRI=":GIBO_00000020"/>
-        <Class abbreviatedIRI=":GIBO_00000024"/>
-        <Class abbreviatedIRI=":GIBO_00000056"/>
-        <Class abbreviatedIRI=":GIBO_00000062"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000020"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000024"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000056"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000062"/>
     </DisjointClasses>
     <DisjointClasses>
         <Class abbreviatedIRI="obo:APOLLO_SV_00000496"/>
@@ -11059,13 +11103,13 @@ Object Property:
         <Class abbreviatedIRI="obo:OMIABIS_0000004"/>
         <Class abbreviatedIRI="obo:OMIABIS_0001046"/>
         <Class abbreviatedIRI="obo:OMIABIS_0001047"/>
-        <Class abbreviatedIRI=":GIBO_00000001"/>
-        <Class abbreviatedIRI=":GIBO_00000004"/>
-        <Class abbreviatedIRI=":GIBO_00000005"/>
-        <Class abbreviatedIRI=":GIBO_00000007"/>
-        <Class abbreviatedIRI=":GIBO_00000051"/>
-        <Class abbreviatedIRI=":GIBO_00000052"/>
-        <Class abbreviatedIRI=":GIBO_00000067"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000001"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000004"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000005"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000007"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000051"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000052"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000067"/>
     </DisjointClasses>
     <DisjointClasses>
         <Class abbreviatedIRI="obo:BFO_0000002"/>
@@ -11164,19 +11208,19 @@ Object Property:
         <Class abbreviatedIRI="obo:OBI_0600036"/>
         <Class abbreviatedIRI="obo:OBI_0600038"/>
         <Class abbreviatedIRI="obo:OMIABIS_0000911"/>
-        <Class abbreviatedIRI=":GIBO_00000044"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000044"/>
     </DisjointClasses>
     <DisjointClasses>
         <Class abbreviatedIRI="obo:IAO_0000032"/>
-        <Class abbreviatedIRI=":GIBO_00000038"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000038"/>
     </DisjointClasses>
     <DisjointClasses>
         <Class abbreviatedIRI="obo:OBI_0001573"/>
-        <Class abbreviatedIRI=":GIBO_00000041"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000041"/>
     </DisjointClasses>
     <DisjointClasses>
         <Class abbreviatedIRI="obo:OBI_0002388"/>
-        <Class abbreviatedIRI=":GIBO_00000014"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000014"/>
     </DisjointClasses>
     <DisjointClasses>
         <Class abbreviatedIRI="obo:OMIABIS_0001004"/>
@@ -11275,51 +11319,51 @@ Object Property:
             <AnnotationProperty abbreviatedIRI="rdf:type"/>
             <IRI>AllDisjointClasses</IRI>
         </Annotation>
-        <Class abbreviatedIRI=":GIBO_00000021"/>
-        <Class abbreviatedIRI=":GIBO_00000022"/>
-        <Class abbreviatedIRI=":GIBO_00000023"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000021"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000022"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000023"/>
     </DisjointClasses>
     <DisjointClasses>
-        <Class abbreviatedIRI=":GIBO_00000029"/>
-        <Class abbreviatedIRI=":GIBO_00000033"/>
-    </DisjointClasses>
-    <DisjointClasses>
-        <Annotation>
-            <AnnotationProperty abbreviatedIRI="rdf:type"/>
-            <IRI>AllDisjointClasses</IRI>
-        </Annotation>
-        <Class abbreviatedIRI=":GIBO_00000030"/>
-        <Class abbreviatedIRI=":GIBO_00000031"/>
-        <Class abbreviatedIRI=":GIBO_00000032"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000029"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000033"/>
     </DisjointClasses>
     <DisjointClasses>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdf:type"/>
             <IRI>AllDisjointClasses</IRI>
         </Annotation>
-        <Class abbreviatedIRI=":GIBO_00000034"/>
-        <Class abbreviatedIRI=":GIBO_00000035"/>
-        <Class abbreviatedIRI=":GIBO_00000036"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000030"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000031"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000032"/>
     </DisjointClasses>
     <DisjointClasses>
-        <Class abbreviatedIRI=":GIBO_00000039"/>
-        <Class abbreviatedIRI=":GIBO_00000040"/>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdf:type"/>
+            <IRI>AllDisjointClasses</IRI>
+        </Annotation>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000034"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000035"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000036"/>
     </DisjointClasses>
     <DisjointClasses>
-        <Class abbreviatedIRI=":GIBO_00000042"/>
-        <Class abbreviatedIRI=":GIBO_00000043"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000039"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000040"/>
     </DisjointClasses>
     <DisjointClasses>
-        <Class abbreviatedIRI=":GIBO_00000063"/>
-        <Class abbreviatedIRI=":GIBO_00000064"/>
-        <Class abbreviatedIRI=":GIBO_00000065"/>
-        <Class abbreviatedIRI=":GIBO_00000066"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000042"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000043"/>
     </DisjointClasses>
     <DisjointClasses>
-        <Class abbreviatedIRI=":GIBO_00000068"/>
-        <Class abbreviatedIRI=":GIBO_00000069"/>
-        <Class abbreviatedIRI=":GIBO_00000070"/>
-        <Class abbreviatedIRI=":GIBO_00000071"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000063"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000064"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000065"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000066"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000068"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000069"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000070"/>
+        <Class IRI="http://www.ontogator.org/GIBO/GIBO_00000071"/>
     </DisjointClasses>
     <ClassAssertion>
         <Class abbreviatedIRI="obo:IAO_0000078"/>
@@ -13128,7 +13172,7 @@ Object Property:
         <Class abbreviatedIRI="obo:BFO_0000003"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty abbreviatedIRI=":GIBO_00000017"/>
+        <ObjectProperty IRI="http://www.ontogator.org/GIBO/GIBO_00000017"/>
         <Class abbreviatedIRI="obo:BFO_0000040"/>
     </ObjectPropertyRange>
     <SubObjectPropertyOf>
@@ -47175,1449 +47219,1449 @@ This interpretation is *not* the same as an at-all-times relation
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
-        <AbbreviatedIRI>:GIBO_00000001</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000001</IRI>
         <Literal xml:lang="en">An identifier that denotes the whole genome sequenced data generated for an isolate specimen.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000118"/>
-        <AbbreviatedIRI>:GIBO_00000001</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000001</IRI>
         <Literal xml:lang="en">WGS_id; isolate name; &apos;specimen title&apos; field in the NCBI data submission</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>:GIBO_00000001</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000001</IRI>
         <Literal xml:lang="en">whole genome sequence identifier</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
-        <AbbreviatedIRI>:GIBO_00000002</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000002</IRI>
         <Literal xml:lang="en">A standard operating procedure for submitting gene sequence data to the NCBI SRA database.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
-        <AbbreviatedIRI>:GIBO_00000002</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000002</IRI>
         <Literal>Nitya singh</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>:GIBO_00000002</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000002</IRI>
         <Literal xml:lang="en">NCBI SRA data submission standard operating procedure</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000116"/>
-        <AbbreviatedIRI>:GIBO_00000003</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000003</IRI>
         <Literal xml:lang="en">data submitted using web data submission get stored to a public or license accessible database which required data being submitted to follow its corresponding data submission protocol</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
-        <AbbreviatedIRI>:GIBO_00000003</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000003</IRI>
         <Literal>Nitya Singh</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="efo:definition"/>
-        <AbbreviatedIRI>:GIBO_00000003</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000003</IRI>
         <Literal xml:lang="en">A planned process that involves data submission to a database through a web-base interface by realizing the concretization of a protocol</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>:GIBO_00000003</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000003</IRI>
         <Literal xml:lang="en">web data submission process</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
-        <AbbreviatedIRI>:GIBO_00000004</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000004</IRI>
         <Literal xml:lang="en">An identifier that denotes a temporal region of what is called a year in any given calendar system.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000116"/>
-        <AbbreviatedIRI>:GIBO_00000004</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000004</IRI>
         <Literal xml:lang="en">Can be used as proxy to capture the age of the patient</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
-        <AbbreviatedIRI>:GIBO_00000004</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000004</IRI>
         <Literal>Nitya Singh</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>:GIBO_00000004</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000004</IRI>
         <Literal xml:lang="en">year identifier</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000116"/>
-        <AbbreviatedIRI>:GIBO_00000005</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000005</IRI>
         <Literal xml:lang="en">can be used to record the corresponding day of occuring of an event at a given place and time</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
-        <AbbreviatedIRI>:GIBO_00000005</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000005</IRI>
         <Literal>Nitya Singh</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="efo:definition"/>
-        <AbbreviatedIRI>:GIBO_00000005</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000005</IRI>
         <Literal xml:lang="en">An identifier that denotes a temporal region of what is called a date, comprising information about year, month and number of day, in any given calendar system.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>:GIBO_00000005</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000005</IRI>
         <Literal xml:lang="en">date identifier</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
-        <AbbreviatedIRI>:GIBO_00000006</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000006</IRI>
         <Literal>Nitya Singh</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="dc:description"/>
-        <AbbreviatedIRI>:GIBO_00000006</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000006</IRI>
         <Literal xml:lang="en">A planned process that involves implementing an established extraction protocal for isolating pure culture of a microorganism from the specimen.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="efo:definition"/>
-        <AbbreviatedIRI>:GIBO_00000006</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000006</IRI>
         <Literal xml:lang="en">A planned process that realizes the concretization of an established extraction protocol for isolating pure culture of a microorganism from the specimen.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>:GIBO_00000006</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000006</IRI>
         <Literal xml:lang="en">microbial isolation process</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
-        <AbbreviatedIRI>:GIBO_00000007</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000007</IRI>
         <Literal xml:lang="en">An identifier, referring to the name of diagnostic lab facility receving the specimen for diagnostics</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
-        <AbbreviatedIRI>:GIBO_00000007</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000007</IRI>
         <Literal>Nitya Singh</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000118"/>
-        <AbbreviatedIRI>:GIBO_00000007</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000007</IRI>
         <Literal xml:lang="en">diagnostic lab name</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>:GIBO_00000007</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000007</IRI>
         <Literal xml:lang="en">diagnostic lab identifier</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
-        <AbbreviatedIRI>:GIBO_00000008</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000008</IRI>
         <Literal xml:lang="en">A material entity, representing a medical or clinical laboratory which performs pathology tests on clinical specimens, in order to collect information about the health of a patient, to aid in diagnosis, treatment, and prevention of disease.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
-        <AbbreviatedIRI>:GIBO_00000008</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000008</IRI>
         <Literal>Nitya Singh</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000119"/>
-        <AbbreviatedIRI>:GIBO_00000008</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000008</IRI>
         <Literal xml:lang="en">Wikipedia
 https://en.wikipedia.org/wiki/Medical_laboratory</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>:GIBO_00000008</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000008</IRI>
         <Literal xml:lang="en">diagnostic lab</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
-        <AbbreviatedIRI>:GIBO_00000009</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000009</IRI>
         <Literal>Nitya Singh</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="efo:definition"/>
-        <AbbreviatedIRI>:GIBO_00000009</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000009</IRI>
         <Literal xml:lang="en">A material entity that representing a computer lab that participates in the mathematical and statistical analysis of genomics data generated from different diagnostic tests and processes, usually conducted on clinical samples.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>:GIBO_00000009</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000009</IRI>
         <Literal xml:lang="en">genomics data analysis center</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
-        <AbbreviatedIRI>:GIBO_00000010</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000010</IRI>
         <Literal xml:lang="en">An organization bearing legal personality that ownes or adminstrates a diagnostic lab.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
-        <AbbreviatedIRI>:GIBO_00000010</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000010</IRI>
         <Literal>Nitya Singh</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>:GIBO_00000010</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000010</IRI>
         <Literal xml:lang="en">diagnostic lab organization</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
-        <AbbreviatedIRI>:GIBO_00000011</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000011</IRI>
         <Literal xml:lang="en">A human being that is member of a diagnostic lab organization and bears the organization contact role.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
-        <AbbreviatedIRI>:GIBO_00000011</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000011</IRI>
         <Literal>Nitya Singh</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>:GIBO_00000011</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000011</IRI>
         <Literal xml:lang="en">diagnostic lab contact person</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
-        <AbbreviatedIRI>:GIBO_00000012</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000012</IRI>
         <Literal xml:lang="en">A contact role borne by a member of a  diagnostic lab organization and realized by serving as the contact for one of its diagnostic labs.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
-        <AbbreviatedIRI>:GIBO_00000012</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000012</IRI>
         <Literal>Nitya Singh</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>:GIBO_00000012</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000012</IRI>
         <Literal xml:lang="en">diagnostic lab contact role</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
-        <AbbreviatedIRI>:GIBO_00000013</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000013</IRI>
         <Literal>Nitya Singh</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000119"/>
-        <AbbreviatedIRI>:GIBO_00000013</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000013</IRI>
         <Literal xml:lang="en">adapted from MedicineNet</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="efo:definition"/>
-        <AbbreviatedIRI>:GIBO_00000013</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000013</IRI>
         <Literal xml:lang="en">A data item that indicates the time when disease or the initial symptoms or manifestations of a disease appear in an individual, based on the recall of reporting patient.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>:GIBO_00000013</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000013</IRI>
         <Literal xml:lang="en">date of illness onset</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
-        <AbbreviatedIRI>:GIBO_00000014</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000014</IRI>
         <Literal xml:lang="en">A diagnosis of infectious disease caused by the pathogenic bacterial strains of Salmonella, typical signs of illness occur after 12 to 36 hours of bacterial exposure.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
-        <AbbreviatedIRI>:GIBO_00000014</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000014</IRI>
         <Literal>Nitya Singh</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000119"/>
-        <AbbreviatedIRI>:GIBO_00000014</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000014</IRI>
         <Literal xml:lang="en">Adapted from Wikipedia
 https://en.wikipedia.org › wiki › Salmonellosis</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>:GIBO_00000014</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000014</IRI>
         <Literal xml:lang="en">diagnosis of Salmonellosis</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
-        <AbbreviatedIRI>:GIBO_00000015</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000015</IRI>
         <Literal>Nitya Singh</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000119"/>
-        <AbbreviatedIRI>:GIBO_00000015</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000015</IRI>
         <Literal xml:lang="en">adapted form Semanticscience Integrated Ontology</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="efo:definition"/>
-        <AbbreviatedIRI>:GIBO_00000015</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000015</IRI>
         <Literal xml:lang="en">A planned process, performed using specific guidelines  to capture clinical information for making clinical decisions about presence or absence of a disease. Examples include, X-ray, biopsies, presence or absence of pathogenic infection etc.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>:GIBO_00000015</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000015</IRI>
         <Literal xml:lang="en">diagnostic test</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
-        <AbbreviatedIRI>:GIBO_00000016</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000016</IRI>
         <Literal xml:lang="en">A role that inheres in a concretization of an diagnostic assay and is realized by an diagnostic process.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
-        <AbbreviatedIRI>:GIBO_00000016</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000016</IRI>
         <Literal>Nitya Singh</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>:GIBO_00000016</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000016</IRI>
         <Literal xml:lang="en">diagnostic role</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
-        <AbbreviatedIRI>:GIBO_00000017</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000017</IRI>
         <Literal xml:lang="en">A relationship of generically dependent or specifically dependent continuant and a material entity, in which both generically and specifically dependent continuant are result of direct contact wtih material entity.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
-        <AbbreviatedIRI>:GIBO_00000017</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000017</IRI>
         <Literal>Nitya Singh</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>:GIBO_00000017</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000017</IRI>
         <Literal xml:lang="en">is_caused_by_exposure_to</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
-        <AbbreviatedIRI>:GIBO_00000018</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000018</IRI>
         <Literal>Nitya Singh</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="efo:definition"/>
-        <AbbreviatedIRI>:GIBO_00000018</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000018</IRI>
         <Literal xml:lang="en">A planned process of collecting patient illness symptom data based on their recall, implemented by following a carefully designed questionnaire to capture the relevant information for diagnosis or intervention puposes.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>:GIBO_00000018</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000018</IRI>
         <Literal xml:lang="en">patient recall interview data collection</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
-        <AbbreviatedIRI>:GIBO_00000019</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000019</IRI>
         <Literal>Nitya singh</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="dc:description"/>
-        <AbbreviatedIRI>:GIBO_00000019</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000019</IRI>
         <Literal xml:lang="en">pure culture of micororganism of interest</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="efo:definition"/>
-        <AbbreviatedIRI>:GIBO_00000019</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000019</IRI>
         <Literal xml:lang="en">A specimen that is the specified output of a microbial isolation process.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>:GIBO_00000019</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000019</IRI>
         <Literal xml:lang="en">microbial isolate specimen</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
-        <AbbreviatedIRI>:GIBO_00000020</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000020</IRI>
         <Literal>Nitya Singh</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000118"/>
-        <AbbreviatedIRI>:GIBO_00000020</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000020</IRI>
         <Literal xml:lang="en">ST</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000119"/>
-        <AbbreviatedIRI>:GIBO_00000020</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000020</IRI>
         <Literal xml:lang="en">adapted from Wikipedia
 https://en.wikipedia.org/wiki/Multilocus_sequence_typing</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="efo:definition"/>
-        <AbbreviatedIRI>:GIBO_00000020</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000020</IRI>
         <Literal xml:lang="en">A data set of unique allele numbers assigned to the allelic profiles, generated by comparison of a set of gene loci within a species type.  Usually designated as a collective term represented as ST, followed by the unique number generated by the allele profiling for a specific species.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>:GIBO_00000020</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000020</IRI>
         <Literal xml:lang="en">sequence types</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
-        <AbbreviatedIRI>:GIBO_00000021</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000021</IRI>
         <Literal>Nitya Singh</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000118"/>
-        <AbbreviatedIRI>:GIBO_00000021</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000021</IRI>
         <Literal xml:lang="en">legacyST</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="efo:definition"/>
-        <AbbreviatedIRI>:GIBO_00000021</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000021</IRI>
         <Literal xml:lang="en">A sequence type, generated as profile, using set of conserved housekeeping gene loci, that is represented by a unique legacyST number for a given species.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>:GIBO_00000021</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000021</IRI>
         <Literal xml:lang="en">legacy sequence type</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
-        <AbbreviatedIRI>:GIBO_00000022</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000022</IRI>
         <Literal>Nitya Singh</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000118"/>
-        <AbbreviatedIRI>:GIBO_00000022</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000022</IRI>
         <Literal xml:lang="en">cgST</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000119"/>
-        <AbbreviatedIRI>:GIBO_00000022</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000022</IRI>
         <Literal xml:lang="en">Adapted from Wikipedia</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="efo:definition"/>
-        <AbbreviatedIRI>:GIBO_00000022</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000022</IRI>
         <Literal xml:lang="en">A sequence type, generated as profile, using set of conserved core genome loci, that is represented by a unique cgST number for a given species.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>:GIBO_00000022</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000022</IRI>
         <Literal xml:lang="en">core genome sequence type</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
-        <AbbreviatedIRI>:GIBO_00000023</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000023</IRI>
         <Literal>Nitya Singh</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000118"/>
-        <AbbreviatedIRI>:GIBO_00000023</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000023</IRI>
         <Literal xml:lang="en">wgST</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000119"/>
-        <AbbreviatedIRI>:GIBO_00000023</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000023</IRI>
         <Literal xml:lang="en">adapted from Wikipedia</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="efo:definition"/>
-        <AbbreviatedIRI>:GIBO_00000023</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000023</IRI>
         <Literal xml:lang="en">A sequence type, generated as profile, using a complete set of loci of whole genome, that is represented by a unique wgST number for a given species.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>:GIBO_00000023</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000023</IRI>
         <Literal xml:lang="en">whole genome sequence type</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
-        <AbbreviatedIRI>:GIBO_00000024</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000024</IRI>
         <Literal xml:lang="en">A data set that has as its part the description of different attributes of the sample that is used to generate the correspomding raw sequence entry in NCBI SRA database.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
-        <AbbreviatedIRI>:GIBO_00000024</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000024</IRI>
         <Literal>Nitya singh</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>:GIBO_00000024</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000024</IRI>
         <Literal xml:lang="en">NCBI biosample metadata</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
-        <AbbreviatedIRI>:GIBO_00000025</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000025</IRI>
         <Literal xml:lang="en">A measurement datum which is  a recorded output of pulse-field gel electrophoresis evidence and is denoted by a alphanumeric charater string.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
-        <AbbreviatedIRI>:GIBO_00000025</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000025</IRI>
         <Literal>Nitya singh</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>:GIBO_00000025</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000025</IRI>
         <Literal xml:lang="en">PFGE pattern</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
-        <AbbreviatedIRI>:GIBO_00000026</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000026</IRI>
         <Literal xml:lang="en">A molecular sequence data analysis process for analyzing whole genome sequence data of the organism, with the aim of identifying biologically important patterns.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
-        <AbbreviatedIRI>:GIBO_00000026</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000026</IRI>
         <Literal>Nitya Singh</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000119"/>
-        <AbbreviatedIRI>:GIBO_00000026</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000026</IRI>
         <Literal xml:lang="en">Adapted from OBI</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>:GIBO_00000026</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000026</IRI>
         <Literal xml:lang="en">Whole Genome data analysis</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000027</IRI>
+        <Literal>Nitya Singh</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="efo:definition"/>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000027</IRI>
+        <Literal xml:lang="en">A specimen ID denoting a microbial isolate specimen.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000027</IRI>
+        <Literal xml:lang="en">microbial isolate specimen ID</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
-        <AbbreviatedIRI>:GIBO_00000028</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000028</IRI>
         <Literal xml:lang="en">A type of genome data analysis which provides contextual interpretation of  gene loci or SNP consequences in transcripts. It allows comparisons to be made between variation data in different populations or strains for the same transcript.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000119"/>
-        <AbbreviatedIRI>:GIBO_00000028</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000028</IRI>
         <Literal xml:lang="en">adapted from EDAM 
 http://edamontology.org/operation_3197</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>:GIBO_00000028</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000028</IRI>
         <Literal xml:lang="en">genetic variation Analysis</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000119"/>
-        <AbbreviatedIRI>:GIBO_00000029</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000029</IRI>
         <Literal xml:lang="en">Adapted from GeneEpiO
 http://purl.obolibrary.org/obo/GENEPIO_0000050</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="efo:definition"/>
-        <AbbreviatedIRI>:GIBO_00000029</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000029</IRI>
         <Literal xml:lang="en">A genetic variation analysis process that involves typing of DNA sequences of internal fragments of multiple genes loci within a bacteria species with the aim of identifying the distinct allelic combinations which are are used to assign allelic profile or sequence type (ST).</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>:GIBO_00000029</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000029</IRI>
         <Literal xml:lang="en">multilocus sequence typing</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
-        <AbbreviatedIRI>:GIBO_00000030</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000030</IRI>
         <Literal>Nitya Singh</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000119"/>
-        <AbbreviatedIRI>:GIBO_00000030</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000030</IRI>
         <Literal xml:lang="en">adapted from GeneEpiO</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="efo:definition"/>
-        <AbbreviatedIRI>:GIBO_00000030</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000030</IRI>
         <Literal xml:lang="en">A multilocus sequence typing process whcih uses the set of conserved housekeeping genes for generating the alleling profiles or sequence type (ST) of bacterial species.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>:GIBO_00000030</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000030</IRI>
         <Literal xml:lang="en">legacy multilocus sequence typing</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
-        <AbbreviatedIRI>:GIBO_00000031</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000031</IRI>
         <Literal>Nitya Singh</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000119"/>
-        <AbbreviatedIRI>:GIBO_00000031</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000031</IRI>
         <Literal xml:lang="en">Adapted from 
 http://www.ridom.de/seqsphere/u/Core_Genome_MLST.html</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="efo:definition"/>
-        <AbbreviatedIRI>:GIBO_00000031</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000031</IRI>
         <Literal xml:lang="en">A multilocus sequence typing process which takes whole genome sequence data as input and uses the fixed set of conserved genome-wide genes  for generating the alleling profiles or sequence type(ST) of bacterial species, known as core-genome ST.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>:GIBO_00000031</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000031</IRI>
         <Literal xml:lang="en">core genome multilocus sequence typing</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
-        <AbbreviatedIRI>:GIBO_00000032</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000032</IRI>
         <Literal xml:lang="en">A multilocus sequence typing process whcih uses the fixed set of whole-wide genes for generating the alleling profiles or sequence type (ST) of bacterial species, known as whole-genome ST.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
-        <AbbreviatedIRI>:GIBO_00000032</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000032</IRI>
         <Literal>Nitya Singh</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000119"/>
-        <AbbreviatedIRI>:GIBO_00000032</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000032</IRI>
         <Literal xml:lang="en">Adapted from GeneEpiO</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>:GIBO_00000032</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000032</IRI>
         <Literal xml:lang="en">whole genome multilocus sequence typing</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
-        <AbbreviatedIRI>:GIBO_00000033</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000033</IRI>
         <Literal xml:lang="en">A genetic variation analysis that detects mutations in multiple DNA sequences, for example, from the alignment and comparison of the fluorescent traces produced by DNA sequencing hardware.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
-        <AbbreviatedIRI>:GIBO_00000033</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000033</IRI>
         <Literal>Nitya Singh</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000119"/>
-        <AbbreviatedIRI>:GIBO_00000033</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000033</IRI>
         <Literal xml:lang="en">adapted from EDAM
 http://edamontology.org/operation_3202</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>:GIBO_00000033</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000033</IRI>
         <Literal xml:lang="en">polymorphism detection</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
-        <AbbreviatedIRI>:GIBO_00000034</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000034</IRI>
         <Literal>Nitya Singh</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000119"/>
-        <AbbreviatedIRI>:GIBO_00000034</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000034</IRI>
         <Literal xml:lang="en">adapted from EDAM 
 http://edamontology.org/operation_0265</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="efo:definition"/>
-        <AbbreviatedIRI>:GIBO_00000034</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000034</IRI>
         <Literal xml:lang="en">A polymorphism detection that detects frameshifts (shifting of DNA reading frame due to one or more nucleotides insertion or deletion) in DNA sequences, including frameshift sites and signals, and frameshift errors from sequencing projects.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>:GIBO_00000034</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000034</IRI>
         <Literal xml:lang="en">Frameshift polymorphism detection</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
-        <AbbreviatedIRI>:GIBO_00000035</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000035</IRI>
         <Literal>Nitya Singh</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000119"/>
-        <AbbreviatedIRI>:GIBO_00000035</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000035</IRI>
         <Literal xml:lang="en">adapted from EDAM 
 http://edamontology.org/operation_0452</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="efo:definition"/>
-        <AbbreviatedIRI>:GIBO_00000035</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000035</IRI>
         <Literal xml:lang="en">A polymorphism detection whcih involves Identification of insertion, deletion and duplication events after the sequence alignment of sample data set.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>:GIBO_00000035</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000035</IRI>
         <Literal xml:lang="en">Indel polymorphism detection</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
-        <AbbreviatedIRI>:GIBO_00000036</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000036</IRI>
         <Literal xml:lang="en">A polymorphism detection which can find change in single nucleotide base positions between sequences.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
-        <AbbreviatedIRI>:GIBO_00000036</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000036</IRI>
         <Literal>Nitya Singh</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000119"/>
-        <AbbreviatedIRI>:GIBO_00000036</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000036</IRI>
         <Literal xml:lang="en">adapted from EDAM
 http://edamontology.org/operation_0484</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>:GIBO_00000036</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000036</IRI>
         <Literal xml:lang="en">Single nucleotide polymorphism detection</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
-        <AbbreviatedIRI>:GIBO_00000037</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000037</IRI>
         <Literal>Nitya Singh</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000119"/>
-        <AbbreviatedIRI>:GIBO_00000037</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000037</IRI>
         <Literal xml:lang="en">Adapted from OBI</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="efo:definition"/>
-        <AbbreviatedIRI>:GIBO_00000037</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000037</IRI>
         <Literal xml:lang="en">A planned process, involving data transformation steps, with the aim of analysing ordered biological data for identifying patterns in the data set.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>:GIBO_00000037</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000037</IRI>
         <Literal xml:lang="en">molecular sequence data analysis</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
-        <AbbreviatedIRI>:GIBO_00000038</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000038</IRI>
         <Literal xml:lang="en">A molecular sequence data item that is about the primary structure or sequential arrangement of nucleic acid molecules, like ribonucleic acid (RNA) or deoxynucleic acid (DNA) molecules.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
-        <AbbreviatedIRI>:GIBO_00000038</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000038</IRI>
         <Literal xml:lang="en">adapted from OBI</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
-        <AbbreviatedIRI>:GIBO_00000038</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000038</IRI>
         <Literal>Nitya Singh</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>:GIBO_00000038</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000038</IRI>
         <Literal xml:lang="en">nucleic acid sequence data</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
-        <AbbreviatedIRI>:GIBO_00000039</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000039</IRI>
         <Literal xml:lang="en">A DNA sequence data item that is about the primary structure of DNA of whole genetic content of an organism.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
-        <AbbreviatedIRI>:GIBO_00000039</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000039</IRI>
         <Literal>Nitya Singh</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000119"/>
-        <AbbreviatedIRI>:GIBO_00000039</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000039</IRI>
         <Literal xml:lang="en">Adapted from 
 OBI</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>:GIBO_00000039</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000039</IRI>
         <Literal xml:lang="en">whole genome sequence data</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
-        <AbbreviatedIRI>:GIBO_00000040</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000040</IRI>
         <Literal>Nitya Singh</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000119"/>
-        <AbbreviatedIRI>:GIBO_00000040</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000040</IRI>
         <Literal xml:lang="en">Adapted form OBI</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="efo:definition"/>
-        <AbbreviatedIRI>:GIBO_00000040</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000040</IRI>
         <Literal xml:lang="en">A DNA sequence data item that is about the primary structure of DNA for only messenger RNA coding region of the whole genomic content.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>:GIBO_00000040</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000040</IRI>
         <Literal xml:lang="en">whole exome sequence data</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
-        <AbbreviatedIRI>:GIBO_00000041</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000041</IRI>
         <Literal xml:lang="en">A nucleic acid sequence data item that is about the primary structure of RNA</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000119"/>
-        <AbbreviatedIRI>:GIBO_00000041</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000041</IRI>
         <Literal xml:lang="en">Bioinformatics Web service ontology
 http://purl.obolibrary.org/obo/OBIws_0000192</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>:GIBO_00000041</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000041</IRI>
         <Literal xml:lang="en">RNA sequence data</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
-        <AbbreviatedIRI>:GIBO_00000042</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000042</IRI>
         <Literal>Nitya Singh</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000119"/>
-        <AbbreviatedIRI>:GIBO_00000042</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000042</IRI>
         <Literal xml:lang="en">Adapted from OBI</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="efo:definition"/>
-        <AbbreviatedIRI>:GIBO_00000042</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000042</IRI>
         <Literal xml:lang="en">A sequence data item that is about the primary structure of RNA for only 16s region of the whole RNA content of the organism</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>:GIBO_00000042</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000042</IRI>
         <Literal xml:lang="en">16s RNA data</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
-        <AbbreviatedIRI>:GIBO_00000043</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000043</IRI>
         <Literal>Nitya Singh</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000119"/>
-        <AbbreviatedIRI>:GIBO_00000043</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000043</IRI>
         <Literal xml:lang="en">Adapted from 
 Bioinformatics Web Service Ontology</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="efo:definition"/>
-        <AbbreviatedIRI>:GIBO_00000043</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000043</IRI>
         <Literal xml:lang="en">A RNA sequence data that is about the primary structure of RNA sequence produced by transcription of whole transcriptome of a organism..</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>:GIBO_00000043</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000043</IRI>
         <Literal xml:lang="en">whole transcriptome sequence data</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000119"/>
-        <AbbreviatedIRI>:GIBO_00000044</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000044</IRI>
         <Literal xml:lang="en">OBI
 http://purl.obolibrary.org/obo/OBI_0600047</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="efo:definition"/>
-        <AbbreviatedIRI>:GIBO_00000044</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000044</IRI>
         <Literal xml:lang="en">An assay that uses chemical or biochemical means to infer the sequence of a biomaterial</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>:GIBO_00000044</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000044</IRI>
         <Literal xml:lang="en">sequencing assay</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000119"/>
-        <AbbreviatedIRI>:GIBO_00000045</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000045</IRI>
         <Literal xml:lang="en">A molecular sequence data that is about the primary structure of ribonucleic acids, like DNA or RNA</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000119"/>
-        <AbbreviatedIRI>:GIBO_00000045</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000045</IRI>
         <Literal xml:lang="en">OBI
 http://purl.obolibrary.org/obo/OBI_0000973</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="efo:definition"/>
-        <AbbreviatedIRI>:GIBO_00000045</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000045</IRI>
         <Literal xml:lang="en">A measurement datum that represents the primary structure of a macromolecule(it&apos;s sequence) sometimes associated with an indicator of confidence of that measurement.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>:GIBO_00000045</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000045</IRI>
         <Literal xml:lang="en">molecular sequence data</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
-        <AbbreviatedIRI>:GIBO_00000046</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000046</IRI>
         <Literal xml:lang="en">A sequence data that is about sequence of amino acids which are linked by peptide bonds.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000119"/>
-        <AbbreviatedIRI>:GIBO_00000046</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000046</IRI>
         <Literal xml:lang="en">Bioinformatics Web service Ontology
 http://purl.obolibrary.org/obo/OBIws_0000080</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>:GIBO_00000046</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000046</IRI>
         <Literal xml:lang="en">protein sequence data</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
-        <AbbreviatedIRI>:GIBO_00000048</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000048</IRI>
         <Literal xml:lang="en">An assay that is used to separate high molecular weight linear DNA fragments, greater than 50 kilobases in size,  by pulsing an electrical field across an agarose gel.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
-        <AbbreviatedIRI>:GIBO_00000048</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000048</IRI>
         <Literal>Nitya Singh</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000118"/>
-        <AbbreviatedIRI>:GIBO_00000048</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000048</IRI>
         <Literal xml:lang="en">PFGE</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>:GIBO_00000048</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000048</IRI>
         <Literal xml:lang="en">Pulsed-Field Gel Electrophoresis</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
-        <AbbreviatedIRI>:GIBO_00000049</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000049</IRI>
         <Literal xml:lang="en">A genetic variation analysis process that utilizes the whole genome sequence data with the aim of identification of molecular determinants of serotype for predicting the serotype phenotype of the microorganism.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
-        <AbbreviatedIRI>:GIBO_00000049</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000049</IRI>
         <Literal>Nitya Singh</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>:GIBO_00000049</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000049</IRI>
         <Literal xml:lang="en">in-silico serotype prediction</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
-        <AbbreviatedIRI>:GIBO_00000050</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000050</IRI>
         <Literal xml:lang="en">A microbial serotype phenotype which is predicted, primarily by utilizing whole genome sequence data and following the planned process of in-silico serotype prediction.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
-        <AbbreviatedIRI>:GIBO_00000050</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000050</IRI>
         <Literal>Nitya Singh</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>:GIBO_00000050</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000050</IRI>
         <Literal xml:lang="en">predicted serotype phenotype</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000116"/>
-        <AbbreviatedIRI>:GIBO_00000051</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000051</IRI>
         <Literal xml:lang="en">This identifier can be used to search and retrive the raw DNA sequence data files in SRA dtabase and is linked with corresponding  metadata information (submitted in same data submission event) via NCBI accession identifier in NCBI Biosample database.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
-        <AbbreviatedIRI>:GIBO_00000051</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000051</IRI>
         <Literal>Nitya Singh</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="efo:definition"/>
-        <AbbreviatedIRI>:GIBO_00000051</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000051</IRI>
         <Literal xml:lang="en">An identifier that denotes the raw sequence data submitted to the NCBI SRA (Sequence Read Archive ) database.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>:GIBO_00000051</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000051</IRI>
         <Literal xml:lang="en">NCBI SRA identifier</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
-        <AbbreviatedIRI>:GIBO_00000052</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000052</IRI>
         <Literal xml:lang="en">An identifier that denotes the submitted metadata to the NCBI Biosample database.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000116"/>
-        <AbbreviatedIRI>:GIBO_00000052</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000052</IRI>
         <Literal xml:lang="en">This identifier can be used to search and retrive the metadata information in NCBI Biosample database about the corresponding raw DNA sequence data (retrievable via NCBI SRA identifier) submitted in same data submission event in NCBI SRA database.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
-        <AbbreviatedIRI>:GIBO_00000052</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000052</IRI>
         <Literal>Nitya Singh</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>:GIBO_00000052</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000052</IRI>
         <Literal xml:lang="en">NCBI accession identifier</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
-        <AbbreviatedIRI>:GIBO_00000053</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000053</IRI>
         <Literal xml:lang="en">A NCBI SRA data submission process submission process that realizes the concretization of an NCBI SRA database submission protocal.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
-        <AbbreviatedIRI>:GIBO_00000053</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000053</IRI>
         <Literal>Nitya Singh</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>:GIBO_00000053</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000053</IRI>
         <Literal xml:lang="en">NCBI SRA database submission process</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
-        <AbbreviatedIRI>:GIBO_00000054</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000054</IRI>
         <Literal xml:lang="en">A NCBI SRA data submission process submission process that realizes the concretization of an NCBI Biosample database submission protocal.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
-        <AbbreviatedIRI>:GIBO_00000054</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000054</IRI>
         <Literal>Nitya singh</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>:GIBO_00000054</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000054</IRI>
         <Literal xml:lang="en">NCBI Biosample database submission process</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
-        <AbbreviatedIRI>:GIBO_00000055</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000055</IRI>
         <Literal xml:lang="en">A web data submission process that realizes the concretization of an NCBI SRA data submission standard operating procedure.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
-        <AbbreviatedIRI>:GIBO_00000055</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000055</IRI>
         <Literal>Nitya Singh</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>:GIBO_00000055</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000055</IRI>
         <Literal xml:lang="en">NCBI SRA data submission process</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
-        <AbbreviatedIRI>:GIBO_00000056</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000056</IRI>
         <Literal>Nitya Singh</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>:GIBO_00000056</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000056</IRI>
         <Literal xml:lang="en">electronic submission package</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
-        <AbbreviatedIRI>:GIBO_00000057</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000057</IRI>
         <Literal>Nitya Singh</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="efo:definition"/>
-        <AbbreviatedIRI>:GIBO_00000057</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000057</IRI>
         <Literal xml:lang="en">An algorithm, developed by Zhou et al.2021, that performs the scalable Hierarchical clustering assignment to the the bacterial population using their core genome multi-locus type profiles as input and generates Hierarchical clusters as output.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>:GIBO_00000057</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000057</IRI>
         <Literal xml:lang="en">Hierarchical Clustering scheme for cgMLST (HierCC)</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
-        <AbbreviatedIRI>:GIBO_00000058</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000058</IRI>
         <Literal>Nitya Singh</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="efo:definition"/>
-        <AbbreviatedIRI>:GIBO_00000058</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000058</IRI>
         <Literal xml:lang="en">A HierCC clustering that performs hierarchical clustering of core genome MLST profiles and generates HC2 cluster as output comprising MLST profiles that are 2 or less allelic distance apart.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>:GIBO_00000058</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000058</IRI>
         <Literal xml:lang="en">HierCC2</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
-        <AbbreviatedIRI>:GIBO_00000059</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000059</IRI>
         <Literal>Nitya Singh</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="efo:definition"/>
-        <AbbreviatedIRI>:GIBO_00000059</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000059</IRI>
         <Literal xml:lang="en">A HierCC clustering that performs hierarchical clustering of core genome MLST profiles and generates HC5 cluster as output comprising MLST profiles that are 5 or less allelic distance apart.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>:GIBO_00000059</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000059</IRI>
         <Literal xml:lang="en">HierCC5</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
-        <AbbreviatedIRI>:GIBO_00000060</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000060</IRI>
         <Literal>Nitya Singh</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="efo:definition"/>
-        <AbbreviatedIRI>:GIBO_00000060</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000060</IRI>
         <Literal xml:lang="en">A HierCC clustering that performs hierarchical clustering of core genome MLST profiles and generates HC10 cluster as output comprising MLST profiles that are 10 or less allelic distance apart.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>:GIBO_00000060</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000060</IRI>
         <Literal xml:lang="en">HierCC10</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
-        <AbbreviatedIRI>:GIBO_00000061</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000061</IRI>
         <Literal>Nitya Singh</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="efo:definition"/>
-        <AbbreviatedIRI>:GIBO_00000061</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000061</IRI>
         <Literal xml:lang="en">A HierCC clustering that performs hierarchical clustering of core genome MLST profiles and generates HC20 cluster as output comprising MLST profiles that are 20 or less allelic distance apart.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>:GIBO_00000061</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000061</IRI>
         <Literal xml:lang="en">HierCC20</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
-        <AbbreviatedIRI>:GIBO_00000062</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000062</IRI>
         <Literal>Nitya Singh</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="efo:definition"/>
-        <AbbreviatedIRI>:GIBO_00000062</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000062</IRI>
         <Literal xml:lang="en">A data set that is output of hierarchical clustering of core genome MLST (cgMLST)  profiles and comprises a set of MLST profiles are at a given threshold allelic distance from each other.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="oboInOwl:shorthand"/>
-        <AbbreviatedIRI>:GIBO_00000062</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000062</IRI>
         <Literal xml:lang="en">HC</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>:GIBO_00000062</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000062</IRI>
         <Literal xml:lang="en">Hierarchical Cluster of cgMLST</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
-        <AbbreviatedIRI>:GIBO_00000063</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000063</IRI>
         <Literal>Nitya Singh</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="efo:definition"/>
-        <AbbreviatedIRI>:GIBO_00000063</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000063</IRI>
         <Literal xml:lang="en">A hierarchical cluster of core genome MLST profiles and comprises a set of MLST profiles that are 2 or less allelic distance apart.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>:GIBO_00000063</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000063</IRI>
         <Literal xml:lang="en">HC2</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
-        <AbbreviatedIRI>:GIBO_00000064</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000064</IRI>
         <Literal>Nitya Singh</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="efo:definition"/>
-        <AbbreviatedIRI>:GIBO_00000064</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000064</IRI>
         <Literal xml:lang="en">A hierarchical cluster of core genome MLST profiles and comprises a set of MLST profiles that are 5 or less allelic distance apart.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>:GIBO_00000064</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000064</IRI>
         <Literal xml:lang="en">HC5</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
-        <AbbreviatedIRI>:GIBO_00000065</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000065</IRI>
         <Literal>Nitya Singh</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="efo:definition"/>
-        <AbbreviatedIRI>:GIBO_00000065</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000065</IRI>
         <Literal xml:lang="en">A hierarchical cluster of core genome MLST profiles and comprises a set of MLST profiles that are 10 or less allelic distance apart.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>:GIBO_00000065</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000065</IRI>
         <Literal xml:lang="en">HC10</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
-        <AbbreviatedIRI>:GIBO_00000066</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000066</IRI>
         <Literal>Nitya Singh</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="efo:definition"/>
-        <AbbreviatedIRI>:GIBO_00000066</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000066</IRI>
         <Literal xml:lang="en">A hierarchical cluster of core genome MLST profiles and comprises a set of MLST profiles that are 20 or less allelic distance apart.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>:GIBO_00000066</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000066</IRI>
         <Literal xml:lang="en">HC20</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
-        <AbbreviatedIRI>:GIBO_00000067</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000067</IRI>
         <Literal>Nitya Singh</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="efo:definition"/>
-        <AbbreviatedIRI>:GIBO_00000067</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000067</IRI>
         <Literal xml:lang="en">An identifier that denotes the unique numeric digits for a given Hier CC cluster.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="oboInOwl:shorthand"/>
-        <AbbreviatedIRI>:GIBO_00000067</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000067</IRI>
         <Literal xml:lang="en">HC number</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>:GIBO_00000067</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000067</IRI>
         <Literal xml:lang="en">hierarchical cluster number</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
-        <AbbreviatedIRI>:GIBO_00000068</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000068</IRI>
         <Literal>Nitya Singh</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="efo:definition"/>
-        <AbbreviatedIRI>:GIBO_00000068</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000068</IRI>
         <Literal xml:lang="en">An identifier that denotes the unique numeric digits for HC2 cluster.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>:GIBO_00000068</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000068</IRI>
         <Literal xml:lang="en">HC2 cluster number</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
-        <AbbreviatedIRI>:GIBO_00000069</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000069</IRI>
         <Literal>Nitya Singh</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="efo:definition"/>
-        <AbbreviatedIRI>:GIBO_00000069</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000069</IRI>
         <Literal xml:lang="en">An identifier that denotes the unique numeric digits for HC2 cluster.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>:GIBO_00000069</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000069</IRI>
         <Literal xml:lang="en">HC5 cluster number</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
-        <AbbreviatedIRI>:GIBO_00000070</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000070</IRI>
         <Literal>Nitya Singh</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="efo:definition"/>
-        <AbbreviatedIRI>:GIBO_00000070</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000070</IRI>
         <Literal xml:lang="en">An identifier that denotes the unique numeric digits for HC10 cluster.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>:GIBO_00000070</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000070</IRI>
         <Literal xml:lang="en">HC10 cluster number</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
-        <AbbreviatedIRI>:GIBO_00000071</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000071</IRI>
         <Literal>Nitya Singh</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="efo:definition"/>
-        <AbbreviatedIRI>:GIBO_00000071</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000071</IRI>
         <Literal xml:lang="en">An identifier that denotes the unique numeric digits for HC20 cluster.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>:GIBO_00000071</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000071</IRI>
         <Literal xml:lang="en">HC20 cluster number</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
-        <AbbreviatedIRI>:GIBO_00000072</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000072</IRI>
         <Literal xml:lang="en">A multilocus sequence typing process which uses the fixed set of ribosomal genes for generating the alleling profiles or sequence type (ST) of bacterial species, known as ribosomal ST.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
-        <AbbreviatedIRI>:GIBO_00000072</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000072</IRI>
         <Literal>Nitya Singh</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>:GIBO_00000072</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000072</IRI>
         <Literal xml:lang="en">ribosomal multilocus sequence typing</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
-        <AbbreviatedIRI>:GIBO_00000073</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000073</IRI>
         <Literal>Nitya Singh</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="efo:definition"/>
-        <AbbreviatedIRI>:GIBO_00000073</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000073</IRI>
         <Literal xml:lang="en">A sequence type, generated as profile, using set of conserved ribosomal gene loci, that is represented by a unique rST number for a given species.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>:GIBO_00000073</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000073</IRI>
         <Literal xml:lang="en">ribosomal sequence type</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>:GIBO_00000074</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000074</IRI>
         <Literal xml:lang="en">SNP profile</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
-        <AbbreviatedIRI>:GIBO_00000075</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000075</IRI>
         <Literal>Nitya Singh</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="efo:definition"/>
-        <AbbreviatedIRI>:GIBO_00000075</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000075</IRI>
         <Literal xml:lang="en">A data set that is output of SNP clustering algorithm and comprises of WGS data samples grouped together as cluster.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>:GIBO_00000075</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000075</IRI>
         <Literal xml:lang="en">SNP cluster</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
-        <AbbreviatedIRI>:GIBO_00000076</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000076</IRI>
         <Literal>Nitya Singh</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="efo:definition"/>
-        <AbbreviatedIRI>:GIBO_00000076</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000076</IRI>
         <Literal xml:lang="en">An algotrithm that takes SNP profiles as inputs and generates clusters of WGS data samples as output, on the basis of thier similarity to each other.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>:GIBO_00000076</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000076</IRI>
         <Literal xml:lang="en">SNP clustering scheme</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
-        <AbbreviatedIRI>:GIBO_00000077</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000077</IRI>
         <Literal>Nitya Singh</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="efo:definition"/>
-        <AbbreviatedIRI>:GIBO_00000077</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000077</IRI>
         <Literal xml:lang="en">An identifier that denotes a SNP cluster</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>:GIBO_00000077</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000077</IRI>
         <Literal xml:lang="en">SNP cluster number</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
-        <AbbreviatedIRI>:GIBO_00000079</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000079</IRI>
         <Literal>Nitya Singh</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="efo:definition"/>
-        <AbbreviatedIRI>:GIBO_00000079</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000079</IRI>
         <Literal xml:lang="en">A data clustering process that implements the  HierCC clustering scheme for core genome MLST(cgMLST) on given core genome profiles as input and generates Hierarchical Clusters of cgMLST as output.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>:GIBO_00000079</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000079</IRI>
         <Literal xml:lang="en">Hierarchical Clustering of cgMLST (HierCC)</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
-        <AbbreviatedIRI>:GIBO_00000080</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000080</IRI>
         <Literal>Nitya Singh</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="efo:definition"/>
-        <AbbreviatedIRI>:GIBO_00000080</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000080</IRI>
         <Literal xml:lang="en">A planned process that group together all data entities in one cluster that are more similar to each other, in comparison to data enetities those are grouped in other clusters.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>:GIBO_00000080</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000080</IRI>
         <Literal xml:lang="en">data clustering</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
-        <AbbreviatedIRI>:GIBO_00000081</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000081</IRI>
         <Literal>Nitya  Singh</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="efo:definition"/>
-        <AbbreviatedIRI>:GIBO_00000081</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000081</IRI>
         <Literal xml:lang="en">A data clustering process that implements the  SNP clustering scheme on given SNP profiles as input and generates SNP clusters as output.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>:GIBO_00000081</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000081</IRI>
         <Literal xml:lang="en">SNP clustering</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
-        <AbbreviatedIRI>:GIBO_00000085</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000085</IRI>
         <Literal>Nitya Singh</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="efo:definition"/>
-        <AbbreviatedIRI>:GIBO_00000085</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000085</IRI>
         <Literal xml:lang="en">An infectious disease that is caused by exposure to some pathogenic Salmonella bacteria</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>:GIBO_00000085</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000085</IRI>
         <Literal xml:lang="en">Salmonellosis</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
-        <AbbreviatedIRI>:GIBO_00000086</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000086</IRI>
         <Literal>Nitya Singh</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="efo:definition"/>
-        <AbbreviatedIRI>:GIBO_00000086</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000086</IRI>
         <Literal xml:lang="en">A data set that comprises multiple core genome sequence types of a given WGS sample set.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>:GIBO_00000086</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000086</IRI>
         <Literal xml:lang="en">core genome MLST profiles</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
-        <AbbreviatedIRI>:GIBO_00000087</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000087</IRI>
         <Literal>Nitya Singh</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="efo:definition"/>
-        <AbbreviatedIRI>:GIBO_00000087</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000087</IRI>
         <Literal xml:lang="en">A DNA sequence data in its raw read format (.raw) as produced as output of a DNA sequencing assay</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>:GIBO_00000087</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000087</IRI>
         <Literal xml:lang="en">raw reads of DNA sequence data</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
-        <AbbreviatedIRI>:GIBO_00000088</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000088</IRI>
         <Literal>Nitya Singh</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="efo:definition"/>
-        <AbbreviatedIRI>:GIBO_00000088</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000088</IRI>
         <Literal xml:lang="en">A standard operating procedure for isolating pure micorbial isolate from a specimen.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>:GIBO_00000088</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000088</IRI>
         <Literal xml:lang="en">microbial isolation SOP</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
-        <AbbreviatedIRI>:GIBO_00000089</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000089</IRI>
         <Literal>Nitya Singh</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="efo:definition"/>
-        <AbbreviatedIRI>:GIBO_00000089</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000089</IRI>
         <Literal xml:lang="en">An identifier that denotes one infectious disease epidemic</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>:GIBO_00000089</AbbreviatedIRI>
+        <IRI>http://www.ontogator.org/GIBO/GIBO_00000089</IRI>
         <Literal xml:lang="en">epidemic identifier</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
-        <AbbreviatedIRI>:iGIBO_00000027</AbbreviatedIRI>
-        <Literal>Nitya Singh</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="efo:definition"/>
-        <AbbreviatedIRI>:iGIBO_00000027</AbbreviatedIRI>
-        <Literal xml:lang="en">A specimen ID denoting a microbial isolate specimen.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>:iGIBO_00000027</AbbreviatedIRI>
-        <Literal xml:lang="en">microbial isolate specimen ID</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000111"/>
